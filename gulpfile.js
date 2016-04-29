@@ -62,10 +62,13 @@ var gulp = require('gulp'),
       'js/util/*.js'
     ],
     jsframeworkfiles: [
-      'js/framework/*.js'
+      'js/framework/**/*.js'
     ],
     jsallfiles: [
       'js/**/*.js'
+    ],
+    jsonfiles: [
+      'json/**/*'
     ],
     htmlfiles: [
       'templates/**/*.html'
@@ -152,6 +155,12 @@ var gulp = require('gulp'),
   gulp.task('fonts', function() {
     return gulp.src(src + PATHS.fontfiles)
       .pipe(gulp.dest(dest + 'HTMLResources/fonts'));
+  });
+
+   // COPYING JSON 
+  gulp.task('fonts', function() {
+    return gulp.src(src + PATHS.jsonfiles)
+      .pipe(gulp.dest(dest + 'HTMLResources/json'));
   });
 
   // CLEANING 

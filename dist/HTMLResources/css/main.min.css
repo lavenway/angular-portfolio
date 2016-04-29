@@ -3890,4 +3890,28 @@ h6 {
     height: 2000px;
     background: red; }
 
+.bg-info {
+  background: blue; }
+
+.bg-danger {
+  background: red; }
+
+.bg-success {
+  background: green; }
+
+.image-selected {
+  border: 3px solid blue; }
+
+.bg-info {
+  background: blue; }
+
+.bg-danger {
+  background: red; }
+
+.bg-success {
+  background: green; }
+
+.image-selected {
+  border: 3px solid blue; }
+
 /*# sourceMappingURL=main.min.css.map */

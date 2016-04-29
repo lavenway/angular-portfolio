@@ -4,9 +4,9 @@
   
     $(function() {
         //Put your code here
-        var body = $('body'),
+        /*var body = $('body'),
             html = $('html'),
-            $doc = $(document);
+            $doc = $(document);*/
 
             /*handlexxxxxxxxxx = function () {
               

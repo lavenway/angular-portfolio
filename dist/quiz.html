@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="quizFramework">
-
+<html class="no-js" lang="en">
 <head>
 	<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js ','no-js').replace('no-js','');</script>
 	  <title>Rhapsody Template</title>
@@ -21,7 +20,7 @@
 		<![endif]-->
 </head>
 
-<body>
+  <body>
 		<div id="wrapper">
       <nav class="navbar navbar-default navbar-fixed-top js-main-nav">
         <div class="container-fluid">
@@ -42,11 +41,17 @@
         	</div>
         </div><!-- /.container -->
       </nav>
+
       <div class="container">
+        <!-- START: COMPONENT DETAILS -->
+          <h2>Component: A quiz framework using Angular js</h2>
+          <p class="push h20"></p>
+        <!-- END: COMPONENT DETAILS -->
 
-      	<div class="row">
-      		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <p class="push h100"></p>
 
+        <div class="row">        
+          <div class="col-xs-12">
             <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
 
               <button class="btn btn-warning" ng-click="list.activateQuiz()">Start Quiz</button>
@@ -164,50 +169,50 @@
               </button>
 
             </div>
+          </div>
+        </div>
 
-      		</div>
-      	</div>
-
-      </div>
-      <div class="push-sf"></div> <!-- for sticky footer -->
+        <div class="push-sf"></div> <!-- for sticky footer -->
+      </div> 
 		</div><!-- .wrapper -->
-		<footer>
-		  <div class="container-fluid">
-		    <div class="row">
-		      <div class="col-xs-12 text-center">
-		        <div class="footer-nav-container">
-		          <ul>
-		            <li><a href="terms-and-condition">T&Cs</a></li>
-		            <li><a href="cookie-policy">Cookie policy</a></li>
-		            <li><a href="about">About</a></li>
-		          </ul>
-		        </div>
-		      </div>
-		    </div>
-		  </div>
-		</footer>
 
-		<div id="grid-overlay">
-		  <div class="container">
-		    <div class="row">
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		    </div>
-		  </div>
-		</div>
+   <footer>
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-xs-12 text-center">
+           <div class="footer-nav-container">
+             <ul>
+               <li><a href="terms-and-condition">T&Cs</a></li>
+               <li><a href="cookie-policy">Cookie policy</a></li>
+               <li><a href="about">About</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </footer>
 
-		<script type="text/javascript" src="HTMLResources/js/util.min.js"></script>
-		<script type="text/javascript" src="HTMLResources/js/lib.min.js"></script>
-		<script type="text/javascript" src="HTMLResources/js/framework.min.js"></script>
+   <div id="grid-overlay">
+     <div class="container">
+       <div class="row">
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+         <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+       </div>
+     </div>
+   </div>
+
+   <script type="text/javascript" src="HTMLResources/js/util.min.js"></script>
+   <script type="text/javascript" src="HTMLResources/js/lib.min.js"></script>
+   <script type="text/javascript" src="HTMLResources/js/framework.min.js"></script>
   </body>
 </html>
