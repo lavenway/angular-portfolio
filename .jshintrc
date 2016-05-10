@@ -21,6 +21,7 @@
   "expr": true,
   "boss": true,
   "globals": {
+    "angular":true,
     "Handlebars": false,
     "Rhapsody": false,
     "google": false,

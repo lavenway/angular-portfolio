@@ -39,7 +39,7 @@ var gulp = require('gulp'),
   var PORT = 8000;
 
   // PATH ON THE DEVELOPMENT SERVER TO FTP FILES TO
-  var PROJECTSERVERPATH = 'test';
+  var PROJECTSERVERPATH = 'boots-quiz';
 
   // BROWSERS TO TARGET WHEN PREFIXING CSS.
   var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
@@ -68,7 +68,7 @@ var gulp = require('gulp'),
       'js/**/*.js'
     ],
     jsonfiles: [
-      'json/**/*'
+      'json/**/*.json'
     ],
     htmlfiles: [
       'templates/**/*.html'
@@ -158,7 +158,7 @@ var gulp = require('gulp'),
   });
 
    // COPYING JSON 
-  gulp.task('fonts', function() {
+  gulp.task('json', function() {
     return gulp.src(src + PATHS.jsonfiles)
       .pipe(gulp.dest(dest + 'HTMLResources/json'));
   });
@@ -198,7 +198,7 @@ var gulp = require('gulp'),
   // BUILD THE 'DIST' FOLDER BY RUNNING ALL OF THE SPECIFIED TASKS
   gulp.task('build', function(callback) {
     runSequence('clean:dist',
-      ['html-include', 'sass', 'util-scripts', 'lib-scripts', 'framework-scripts', 'lint', 'images', 'fonts'],
+      ['html-include', 'sass', 'util-scripts', 'lib-scripts', 'framework-scripts', 'lint', 'images', 'fonts', 'json'],
       callback
     );
   });
@@ -223,6 +223,8 @@ var gulp = require('gulp'),
     gulp.watch(src + PATHS.htmlfiles, ['html-include', browserSync.reload]);
     // WATCH JS FILES
     gulp.watch(src + PATHS.jsallfiles, ['util-scripts', 'lib-scripts', 'framework-scripts', 'lint', browserSync.reload]);
+    // WATCH JSON FILES
+    gulp.watch(src + PATHS.jsonfiles, ['json', browserSync.reload]);
      // WATCH SASS FILES
     gulp.watch(src + PATHS.sassfiles, ['sass', browserSync.reload]);
      // WATCH IMAGE FILES

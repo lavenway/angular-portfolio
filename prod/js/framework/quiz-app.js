@@ -1,5 +1,8 @@
 (function() {
+
 	'use strict';
+
 	angular
-		.module('quizFramework', []);
+		.module('quizFramework', ['ngMaterial']);
+
 })();

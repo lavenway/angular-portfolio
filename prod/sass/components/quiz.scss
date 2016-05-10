@@ -1,5 +1,14 @@
+body {
+	font-size: 14px;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
 .bg-info {
-	background: blue;
+	padding: 5px;
+	border: 2px solid blue;
 }
 
 .bg-danger {
@@ -12,4 +21,40 @@
 
 .image-selected {
 	border: 3px solid blue;
+}
+
+.image-answer {
+	width: 50%;
+
+	&.bg-danger {
+		border: 10px solid red;
+	}
+
+	&.bg-success {
+		border: 10px solid green;
+	}
+}
+
+#quiz-wrapper {
+	margin-top: 40px;
+	padding: 20px;
+	border: 2px solid black;
+}
+
+.landing {
+	margin-top: 20px;
+	width: 100%;
+	height: 300px;
+	background: pink;
+}
+
+.answer-wrapper {
+	margin-top: 20px;
+	p {
+		margin: 0;
+	}
+}
+
+.progress-toolbar {
+	margin-bottom: 10px;
 }
