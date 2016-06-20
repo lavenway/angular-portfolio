@@ -1,32 +1,141 @@
-(function($) {
-    'use strict';
-    $ = $ || jQuery;
-  
-    $(function() {
-        //Put your code here
-        /*var body = $('body'),
-            html = $('html'),
-            $doc = $(document);*/
+// IIFE - Immediately Invoked Function Expression
+(function(portfolio) {
+  'use strict';
 
-            /*handlexxxxxxxxxx = function () {
-              
-            };*/
+  console.log('portfolio');
+  // The global jQuery object is passed as a parameter
+  portfolio(window.jQuery, window, document);
 
+  }(function($, window, document) {
+      'use strict';
 
-        //$navCloseDropdown.on('click', handlexxxxxxxxxx);
+      console.log('window, document');
+      // The $ is now locally scoped 
+      $(function() {
+          // The DOM is ready!
+          console.log('inner function from window, document');
+          // This is needed to prevent onreadystatechange being run twice
+          var ready = false;
 
-        // Only run this stuff if page is fully loaded
-        // This is needed to prevent onreadystatechange being run twice
-        var ready = false;
+          document.onreadystatechange = function() {
+            console.log('onreadystatechange');
+            if (ready) {
+              return;
+            }
+            
+            // interactive = DOMContentLoaded & complete = window.load
+            if (document.readyState == 'interactive' || document.readyState == 'complete') {
+              ready = true;
+            }      
+          };
+      });
 
-        document.onreadystatechange = function() {
+      // The rest of your code goes here!
+      // Variables
+      var body = $('body'),
+          desktopDevice = 'desktop-viewport',
+          $mainNav = $('.navbar'),
+          mobileDevice = 'mobile-viewport',
+          $mobileMenuToggle = $('.mobile-menu'),
+          tabletDevice = 'tablet-viewport',
 
-          if (ready) {
-            return;
-          }
-          
-          //Put your code here
+          handleMobileNavToggle = function (e) {
+            var $mobileHiddenNav = $('.navbar-links');
 
-        };
-    });
-})(jQuery);
+            $mainNav.toggleClass('active');
+
+            $mobileHiddenNav.toggle();
+          };
+
+      enquire.register('screen and (max-width:480px)', {
+        // OPTIONAL
+        // If supplied, triggered when a media query matches.
+        match : function() {
+          body.addClass(mobileDevice);
+        },      
+                                    
+        // OPTIONAL
+        // If supplied, triggered when the media query transitions 
+        // *from a matched state to an unmatched state*.
+        unmatch : function() {
+          body.removeClass(mobileDevice);
+        },    
+        
+        // OPTIONAL
+        // If supplied, triggered once, when the handler is registered.
+        setup : function() {},    
+                                    
+        // OPTIONAL, defaults to false
+        // If set to true, defers execution of the setup function 
+        // until the first time the media query is matched
+        deferSetup : true,
+                                    
+        // OPTIONAL
+        // If supplied, triggered when handler is unregistered. 
+        // Place cleanup code here
+        destroy : function() {}         
+      });
+
+      enquire.register('screen and (min-width:481px) and (max-width:1023px)', {
+        // OPTIONAL
+        // If supplied, triggered when a media query matches.
+        match : function() {       
+          body.addClass(tabletDevice);
+        }, 
+
+        // OPTIONAL
+        // If supplied, triggered when the media query transitions 
+        // *from a matched state to an unmatched state*.
+        unmatch : function() {
+          body.removeClass(tabletDevice);
+        },
+
+        // OPTIONAL
+        // If supplied, triggered once, when the handler is registered.
+        setup : function() {},    
+                                    
+        // OPTIONAL, defaults to false
+        // If set to true, defers execution of the setup function 
+        // until the first time the media query is matched
+        deferSetup : true,
+                                    
+        // OPTIONAL
+        // If supplied, triggered when handler is unregistered. 
+        // Place cleanup code here
+        destroy : function() {}
+      });
+
+      enquire.register('screen and (min-width:1024px)', {
+        // OPTIONAL
+        // If supplied, triggered when a media query matches.
+        match : function() {
+          body.addClass(desktopDevice);
+        }, 
+
+        // OPTIONAL
+        // If supplied, triggered when the media query transitions 
+        // *from a matched state to an unmatched state*.
+        unmatch : function() {  
+          body.removeClass(desktopDevice);
+        },
+
+        // OPTIONAL
+        // If supplied, triggered once, when the handler is registered.
+        setup : function() {},    
+                                    
+        // OPTIONAL, defaults to false
+        // If set to true, defers execution of the setup function 
+        // until the first time the media query is matched
+        deferSetup : true,
+                                    
+        // OPTIONAL
+        // If supplied, triggered when handler is unregistered. 
+        // Place cleanup code here
+        destroy : function() {}
+      });
+
+      // MOBILE NAV TOGGLE MENU
+      $mobileMenuToggle.on('click', handleMobileNavToggle);
+
+  }
+));

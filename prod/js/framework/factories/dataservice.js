@@ -5,29 +5,37 @@
 	function DataFactory($http) {
 
 		/*var urlBase = 'http://www.json-generator.com/api/json/get/bQkWdPSKMi?indent=2';*/
-		var urlBase = 'HTMLResources/json/quiz-data.json?callback=JSON_CALLBACK';
+		var urlBase = 'HTMLResources/json/folio-data.json?callback=JSON_CALLBACK';
 
-		var JSONQuizData = [];
-		var JSONCorrectAnswers = [];
-		var JSONScoreDescription = [];
+		var JSONHomeSection = [];
+		var JSONAboutSection = [];
+		var JSONAgenciesSection = [];
+		var JSONWorkSection = [];
+		var JSONContactSection = [];
 
 		var dataObj = {
-			JSONQuizData: JSONQuizData,
-			JSONCorrectAnswers: JSONCorrectAnswers,
-			JSONScoreDescription: JSONScoreDescription
+			JSONHomeSection: JSONHomeSection,
+			JSONAboutSection: JSONAboutSection,
+			JSONAgenciesSection: JSONAgenciesSection,
+			JSONWorkSection: JSONWorkSection,
+			JSONContactSection: JSONContactSection
 		};
 
     $http.get(urlBase).success(function(data) {
-        dataObj.JSONQuizData = data.JSONQuizData,
-        dataObj.JSONCorrectAnswers = data.JSONCorrectAnswers,
-        dataObj.JSONScoreDescription = data.JSONScoreDescription;
+        dataObj.JSONHomeSection = data.JSONHomeSection,
+        dataObj.JSONAboutSection = data.JSONAboutSection,
+        dataObj.JSONAgenciesSection = data.JSONAgenciesSection,
+        dataObj.JSONWorkSection = data.JSONWorkSection,
+        dataObj.JSONContactSection = data.JSONContactSection;
     });
 
   	return dataObj;
+
+
 	}
 
 	angular
-		.module('quizFramework')
+		.module('folioFramework')
 		.factory('dataService', DataFactory);
 
 	DataFactory.$inject = ['$http'];

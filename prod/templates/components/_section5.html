@@ -1,0 +1,39 @@
+<section class="section contact">
+
+	<div class="container">
+
+		<h1>{{folio.dataService.JSONContactSection[0].header}}</h1>
+
+	  <form method="post" action="contact.php" id="contact-form" role="form" class="contact-form">
+	                                
+			<!-- Name -->
+			<div class="form-group">
+		    <input type="text" name="name" id="name" class="form-control" placeholder="Name" min="3" max="100" required="">
+		  </div>
+
+			<!-- Email -->
+			<div class="form-group">
+		    <input type="email" name="email" id="email" class="form-control" placeholder="Email" min="5" max="100" required="">
+		  </div>
+
+			<!-- Message -->
+		  <div class="form-group">
+		    <textarea name="message" id="text" class="form-control" rows="6" placeholder="Message" min="5" max="400"></textarea>
+		  </div>   
+
+		  <!-- Anti-spam -->
+		  <div class="form-group last">
+		  	<label>1966 <span></label>
+				<input name="human" placeholder="Enter security code">
+			</div>
+		  
+			<!-- Send Button -->                                 
+		  <button id="submit" class="btn" name="submit" type="submit" value="Submit">
+		      Send
+		  </button>
+
+		</form>
+		
+	</div>
+
+</section>

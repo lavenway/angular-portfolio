@@ -21,6 +21,7 @@ var gulp = require('gulp'),
     include = require('gulp-html-tag-include'),
     imagemin = require('gulp-imagemin'),
     jshint = require('gulp-jshint'),
+    phplint = require('gulp-phplint'),
     rename = require('gulp-rename'),
     runSequence = require('run-sequence'),
     sass = require('gulp-sass'),
@@ -72,6 +73,9 @@ var gulp = require('gulp'),
     ],
     htmlfiles: [
       'templates/**/*.html'
+    ],
+    phpfiles: [
+      'php/**/*.php'
     ],
   };
 
@@ -131,6 +135,12 @@ var gulp = require('gulp'),
     .pipe(jshint.reporter('default'));
   });
 
+  // LINT PHP FILES
+  gulp.task('phplint', function() {
+  return gulp.src([src + PATHS.phpfiles])
+    .pipe(phplint());
+  });
+
   // Compile CSS from Sass files
   gulp.task('sass', function() {
     return gulp.src(src + PATHS.sassfiles, {style: 'compressed'})
@@ -144,6 +154,18 @@ var gulp = require('gulp'),
       .pipe(gulp.dest(dest + 'HTMLResources/css'));
   });
 
+  // COPYING JSON 
+  gulp.task('json', function() {
+    return gulp.src(src + PATHS.jsonfiles)
+      .pipe(gulp.dest(dest + 'HTMLResources/json'));
+  });
+
+  // COPYING PHP 
+  gulp.task('php', function() {
+    return gulp.src(src + PATHS.phpfiles)
+      .pipe(gulp.dest(dest + 'HTMLResources/php'));
+  });
+
   // COMPRESS IMAGES
   gulp.task('images', function() {
     return gulp.src(src + PATHS.imagefiles)
@@ -155,12 +177,6 @@ var gulp = require('gulp'),
   gulp.task('fonts', function() {
     return gulp.src(src + PATHS.fontfiles)
       .pipe(gulp.dest(dest + 'HTMLResources/fonts'));
-  });
-
-   // COPYING JSON 
-  gulp.task('json', function() {
-    return gulp.src(src + PATHS.jsonfiles)
-      .pipe(gulp.dest(dest + 'HTMLResources/json'));
   });
 
   // CLEANING 
@@ -198,7 +214,7 @@ var gulp = require('gulp'),
   // BUILD THE 'DIST' FOLDER BY RUNNING ALL OF THE SPECIFIED TASKS
   gulp.task('build', function(callback) {
     runSequence('clean:dist',
-      ['html-include', 'sass', 'util-scripts', 'lib-scripts', 'framework-scripts', 'lint', 'images', 'fonts', 'json'],
+      ['html-include', 'sass', 'util-scripts', 'lib-scripts', 'framework-scripts', 'lint', 'phplint', 'images', 'fonts', 'json', 'php'],
       callback
     );
   });
@@ -222,9 +238,11 @@ var gulp = require('gulp'),
     // WATCH HTML FILES
     gulp.watch(src + PATHS.htmlfiles, ['html-include', browserSync.reload]);
     // WATCH JS FILES
-    gulp.watch(src + PATHS.jsallfiles, ['util-scripts', 'lib-scripts', 'framework-scripts', 'lint', browserSync.reload]);
+    gulp.watch(src + PATHS.jsallfiles, ['util-scripts', 'lib-scripts', 'framework-scripts', 'lint', 'phplint', browserSync.reload]);
     // WATCH JSON FILES
     gulp.watch(src + PATHS.jsonfiles, ['json', browserSync.reload]);
+    // WATCH PHP FILES
+    gulp.watch(src + PATHS.phpfiles, ['php', browserSync.reload]);
      // WATCH SASS FILES
     gulp.watch(src + PATHS.sassfiles, ['sass', browserSync.reload]);
      // WATCH IMAGE FILES

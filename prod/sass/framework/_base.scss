@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  font-family: 'Arimo', sans-serif;
   font-size: 100%;
   color: $black;
   -webkit-tap-highlight-color: transparent;
@@ -24,6 +25,7 @@ body {
 
 a {
   color: $blue;
+
   &:hover, &:focus, &:active {
     color: $black;
   }
@@ -53,45 +55,123 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 42px;
-  font-size: 4.2rem;
+  font-weight: 700;
   line-height: 36px;
-  line-height: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 20px;
-  font-size: 2rem;
   line-height: normal;
 }
 
 h3 {
   font-size: 35px;
-  font-size: 3.5rem;
   line-height: 25px;
-  line-height: 2.5rem;
 }
 
 h4 {
   font-size: 20px;
-  font-size: 2rem;
   line-height: 25px;
-  line-height: 2.5rem;
 }
 
 h5 {
   font-size: 24px;
-  font-size: 2.4rem;
   line-height: 34px;
-  line-height: 3.4rem;
-  @include font-smoothing();
 }
 
 h6 {
   font-size: 20px;
-  font-size: 2rem;
   line-height: 24px;
-  line-height: 2.4rem;
-  @include font-smoothing();
+}
+
+
+/******************************
+* MAIN NAV
+******************************/
+.navbar {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  box-shadow: none;
+  transition: all 1s ease;
+  background:rgba(255,255,255,0.3);
+
+  &.active {
+    height: auto;
+  }
+
+  @media all and (min-width: 480px) {
+    height: 160px;
+  }
+
+  &:hover {
+    background:rgba(0,0,0,0.6);
+  }
+
+  .mobile-menu {
+    i {
+      padding: 26px;
+      font-size: 30px;
+    }
+
+    @media all and (min-width: 480px) {
+      display: none;
+    }
+  }
+
+  ul {
+    display: none;
+    margin: 0 2%;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    @media all and (min-width: 480px) {
+      display: block;
+    }
+
+    li {
+      display: block;
+      width: 100%;
+      vertical-align: top;
+
+      @media all and (min-width: 480px) {
+        display: inline-block;
+        width: 100px;
+      }
+
+      a {
+        font-weight: 700;
+        color: $white;
+        line-height: normal;
+
+        @media all and (min-width: 480px) {
+          line-height: 156px;
+        }
+
+        &.logo {
+          display: block;
+          width: 114px;
+          height: 80px;
+          margin-top: 36px;
+          font-size: 0;
+        }
+      }
+    }
+  }
+
+}
+
+
+/******************************
+* FOOTER
+******************************/
+footer {
+  display: none;
 }
 
 

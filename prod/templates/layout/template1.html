@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="quizFramework">
+<html class="no-js" lang="en" ng-app="folioFramework" ng-controller="folioCtrl as folio">
 
 <head>
 	<include src="../structure/_html-header.html"></include>
 </head>
 
-<body>
-		<div id="wrapper">
+  <body initialize-directive callbackrender-fn="folio.initializeFullpage()">
+    <div id="wrapper">
+
       <include src="../structure/_header.html"></include>
-      <div class="container">
 
-      	<div class="row">
-      		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-
-                        <div id="quiz-wrapper">
-                              <include src="../components/_quiz.html"></include>
-                        </div>
-
-      		</div>
-      	</div>
-
+      <div id="fullpage">
+        <!-- Section 1 - Home -->
+        <include src="../components/_section1.html"></include>
+        <!-- Section 2 - About -->
+        <include src="../components/_section2.html"></include>
+        <!-- Section 3 - Agencies -->
+        <include src="../components/_section3.html"></include>
+        <!-- Section 4 - Work -->
+        <include src="../components/_section4.html"></include>
+        <!-- Section 5 - Contact -->
+        <include src="../components/_section5.html"></include>
       </div>
+
       <div class="push-sf"></div> <!-- for sticky footer -->
-		</div><!-- .wrapper -->
-		<include src="../structure/_footer.html"></include>
+
+    </div><!-- .wrapper -->
+
+    <include src="../structure/_footer.html"></include>
+    
   </body>
 </html>

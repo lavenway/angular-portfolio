@@ -30,6 +30,7 @@
     "gulp-ignore": "^2.0.1",
     "gulp-imagemin": "^2.4.0",
     "gulp-jshint": "^2.0.0",
+    "gulp-phplint": "^0.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",

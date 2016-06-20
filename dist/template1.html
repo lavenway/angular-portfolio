@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="quizFramework">
+<html class="no-js" lang="en" ng-app="folioFramework" ng-controller="folioCtrl as folio">
 
 <head>
 	<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js ','no-js').replace('no-js','');</script>
-	  <title>Rhapsody Template</title>
+	  <title>Wayne lavender Digital Portfolio</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
 		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -11,6 +11,8 @@
 		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 
 	  <!-- CSS -->
+	  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+	  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="HTMLResources/css/main.min.css">
 		<!-- Must live here to provide html5 shiv in IE8 -->
 		<!--  <script src="HTMLResources/js/modernizr-2.8.3.js"></script> -->
@@ -21,248 +23,194 @@
 		<![endif]-->
 </head>
 
-<body>
-		<div id="wrapper">
+  <body initialize-directive callbackrender-fn="folio.initializeFullpage()">
+    <div id="wrapper">
+
       <nav class="navbar navbar-default navbar-fixed-top js-main-nav">
         <div class="container-fluid">
         	<div class="navbar-header">
-        		<div class="pull-left">
-        			ADD SOMETHING HERE
-      	  	</div>
 
-      	  	<div class="center-block">
-      		  	<a href="index.html" class="logo" title="Add some text">
-      		  		IMAGE HERE
-      	      </a>
-          	</div>
-      	  	
-      	  	<div class="pull-right">
-      	  		ADD SOMETHING HERE
-      	  	</div>
+        		<div class="mobile-menu">
+        			<i class="fa fa-bars"></i>
+        		</div>
+
+      	  	<ul class="navbar-links">
+      			  <li data-menuanchor="secondPage"><a href="#section2">About</a></li>
+      			  <li data-menuanchor="thirdPage"><a href="#section3">Agencies</a></li>
+      			  <li data-menuanchor="firstPage" class="active">
+      			  	<a href="#section1" class="logo" title="Add some text">
+      			  		<img src="HTMLResources/img/logo-wl-small.png" alt="Wayne Lavender - Developer Logo">
+      			  	</a>
+      			  </li>
+      			  <li data-menuanchor="fourthPage"><a href="#section4">Work</a></li>
+      			  <li data-menuanchor="fourthPage"><a href="#section5">Contact</a></li>
+      			</ul>
+
         	</div>
         </div><!-- /.container -->
       </nav>
-      <div class="container">
 
-      	<div class="row">
-      		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <div id="fullpage">
+        <!-- Section 1 - Home -->
+        <section class="section home">
 
-                        <div id="quiz-wrapper">
-                              <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
+        	<div class="container">
+          	<h1>{{folio.dataService.JSONHomeSection[0].header}}</h1>
+        	</div>
+        	
+        </section>
+        <!-- Section 2 - About -->
+        <section class="section about">
 
-                                <button class="btn btn-warning" ng-click="list.activateQuiz()">Start Quiz</button>
+        	<div class="container">
+        		<h1>{{folio.dataService.JSONAboutSection[0].header}}</h1>
+        	</div>
+        	
+        </section>
+        <!-- Section 3 - Agencies -->
+        <section class="section agencies">
 
-                                <div class="landing">
-                                  QUIZ LANDING SCREEN
-                                </div>
+        	<div class="container">
 
-                              </div><!-- LIST CONTROLLER -->
+        		<h1>{{folio.dataService.JSONAgenciesSection[0].header}}</h1>
 
-                              <div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
+        	  <div ng-repeat="agencies in folio.dataService.JSONAgenciesSection[0].possibilities">
 
-                                <div class="header-toolbar">
-                                  <span class="back"
-                                    ng-show="quiz.back"
-                                    ng-click="quiz.backQuestion()">
-                                    Back
-                                  </span>
-                                  <h4>
-                                    <span ng-hide="quiz.feedback">Question:</span>
-                                    <span ng-show="quiz.feedback">Answer:</span>
-                                    {{quiz.activeQuestion+1 + "/" + quiz.dataService.JSONQuizData.length}}
-                                  </h4>
-                                </div>
+        			<div class="col-xs-12 col-sm-4">
 
-                                <div class="progress-toolbar">
-                                  <button class="btn"
-                                    ng-repeat="question in quiz.dataService.JSONQuizData"
-                                    ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}"
-                                    ng-click="quiz.setActiveQuestion($index)">
-                                  </button>
-                                </div>
+        				<a ng-href="{{agencies.url}}"
+        					 ng-attr-style="background: {{agencies.colour}}"
+        					 class="logo">
+        					<h2>{{agencies.title}}</h2>
+        		  		<img ng-src="{{agencies.image}}">
+        		  	</a>
+        		  	
+        		  </div>
 
-                                <div class="alert alert-danger"
-                                    ng-show="quiz.error">
-                                      You have not answered all of the questions!
-                                    <button class="close"
-                                      ng-click="quiz.error = false">
-                                      &times;
-                                    </button>
-                                </div>
+        		</div>
 
-                                <div class="question"
-                                   ng-hide="quiz.finalise || quiz.feedback">
-                                  <p>{{quiz.dataService.JSONQuizData[quiz.activeQuestion].text}}</p>
-                                </div>
-                                
-                                <div class="answer-container" ng-hide="quiz.finalise || quiz.feedback">
-                                  <div class="answer-wrapper"
-                                    ng-if="quiz.dataService.JSONQuizData[quiz.activeQuestion].type === 'text'"
-                                    ng-repeat="answer in quiz.dataService.JSONQuizData[quiz.activeQuestion].possibilities">
-                                    <p class="answer text-answer"
-                                      ng-class="{'bg-info': $index === quiz.dataService.JSONQuizData[quiz.activeQuestion].selected}">
-                                      {{answer.answer}}
-                                    </p>
-                                    <button class="btn btn-warning"
-                                      ng-click="quiz.questionAnswered() || quiz.selectAnswer($index)">
-                                        Submit
-                                    </button>
-                                  </div>
+        	</div>
 
-                                  <div class="answer-wrapper"
-                                    ng-if="quiz.dataService.JSONQuizData[quiz.activeQuestion].type === 'image'"
-                                    ng-repeat="answer in quiz.dataService.JSONQuizData[quiz.activeQuestion].possibilities">
-                                    <p class="answer image-answer"
-                                      ng-class="{'image-selected': $index === quiz.dataService.JSONQuizData[quiz.activeQuestion].selected}">
-                                      <img ng-src="{{answer.answer}}">
-                                    </p>
-                                    <button class="btn btn-warning"
-                                      ng-click="quiz.questionAnswered() || quiz.selectAnswer($index)">
-                                        Submit
-                                    </button>
-                                  </div>
-                                </div>
+        </section>
+        <!-- Section 4 - Work -->
+        <section class="section work">
 
-                                <div class="answer-feedback" ng-show="quiz.feedback">
-                                  <div class="title">
-                                    <p>
-                                      <span ng-show="quiz.dataService.JSONQuizData[quiz.activeQuestion].selected !== quiz.dataService.JSONCorrectAnswers[quiz.activeQuestion].number">Wrong:</span>
-                                      <span ng-show="quiz.dataService.JSONQuizData[quiz.activeQuestion].selected === quiz.dataService.JSONCorrectAnswers[quiz.activeQuestion].number">Correct:</span>
-                                      The answer is {{quiz.dataService.JSONCorrectAnswers[quiz.activeQuestion].letter}}</p>
-                                  </div>
-                                  <p>{{quiz.dataService.JSONQuizData[quiz.activeQuestion].feedback}}</p>
-                                  <button class="btn btn-warning"
-                                    ng-click="quiz.questionContinue()"
-                                    ng-hide="quiz.lastQuestion">
-                                      Next question
-                                  </button>
-                                  <button class="btn btn-warning"
-                                    ng-click="quiz.questionContinue() || quiz.finaliseAnswers()"
-                                    ng-show="quiz.lastQuestion">
-                                      Find out your score
-                                  </button>
-                                </div>
+        	<div class="container">
 
-                                <!--<div class="finalise" ng-show="quiz.finalise">
-                                  <p>Are you sure you want to submit your answers?</p>
-                                  <button class="btn btn-success" ng-click="quiz.finaliseAnswers()">Yes</button>
-                                  <button class="btn btn-danger" ng-click="quiz.finalise = false">No</button>
-                                </div>-->
+        		<h1>{{folio.dataService.JSONWorkSection[0].header}}</h1>
 
-                              </div><!-- QUIZ CONTROLLER -->
+        		<div class="items"
+        			   ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities"
+        			   loaded-directive callback-fn="folio.numberOfSlides()">
 
-                              <div class="results" ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
-                                <div class="btn-toolbar">
-                                  <button class="btn btn-primary btn-lg"
-                                    ng-click="results.reset()">Try again
-                                  </button>
+        			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
 
-                                  <h4>Result</h4>
+        				<a ng-href="{{work.url}}"
+        					 ng-attr-style="background: {{work.colour}}"
+        					 class="logo">
+        					<h2>{{work.title}}</h2>
+        		  		<img ng-src="{{work.image}}">
+        		  	</a>
 
-                                  <button class="btn"
-                                    ng-repeat="question in results.dataService.JSONQuizData"
-                                    ng-class="{'btn-success': question.correct, 'btn-danger': !question.correct}"
-                                    ng-click="results.setActiveQuestion($index)">X
-                                  </button>
-                                </div>
+        		  </div>
 
-                                <div>
-                                  <md-content>
-                                    <md-tabs>
-                                      <md-tab label="Results">
-                                        <md-content class="md-padding">
-                                          <h2>{{results.quizMetrics.numCorrect}} / {{results.dataService.JSONQuizData.length}} ... {{results.calculateScoreTagline()}}</h2>
-                                          <h2>{{results.calculatePerc() | number:2}}%</h2>
-                                          <p>{{results.calculateScoreDescription()}}</p>
-                                        </md-content>
-                                      </md-tab>
-                                      <md-tab label="Product details">
-                                        <md-content class="md-padding">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
-                                        </md-content>
-                                      </md-tab>
-                                    </md-tabs>
-                                  </md-content>
-                                </div>
+        		</div>
 
-                                <div class="questions">
-                                  <h4>{{results.activeQuestion+1 + ". " + results.dataService.JSONQuizData[results.activeQuestion].text}}</h4>
-                                  <div class="answer-wrapper"
-                                    ng-if="results.dataService.JSONQuizData[results.activeQuestion].type === 'text'"
-                                    ng-repeat="answer in results.dataService.JSONQuizData[results.activeQuestion].possibilities">
-                                    <p class="answer text-answer"
-                                      ng-class="results.getAnswerClass($index)">
-                                      {{answer.answer}}
-                                      <span ng-show="$index !== results.quizMetrics.JSONCorrectAnswers[results.activeQuestion].number && $index === results.dataService.JSONQuizData[results.activeQuestion].selected">Your answer</span>
-                                      <span ng-show="$index === results.quizMetrics.JSONCorrectAnswers[results.activeQuestion].number">Correct answer</span>
-                                    </p>
-                                  </div>
+        	</div>
 
-                                  <div class="answer-wrapper"
-                                    ng-if="results.dataService.JSONQuizData[results.activeQuestion].type === 'image'"
-                                    ng-repeat="answer in results.dataService.JSONQuizData[results.activeQuestion].possibilities">
-                                    <p class="answer image-answer"
-                                      ng-class="results.getAnswerClass($index)">
-                                      <img ng-src="{{answer.answer}}">
-                                    </p>
-                                  </div>
+        </section>
+        <!-- Section 5 - Contact -->
+        <section class="section contact">
 
-                                </div>
+        	<div class="container">
 
-                              </div>
-                        </div>
+        		<h1>{{folio.dataService.JSONContactSection[0].header}}</h1>
 
-      		</div>
-      	</div>
+        	  <form method="post" action="contact.php" id="contact-form" role="form" class="contact-form">
+        	                                
+        			<!-- Name -->
+        			<div class="form-group">
+        		    <input type="text" name="name" id="name" class="form-control" placeholder="Name" min="3" max="100" required="">
+        		  </div>
 
+        			<!-- Email -->
+        			<div class="form-group">
+        		    <input type="email" name="email" id="email" class="form-control" placeholder="Email" min="5" max="100" required="">
+        		  </div>
+
+        			<!-- Message -->
+        		  <div class="form-group">
+        		    <textarea name="message" id="text" class="form-control" rows="6" placeholder="Message" min="5" max="400"></textarea>
+        		  </div>   
+
+        		  <!-- Anti-spam -->
+        		  <div class="form-group last">
+        		  	<label>1966 <span></label>
+        				<input name="human" placeholder="Enter security code">
+        			</div>
+        		  
+        			<!-- Send Button -->                                 
+        		  <button id="submit" class="btn" name="submit" type="submit" value="Submit">
+        		      Send
+        		  </button>
+
+        		</form>
+        		
+        	</div>
+
+        </section>
       </div>
+
       <div class="push-sf"></div> <!-- for sticky footer -->
-		</div><!-- .wrapper -->
-		<footer>
-		  <div class="container-fluid">
-		    <div class="row">
-		      <div class="col-xs-12 text-center">
-		        <div class="footer-nav-container">
-		          <ul>
-		            <li><a href="terms-and-condition">T&Cs</a></li>
-		            <li><a href="cookie-policy">Cookie policy</a></li>
-		            <li><a href="about">About</a></li>
-		          </ul>
-		        </div>
-		      </div>
-		    </div>
-		  </div>
-		</footer>
 
-		<div id="grid-overlay">
-		  <div class="container">
-		    <div class="row">
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		      <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
-		    </div>
-		  </div>
-		</div>
+    </div><!-- .wrapper -->
 
-		<script type="text/javascript" src="HTMLResources/js/util.min.js"></script>
-		<script type="text/javascript" src="HTMLResources/js/lib.min.js"></script>
-		<script type="text/javascript" src="HTMLResources/js/framework.min.js"></script>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="footer-nav-container">
+              <ul>
+                <li><a href="terms-and-condition">T&Cs</a></li>
+                <li><a href="cookie-policy">Cookie policy</a></li>
+                <li><a href="about">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>-->
-		  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-		  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <div id="grid-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+          <div class="col-xs-1 col-sm-1 col-md-1"><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="HTMLResources/js/util.min.js"></script>
+    <script type="text/javascript" src="HTMLResources/js/lib.min.js"></script>
+    <script type="text/javascript" src="HTMLResources/js/framework.min.js"></script>
+
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>-->
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
 
 
-		    <!-- Angular Material Library -->
-		  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+        <!-- Angular Material Library -->
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    
   </body>
 </html>

@@ -1,0 +1,26 @@
+<section class="section work">
+
+	<div class="container">
+
+		<h1>{{folio.dataService.JSONWorkSection[0].header}}</h1>
+
+		<div class="items"
+			   ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities"
+			   loaded-directive callback-fn="folio.numberOfSlides()">
+
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+
+				<a ng-href="{{work.url}}"
+					 ng-attr-style="background: {{work.colour}}"
+					 class="logo">
+					<h2>{{work.title}}</h2>
+		  		<img ng-src="{{work.image}}">
+		  	</a>
+
+		  </div>
+
+		</div>
+
+	</div>
+
+</section>
