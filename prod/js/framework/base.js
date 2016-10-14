@@ -2,23 +2,23 @@
 (function(portfolio) {
   'use strict';
 
-  console.log('portfolio');
+  //console.log('portfolio');
   // The global jQuery object is passed as a parameter
   portfolio(window.jQuery, window, document);
 
   }(function($, window, document) {
       'use strict';
 
-      console.log('window, document');
+      //console.log('window, document');
       // The $ is now locally scoped 
       $(function() {
           // The DOM is ready!
-          console.log('inner function from window, document');
+          //console.log('inner function from window, document');
           // This is needed to prevent onreadystatechange being run twice
           var ready = false;
 
           document.onreadystatechange = function() {
-            console.log('onreadystatechange');
+            //console.log('onreadystatechange');
             if (ready) {
               return;
             }
@@ -26,7 +26,7 @@
             // interactive = DOMContentLoaded & complete = window.load
             if (document.readyState == 'interactive' || document.readyState == 'complete') {
               ready = true;
-            }      
+            }
           };
       });
 
@@ -36,15 +36,26 @@
           desktopDevice = 'desktop-viewport',
           $mainNav = $('.navbar'),
           mobileDevice = 'mobile-viewport',
+          $mobileHiddenNav = $('.navbar-links'),
           $mobileMenuToggle = $('.mobile-menu'),
           tabletDevice = 'tablet-viewport',
 
-          handleMobileNavToggle = function (e) {
-            var $mobileHiddenNav = $('.navbar-links');
-
-            $mainNav.toggleClass('active');
+          handleMobileNavToggle = function () {
+            $mainNav.toggleClass('navbar-active');
 
             $mobileHiddenNav.toggle();
+          },
+
+          handleScrollDetection = function () {
+
+            body.addClass('scroll-active');
+
+            clearTimeout($.data(this, 'scrollTimer'));
+
+            $.data(this, 'scrollTimer', setTimeout(function() {
+                body.removeClass('scroll-active');
+            }, 1000));
+
           };
 
       enquire.register('screen and (max-width:480px)', {
@@ -81,6 +92,7 @@
         // If supplied, triggered when a media query matches.
         match : function() {       
           body.addClass(tabletDevice);
+          $mobileHiddenNav.removeAttr('style');
         }, 
 
         // OPTIONAL
@@ -110,6 +122,7 @@
         // If supplied, triggered when a media query matches.
         match : function() {
           body.addClass(desktopDevice);
+          $mobileHiddenNav.removeAttr('style');
         }, 
 
         // OPTIONAL
@@ -136,6 +149,9 @@
 
       // MOBILE NAV TOGGLE MENU
       $mobileMenuToggle.on('click', handleMobileNavToggle);
+
+      // WINDOW SCROLL DETECTION
+      $(window).on('scroll', handleScrollDetection);
 
   }
 ));

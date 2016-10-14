@@ -50,6 +50,9 @@ var gulp = require('gulp'),
     imagefiles: [
       'img/**/*'
     ],
+    faviconfiles: [
+      'favicon/**/*'
+    ],
     fontfiles: [
       'fonts/**/*'
     ],
@@ -179,6 +182,12 @@ var gulp = require('gulp'),
       .pipe(gulp.dest(dest + 'HTMLResources/fonts'));
   });
 
+  // COPYING FAVICONS 
+  gulp.task('favicon', function() {
+    return gulp.src(src + PATHS.faviconfiles)
+      .pipe(gulp.dest(dest));
+  });
+
   // CLEANING 
   gulp.task('clean', function() {
     return del.sync(dest).then(function(cb) {
@@ -214,7 +223,7 @@ var gulp = require('gulp'),
   // BUILD THE 'DIST' FOLDER BY RUNNING ALL OF THE SPECIFIED TASKS
   gulp.task('build', function(callback) {
     runSequence('clean:dist',
-      ['html-include', 'sass', 'util-scripts', 'lib-scripts', 'framework-scripts', 'lint', 'phplint', 'images', 'fonts', 'json', 'php'],
+      ['html-include', 'sass', 'util-scripts', 'lib-scripts', 'framework-scripts', 'lint', 'phplint', 'images', 'favicon', 'fonts', 'json', 'php'],
       callback
     );
   });

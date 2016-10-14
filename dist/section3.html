@@ -2,22 +2,42 @@
 <html class="no-js" lang="en">
 <head>
 	<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js ','no-js').replace('no-js','');</script>
-	  <title>Wayne lavender Digital Portfolio</title>
+	  <title>Wayne lavender | Digital Portfolio</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-
-	  <!-- CSS -->
-	  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+		<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="&nbsp;"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+		<meta name="description" content="Front-end Developer producing high quality responsive websites">
+		<meta name="robots" content="index, nofollow">
+		<meta name="keywords" content="front-end developer, front-end development">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
 	  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 		<link type="text/css" rel="stylesheet" href="HTMLResources/css/main.min.css">
 		<!-- Must live here to provide html5 shiv in IE8 -->
-		<!--  <script src="HTMLResources/js/modernizr-2.8.3.js"></script> -->
+		<!-- <script src="HTMLResources/js/modernizr-2.8.3.js"></script> -->
 	 
 
-	  <!--[if lt IE 9]>    	
+	  <!--[if lt IE 9]>
 			<script src="HTMLResources/js/respond.min.js"></script>
 		<![endif]-->
 </head>
@@ -31,17 +51,32 @@
         		<div class="mobile-menu">
         			<i class="fa fa-bars"></i>
         		</div>
-
-      	  	<ul class="navbar-links">
-      			  <li data-menuanchor="secondPage"><a href="#section2">About</a></li>
-      			  <li data-menuanchor="thirdPage"><a href="#section3">Agencies</a></li>
+      	  	<ul id="menu" class="navbar-links">
+      	  		<li data-menuanchor="secondPage">
+      	  			<a href="#secondPage">
+      	  				<span>Portfolio</span>
+      	  			</a>
+      	  		</li>
+      				<li data-menuanchor="thirdPage">
+      					<a href="#thirdPage">
+      						<span>About</span>
+      					</a>
+      				</li>
       			  <li data-menuanchor="firstPage" class="active">
-      			  	<a href="#section1" class="logo" title="Add some text">
+      			  	<a href="#firstPage" class="logo" title="Wayne lavender Front-end Developer">
       			  		<img src="HTMLResources/img/logo-wl-small.png" alt="Wayne Lavender - Developer Logo">
       			  	</a>
       			  </li>
-      			  <li data-menuanchor="fourthPage"><a href="#section4">Work</a></li>
-      			  <li data-menuanchor="fourthPage"><a href="#section5">Contact</a></li>
+      			  <li data-menuanchor="fourthPage">
+      			  	<a href="#fourthPage">
+      			  		<span>Agencies</span>
+      			  	</a>
+      			  </li>
+      			  <li data-menuanchor="lastPage">
+      			  	<a href="#lastPage">
+      			  		<span>Contact</span>
+      			  	</a>
+      			  </li>
       			</ul>
 
         	</div>
@@ -60,29 +95,12 @@
 
         <div class="row">        
           <div class="col-xs-12">
-            <section class="section agencies">
+            <section class="section about">
 
             	<div class="container">
-
-            		<h1>{{folio.dataService.JSONAgenciesSection[0].header}}</h1>
-
-            	  <div ng-repeat="agencies in folio.dataService.JSONAgenciesSection[0].possibilities">
-
-            			<div class="col-xs-12 col-sm-4">
-
-            				<a ng-href="{{agencies.url}}"
-            					 ng-attr-style="background: {{agencies.colour}}"
-            					 class="logo">
-            					<h2>{{agencies.title}}</h2>
-            		  		<img ng-src="{{agencies.image}}">
-            		  	</a>
-            		  	
-            		  </div>
-
-            		</div>
-
+            		<h2>{{folio.dataService.JSONAboutSection[0].header}}</h2>
             	</div>
-
+            	
             </section>
           </div>
         </div>

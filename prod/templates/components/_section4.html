@@ -1,23 +1,21 @@
-<section class="section work">
+<section class="section agencies">
 
 	<div class="container">
 
-		<h1>{{folio.dataService.JSONWorkSection[0].header}}</h1>
+		<h2>{{folio.dataService.JSONTestimonialSection[0].header}}</h2>
 
-		<div class="items"
-			   ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities"
-			   loaded-directive callback-fn="folio.numberOfSlides()">
+		<div class="row">
 
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+	  	<div ng-repeat="testimonial in folio.dataService.JSONTestimonialSection[0].possibilities">
 
-				<a ng-href="{{work.url}}"
-					 ng-attr-style="background: {{work.colour}}"
-					 class="logo">
-					<h2>{{work.title}}</h2>
-		  		<img ng-src="{{work.image}}">
-		  	</a>
+				<div class="col-xs-12 col-sm-6">
 
-		  </div>
+					<h3>{{testimonial.description}}</h3>
+					<p>{{testimonial.name}}</p>
+			  	
+			  </div>
+
+			</div>
 
 		</div>
 

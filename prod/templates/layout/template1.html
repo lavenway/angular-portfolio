@@ -5,7 +5,9 @@
 	<include src="../structure/_html-header.html"></include>
 </head>
 
-  <body initialize-directive callbackrender-fn="folio.initializeFullpage()">
+  <body initialize-directive callbackrender-fn="folio.initializeFullpage()"
+    ng-class="{ 'hidden-menu-active': folio.panelActive }">
+    
     <div id="wrapper">
 
       <include src="../structure/_header.html"></include>
@@ -13,11 +15,11 @@
       <div id="fullpage">
         <!-- Section 1 - Home -->
         <include src="../components/_section1.html"></include>
-        <!-- Section 2 - About -->
+        <!-- Section 2 - Portfolio -->
         <include src="../components/_section2.html"></include>
-        <!-- Section 3 - Agencies -->
+        <!-- Section 3 - About -->
         <include src="../components/_section3.html"></include>
-        <!-- Section 4 - Work -->
+        <!-- Section 4 - Agencies -->
         <include src="../components/_section4.html"></include>
         <!-- Section 5 - Contact -->
         <include src="../components/_section5.html"></include>

@@ -1,7 +1,37 @@
-<section class="section about">
+<section class="section work">
 
-	<div class="container">
-		<h1>{{folio.dataService.JSONAboutSection[0].header}}</h1>
+	<div class="container animate">
+
+		<div class="row">
+
+			<h2>{{folio.dataService.JSONWorkSection[0].header}}</h2>
+ 
+			<div class="items" loaded-directive callback-fn="folio.numberOfSlides()"
+			  ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true">
+
+				<div class="col-xs-6 col-sm-4 col-md-3">
+
+					<a href="#"
+						 ng-attr-style="background: {{work.colour}}"
+						 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
+						 class="logo">
+
+						<p>{{work.title}}</p>
+
+						<div class="image">
+			  			<img ng-src="{{work.logo}}">
+			  		</div>
+
+			  	</a>
+
+			  </div>
+
+			</div>
+
+		</div>
+
 	</div>
-	
+
+	<include src="../components/_section2-details.html"></include>
+
 </section>

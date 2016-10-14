@@ -1,0 +1,39 @@
+<section class="work-details">
+
+	<div class="container">
+		
+		<a href="#"
+			 ng-click="folio.closeWorkItemDetailsPanel($event); folio.panelActive = !folio.panelActive"
+			 class="close">
+			 <i class="fa fa-close"></i>
+		</a>
+
+		<div class="row">
+
+			<div ng-repeat="workItem in folio.dataService.JSONWorkSection[0].possibilities | filter: folio.getWorkItemDetails">
+
+				<div class="item">
+
+					<div class="col-xs-12">
+
+						<h2>{{workItem.title}}</h2>
+
+						<div class="logo">
+							<img ng-src="{{workItem.logo}}">
+						</div>
+
+						<p>{{workItem.description}}</p>
+
+						<img ng-src="{{workItem.image}}">
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>

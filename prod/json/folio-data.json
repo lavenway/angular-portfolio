@@ -1,207 +1,271 @@
 {
 	"JSONHomeSection": [{
-		"header": "This is the title for the Home page"
+		"header": "Wayne Lavender - Front-end Developer",
+		"skills": "HTML | CSS | JS | ipsum | lorem",
+		"image": "HTMLResources/img/logo-wl-large.png"
 	}],
 
-	"JSONAboutSection": [{
-			"header": "This is the title for the About page"
-	}],
-
-	"JSONAgenciesSection": [{
-			"header": "This is the title for the Agencies page",
+	"JSONWorkSection": [{
+			"header": "This is the title for the Work page...",
 			"possibilities": [
 				{
-					"id": 1,
+					"itemId": 0,
 					"title": "Lorem ipsum 1",
-					"image": "HTMLResources/img/logo-burrows.jpg",
+					"logo": "HTMLResources/img/logo-ambition.png",
 					"url": "http://www.google.com",
-					"colour": "#0093c0"
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
 				},
 				{
-					"id": 2,
+					"itemId": 1,
 					"title": "Lorem ipsum 2",
-					"image": "HTMLResources/img/logo-4mat.jpg",
+					"logo": "HTMLResources/img/logo-argyllscott.jpg",
 					"url": "http://www.google.com",
-					"colour": "#ffffff"
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
 				},
 				{
-					"id": 3,
+					"itemId": 2,
 					"title": "Lorem ipsum 3",
-					"image": "HTMLResources/img/logo-rhapsody.jpg",
+					"logo": "HTMLResources/img/logo-berkley.jpg",
 					"url": "http://www.google.com",
-					"colour": "#ffffff"
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 3,
+					"title": "Lorem ipsum 4",
+					"logo": "HTMLResources/img/logo-boots.png",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 4,
+					"title": "Lorem ipsum 5",
+					"logo": "HTMLResources/img/logo-capita.jpg",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 5,
+					"title": "Lorem ipsum 6",
+					"logo": "HTMLResources/img/logo-connex.jpg",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 6,
+					"title": "Lorem ipsum 7",
+					"logo": "HTMLResources/img/logo-ford.png",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 7,
+					"title": "Lorem ipsum 8",
+					"logo": "HTMLResources/img/logo-g4-americas.jpg",
+					"url": "http://www.google.com",
+					"colour": "#696969",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 8,
+					"title": "Lorem ipsum 9",
+					"logo": "HTMLResources/img/logo-harnham.jpg",
+					"url": "http://www.google.com",
+					"colour": "#000000",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 9,
+					"title": "Lorem ipsum 10",
+					"logo": "HTMLResources/img/logo-hfg.jpg",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 10,
+					"title": "Lorem ipsum 11",
+					"logo": "HTMLResources/img/logo-jonathan-lee.jpg",
+					"url": "http://www.google.com",
+					"colour": "#696969",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 11,
+					"title": "Lorem ipsum 12",
+					"logo": "HTMLResources/img/logo-monarch.jpg",
+					"url": "http://www.google.com",
+					"colour": "#696969",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 12,
+					"title": "Lorem ipsum 13",
+					"logo": "HTMLResources/img/logo-next.jpg",
+					"url": "http://www.google.com",
+					"colour": "#212121",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 13,
+					"title": "Lorem ipsum 14",
+					"logo": "HTMLResources/img/logo-npower.jpg",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 14,
+					"title": "Lorem ipsum 15",
+					"logo": "HTMLResources/img/logo-opus.jpg",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 15,
+					"title": "Lorem ipsum 16",
+					"logo": "HTMLResources/img/logo-saccomann.png",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 16,
+					"title": "Lorem ipsum 17",
+					"logo": "HTMLResources/img/logo-sagarwright.png",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 17,
+					"title": "Lorem ipsum 18",
+					"logo": "HTMLResources/img/logo-sanctuary.jpg",
+					"url": "http://www.google.com",
+					"colour": "#696969",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 18,
+					"title": "Lorem ipsum 19",
+					"logo": "HTMLResources/img/logo-skills-alliance.jpg",
+					"url": "http://www.google.com",
+					"colour": "#696969",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 19,
+					"title": "Lorem ipsum 20",
+					"logo": "HTMLResources/img/logo-subsurface.jpg",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 20,
+					"title": "Lorem ipsum 21",
+					"logo": "HTMLResources/img/logo-thomas-thor.jpg",
+					"url": "http://www.google.com",
+					"colour": "#696969",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
+				},
+				{
+					"itemId": 21,
+					"title": "Lorem ipsum 22",
+					"logo": "HTMLResources/img/logo-vue.jpg",
+					"url": "http://www.google.com",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": true
+				},
+				{
+					"itemId": 22,
+					"title": "Lorem ipsum 23",
+					"logo": "HTMLResources/img/logo-williamalexander.jpg",
+					"url": "http://www.google.com",
+					"colour": "#c71e23",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": "HTMLResources/img/details-placeholder.png",
+					"favourite": false
 				}
 			]
 	}],
 
-	"JSONWorkSection": [{
-			"header": "This is the title for the Work page",
+	"JSONAboutSection": [{
+			"header": "This is the title for the About page..."
+	}],
+
+	"JSONTestimonialSection": [{
+			"header": "This is the title for the Testimonial page...",
 			"possibilities": [
 				{
-					"id": 1,
-					"title": "Lorem ipsum 1",
-					"image": "HTMLResources/img/logo-ambition.png",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"name": "Lorem ipsum dolor"
 				},
 				{
-					"id": 2,
-					"title": "Lorem ipsum 2",
-					"image": "HTMLResources/img/logo-argyllscott.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"name": "Lorem ipsum dolor"
 				},
 				{
-					"id": 3,
-					"title": "Lorem ipsum 3",
-					"image": "HTMLResources/img/logo-berkley.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 4,
-					"title": "Lorem ipsum 4",
-					"image": "HTMLResources/img/logo-boots.png",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 5,
-					"title": "Lorem ipsum 5",
-					"image": "HTMLResources/img/logo-capita.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 6,
-					"title": "Lorem ipsum 6",
-					"image": "HTMLResources/img/logo-connex.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 7,
-					"title": "Lorem ipsum 7",
-					"image": "HTMLResources/img/logo-ford.png",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 8,
-					"title": "Lorem ipsum 8",
-					"image": "HTMLResources/img/logo-g4-americas.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969"
-				},
-				{
-					"id": 9,
-					"title": "Lorem ipsum 9",
-					"image": "HTMLResources/img/logo-harnham.jpg",
-					"url": "http://www.google.com",
-					"colour": "#000000"
-				},
-				{
-					"id": 10,
-					"title": "Lorem ipsum 10",
-					"image": "HTMLResources/img/logo-hfg.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 11,
-					"title": "Lorem ipsum 11",
-					"image": "HTMLResources/img/logo-jonathan-lee.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969"
-				},
-				{
-					"id": 12,
-					"title": "Lorem ipsum 12",
-					"image": "HTMLResources/img/logo-monarch.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969"
-				},
-				{
-					"id": 13,
-					"title": "Lorem ipsum 13",
-					"image": "HTMLResources/img/logo-next.jpg",
-					"url": "http://www.google.com",
-					"colour": "#212121"
-				},
-				{
-					"id": 14,
-					"title": "Lorem ipsum 14",
-					"image": "HTMLResources/img/logo-npower.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 15,
-					"title": "Lorem ipsum 15",
-					"image": "HTMLResources/img/logo-opus.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 16,
-					"title": "Lorem ipsum 16",
-					"image": "HTMLResources/img/logo-saccomann.png",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 17,
-					"title": "Lorem ipsum 17",
-					"image": "HTMLResources/img/logo-sagarwright.png",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 18,
-					"title": "Lorem ipsum 18",
-					"image": "HTMLResources/img/logo-sanctuary.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969"
-				},
-				{
-					"id": 19,
-					"title": "Lorem ipsum 19",
-					"image": "HTMLResources/img/logo-skills-alliance.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969"
-				},
-				{
-					"id": 20,
-					"title": "Lorem ipsum 20",
-					"image": "HTMLResources/img/logo-subsurface.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 21,
-					"title": "Lorem ipsum 21",
-					"image": "HTMLResources/img/logo-thomas-thor.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969"
-				},
-				{
-					"id": 22,
-					"title": "Lorem ipsum 22",
-					"image": "HTMLResources/img/logo-vue.jpg",
-					"url": "http://www.google.com",
-					"colour": "#ffffff"
-				},
-				{
-					"id": 23,
-					"title": "Lorem ipsum 23",
-					"image": "HTMLResources/img/logo-williamalexander.jpg",
-					"url": "http://www.google.com",
-					"colour": "#c71e23"
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"name": "Lorem ipsum dolor"
 				}
 			]
 	}],
 
 	"JSONContactSection": [{
-			"header": "This is the title for the Contact page"
+			"header": "You've made it this far so why not get in contact...",
+			"subheaderone": "Look me up via:",
+			"subheadertwo": "Or drop me an email"
 	}]
 }

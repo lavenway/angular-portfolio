@@ -1,24 +1,7 @@
-<section class="section agencies">
+<section class="section about">
 
 	<div class="container">
-
-		<h1>{{folio.dataService.JSONAgenciesSection[0].header}}</h1>
-
-	  <div ng-repeat="agencies in folio.dataService.JSONAgenciesSection[0].possibilities">
-
-			<div class="col-xs-12 col-sm-4">
-
-				<a ng-href="{{agencies.url}}"
-					 ng-attr-style="background: {{agencies.colour}}"
-					 class="logo">
-					<h2>{{agencies.title}}</h2>
-		  		<img ng-src="{{agencies.image}}">
-		  	</a>
-		  	
-		  </div>
-
-		</div>
-
+		<h2>{{folio.dataService.JSONAboutSection[0].header}}</h2>
 	</div>
-
+	
 </section>

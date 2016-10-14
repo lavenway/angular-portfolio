@@ -1,53 +1,198 @@
 /********************************************
 * SECTION 1 - HOME
 ********************************************/
-.section.home { background: $red; }
+.section.home {
+	text-align: center;
+	background: $bluebase;
+
+	.wl-logo {
+		width: 100%;
+		max-width: 450px;
+		margin: 0 auto 40px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h1 {
+		margin-bottom: 10px;
+		font-family: $font-secondary;
+		font-weight: 900;
+	}
+
+	h1, h3 {
+		color: $white;
+	}
+
+}
+
 
 /********************************************
-* SECTION 2 - ABOUT
+* SECTION 2 - WORK
 ********************************************/
-.section.about { background: $orange; }
+.section.work {
+	overflow: hidden;
+	background: $offwhite;
+
+	.container.animate {
+		position: relative;
+		top: 50%;
+		left: 0;
+		margin-top: -40px;
+		padding: 0;
+		transform: translateY(-50%);
+		@include transition(.4s);
+
+  	@media all and (min-width: 768px) {
+      margin-top: -78px;
+    }
+
+		> .row {
+			position: relative;
+			padding: 0;
+			margin: 0 12px;
+
+			.fp-tableCell {
+				display: inline-block;
+				vertical-align: top;
+				height: auto !important;
+			}
+		}
+
+		.items {
+
+			.logo {
+				min-height: 190px;
+
+				p {
+					margin: 0;
+					font-weight: normal;
+					color: $white;
+				}
+			}
+
+		}
+
+	}
+}
+
 
 /********************************************
-* SECTION 3 - AGENCIES
+* SECTION 2 - WORK DETAILS
 ********************************************/
-.section.agencies {
-	background: $yellow;
+.work-details {
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	right: -200%;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	@include transition(.4s);
+	background: $greenmediumlight;
 
 	.container {
-		padding: 0;
+		position: relative;
+	}
+
+	.close {
+		display: block;
+		z-index: 1;
+		position: absolute;
+		top: 20px;
+		right: 12px;
+		font-size: 40px;
+		color: $white;
+		text-align: center;
+	}
+
+	.item {
+		margin: 60px 0;
+		overflow: hidden;
+
+		.logo img {
+			width: 150px;
+		}
+	}
+
+}
+
+.hidden-menu-active {
+	/*position: absolute !important;
+	width: 100% !important;
+	height: 100% !important;
+  overflow: hidden !important;*/
+
+	.section.work .container.animate {
+		position: absolute;
+		left: -100%;
+	}
+
+	.work-details {
+		right: 0;
+
+		@media all and (min-width: 768px) {
+      width: 100%;
+    }
+	}
+}
+
+
+/********************************************
+* SECTION 3 - ABOUT
+********************************************/
+.section.about { background: $bluemediumlight; }
+
+
+/********************************************
+* SECTION 4 - AGENCIES
+********************************************/
+.section.agencies {
+	background: $offwhite;
+
+	.container {
 
 		.logo {
 			min-height: 300px;
 		}
-	}
-}
 
-/********************************************
-* SECTION 4 - WORK
-********************************************/
-.section.work {
-	background: $green;
-
-	.container {
-		padding: 0;
-
-		.logo {
-			min-height: 190px;
+		h2 {
+			color: $black;
 		}
 	}
 }
+
 
 /********************************************
 * SECTION 5 - CONTACT
 ********************************************/
 .section.contact {
-	background: $blue;
+	background: $greenlight;
+
+	.container {
+		max-width: 670px;
+	}
+
+	h2,h3 {
+		color: $black;
+	}
+
+	.social {
+		margin-bottom: 40px;
+
+		a {
+			display: block;
+			width: 40px;
+			height: 40px;
+			font-size: 40px;
+			color: $white;
+			text-align: center;
+		}
+	}
 
 	.contact-form {
-		max-width: 670px;
-		margin: 0 auto;
-
+		
 		.form-group {
 			overflow: hidden;
 			margin-bottom: 10px;
@@ -74,10 +219,11 @@
 			width: 100%;
 			height: 60px;
 			padding: 5px 5px 5px 10px;
-			font-family: 'Arimo', sans-serif;
+			font-family: $font-primary;
 			font-size: 16px;
+			border: 1px solid $black;
     	outline: none;
-    	transition: background 0.25s ease-in-out 0s;
+    	@include transition(background 0.5s ease-in-out 0s);
     	background: $white;
 		}
 
@@ -90,6 +236,9 @@
 			height: 60px;
 			font-size: 16px;
 			font-weight: 700;
+			color: $white;
+			border: none;
+			background: $black;
 		}
 	}
 
@@ -101,65 +250,95 @@
 ********************************************/
 .section {
 
-	.container {
-		width: auto;
-		max-width: 1200px;
+	> .fp-tableCell {
+  	position: relative;
+  	top: -40px;
 
-		div[class*='col'] {
+  	@media all and (min-width: 768px) {
+      top: -78px;
+    }
+	}
+
+	/*.container:first-of-type {
+		position: relative;
+  	top: -40px;
+
+  	@media all and (min-width: 768px) {
+      top: -78px;
+    }
+	}*/
+
+	.container {
+		/*width: auto;
+		max-width: 1280px;*/
+
+		.items [class*='col'] {
 			overflow: hidden;
 			padding: 0;
 			border: 1px solid transparent;
 		}
 
-		.logo {
-			display: block;
-			position: relative;
-			overflow: hidden;
+		.items {
 
-			&:before {
-				content: "";
-				z-index: 1;
-				position: absolute;
-				bottom: -100%;
-				width: 100%;
-				height: 50px;
-				transition: .3s;
-				background: $red;
-			}
-
-			&:hover {
-				h2 {
-					bottom: 0;
-					transition-delay: .3s;
-				}
+			.logo {
+				display: block;
+				position: relative;
+				overflow: hidden;
+				border: 1px solid $grey;
 
 				&:before {
-					bottom: 0;
+					content: "";
+					z-index: 1;
+					position: absolute;
+					bottom: -100%;
+					width: 100%;
+					height: 50px;
+					@include transition(.3s);
+					background: $black;
 				}
 
-				img {
-					transform: translate(-50%, -50%) scale(.9);
+				&:hover {
+					&:before {
+						bottom: 0;
+					}
+
+					p {
+						bottom: 0;
+						margin: 0;
+						transition-delay: .3s;
+					}
+
+					.image {
+						@include transform(translateX(-50%) translateY(-50%) translateZ(0) scale(0.9));
+					}
 				}
-			}
 
-			h2 {
-				z-index: 1;
-				position: absolute;
-				bottom: -100%;
-				width: 100%;
-				text-align: center;
-				transition-delay: 0;
-				transform: translateY(-50%);
-			}
+				p {
+					z-index: 1;
+					position: absolute;
+					bottom: -100%;
+					width: 100%;
+					font-size: 16px;
+					line-height: 25px;
+					text-align: center;
+					transition-delay: 0;
+					@include transform(translateY(-50%));
+				}
 
-			img {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				max-width: 70%;
-				margin: 0 auto;
-				transform: translate(-50%, -50%);
-				transition: .3s transform;
+				.image {
+					position: absolute;
+				  top: 50%;
+				  left: 50%;
+		    	width: 100%;
+					@include transform(translateX(-50%) translateY(-50%) translateZ(0) scale(1.0));
+					@include transition(.3s);
+
+					img {
+						max-width: 70%;
+						margin: 0 auto;
+					}
+				}
+
 			}
 
 		}

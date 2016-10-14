@@ -1,13 +1,45 @@
-//colours
+/********************************************
+* COLOURS
+********************************************/
+// GENERAL
+$black: #333333;
+$offblack: #222222;
 $white: #ffffff;
-$black: #000000;
-$blue: blue;
-$green: green;
-$orange: orange;
-$red: red;
-$yellow: yellow;
+$offwhite: #f9f9f9;
+$grey: #999999;
 
-//mixins
+// TEST
+$testblue: blue;
+$testgreen: green;
+$testorange: orange;
+$testred: red;
+$testyellow: yellow;
+
+// BLUES
+$bluebase: #7baabe;
+$bluelight: #92b2d3;
+$bluemediumlight: #6089b3;
+$bluemediumdark: #27588b;
+$bluedark: #16426f;
+
+// GREENS
+$greenbase: #417c81;
+$greenlight: #9cc0c3;
+$greenmediumlight: #659599;
+$greenmediumdark: #236167;
+$greendark: #0c464b;
+
+
+/********************************************
+* FONTS
+********************************************/
+$font-primary: 'Open Sans', sans-serif;
+//$font-secondary: 'Orbitron', sans-serif;
+$font-secondary: 'Titillium Web', sans-serif;
+
+/********************************************
+* MIXINS
+********************************************/
 @mixin font-smoothing($value: antialiased) {
   -webkit-font-smoothing: $value;
   -moz-osx-font-smoothing: grayscale;
@@ -40,4 +72,11 @@ $yellow: yellow;
   -moz-transform: $transform;
   -ms-transform: $transform;
   transform: $transform;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
 }

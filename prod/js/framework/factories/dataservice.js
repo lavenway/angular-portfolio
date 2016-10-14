@@ -9,14 +9,14 @@
 
 		var JSONHomeSection = [];
 		var JSONAboutSection = [];
-		var JSONAgenciesSection = [];
+		var JSONTestimonialSection = [];
 		var JSONWorkSection = [];
 		var JSONContactSection = [];
 
 		var dataObj = {
 			JSONHomeSection: JSONHomeSection,
 			JSONAboutSection: JSONAboutSection,
-			JSONAgenciesSection: JSONAgenciesSection,
+			JSONTestimonialSection: JSONTestimonialSection,
 			JSONWorkSection: JSONWorkSection,
 			JSONContactSection: JSONContactSection
 		};
@@ -24,13 +24,12 @@
     $http.get(urlBase).success(function(data) {
         dataObj.JSONHomeSection = data.JSONHomeSection,
         dataObj.JSONAboutSection = data.JSONAboutSection,
-        dataObj.JSONAgenciesSection = data.JSONAgenciesSection,
+        dataObj.JSONTestimonialSection = data.JSONTestimonialSection,
         dataObj.JSONWorkSection = data.JSONWorkSection,
         dataObj.JSONContactSection = data.JSONContactSection;
     });
 
   	return dataObj;
-
 
 	}
 
