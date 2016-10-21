@@ -6,8 +6,9 @@
 
 			<h2>{{folio.dataService.JSONWorkSection[0].header}}</h2>
  
-			<div class="items" loaded-directive callback-fn="folio.numberOfSlides()"
-			  ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true">
+			<div class="items"
+				ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
+				loaded-directive callback-fn="folio.numberOfSlides()">
 
 				<div class="col-xs-6 col-sm-4 col-md-3">
 

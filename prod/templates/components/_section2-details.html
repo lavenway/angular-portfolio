@@ -18,13 +18,50 @@
 
 						<h2>{{workItem.title}}</h2>
 
-						<div class="logo">
-							<img ng-src="{{workItem.logo}}">
+						<div class="row">
+
+							<div class="col-xs-12 col-sm-4">
+
+								<div class="logo">
+									<img ng-src="{{workItem.logo}}">
+								</div>
+
+								<p>{{workItem.description}}</p>
+
+								<div class="row">
+
+									<div class="col-xs-4"
+										ng-repeat="workItemDetails in workItem.image">
+
+										<div class="image"
+											ng-click="folio.updateThumbDetails($index);"
+											ng-class="{'active':folio.isActive($index)}">
+											<img ng-src="{{workItemDetails.url}}">
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-xs-12 col-sm-7 col-sm-offset-1">
+
+								<div class="hero"
+									ng-repeat="workItemDetails in workItem.image"
+									ng-show="folio.isActive($index)">
+									<img alt="{{workItemDetails.name}}" title="{{workItemDetails.name}}" ng-src="{{workItemDetails.url}}">
+								</div>
+
+								<div ng-repeat="workItemDetails in workItem.image">
+
+									<p ng-show="folio.isActive($index)">{{workItemDetails.description}}</p>
+
+								</div>
+
+							</div>
+
 						</div>
-
-						<p>{{workItem.description}}</p>
-
-						<img ng-src="{{workItem.image}}">
 
 					</div>
 
