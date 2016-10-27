@@ -131,9 +131,11 @@
 
 		.logo  {
 			margin-bottom: 20px;
+			padding: 10px;
 
 			img {
-				width: 150px;
+				height: 50px;
+				margin: 0 auto;
 			}
 		}
 	}
@@ -144,7 +146,9 @@
 	}
 
 	.image {
+		margin-bottom: 10px;
 		border-width: 2px;
+		cursor: pointer;
 	}
 
 	.hero {
@@ -154,6 +158,11 @@
 		img {
 			width: 100%;
 		}
+	}
+
+	.description {
+		font-size: 14px;
+		text-align: center;
 	}
 
 }

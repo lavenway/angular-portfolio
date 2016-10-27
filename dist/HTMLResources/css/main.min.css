@@ -4088,15 +4088,22 @@ h3 {
   background: rgba(50, 50, 50, 0.3); }
   .fp-viewing-firstPage .navbar .logo {
     width: 0;
+    min-width: 0;
     height: 0;
     margin: 0;
     opacity: 0; }
+  .fp-viewing-firstPage .navbar li.logo {
+    width: 0; }
   .scroll-active .navbar {
     bottom: -156px; }
   .navbar:hover {
     background: #323232; }
     .navbar:hover .mobile-menu {
       color: #ffffff; }
+    .navbar:hover .logo img.default {
+      display: none; }
+    .navbar:hover .logo img.hover {
+      display: block; }
   .navbar.navbar-active {
     height: auto; }
   @media all and (min-width: 768px) {
@@ -4119,12 +4126,11 @@ h3 {
     .navbar ul li {
       display: block;
       width: 10%;
-      vertical-align: top;
-      /*&:hover, &.active {
-        a {
-          text-decoration: underline;
-        }
-      }*/ }
+      min-width: 140px;
+      vertical-align: top; }
+      @media all and (min-width: 768px) {
+        .navbar ul li {
+          min-width: 100px; } }
       .navbar ul li.active a span:before, .navbar ul li:hover a span:before {
         display: block; }
       @media all and (min-width: 768px) {
@@ -4138,8 +4144,7 @@ h3 {
         padding: 20px 0;
         font-weight: 700;
         color: #ffffff;
-        line-height: normal;
-        text-align: center; }
+        line-height: normal; }
         @media all and (min-width: 768px) {
           .navbar ul li a {
             display: inline-block;
@@ -4158,18 +4163,24 @@ h3 {
             width: 100%;
             height: 2px;
             background: #ffffff; }
-        .navbar ul li a.logo {
+      .navbar ul li.logo {
+        min-width: 180px;
+        margin-left: -20px;
+        padding: 0 20px; }
+        .navbar ul li.logo a {
           display: none;
           height: 80px;
           margin: 0 auto;
           font-size: 0; }
           @media all and (min-width: 768px) {
-            .navbar ul li a.logo {
+            .navbar ul li.logo a {
               display: block;
               width: 140px;
-              margin: 36px 0 0 -10px; } }
-          .navbar ul li a.logo img {
+              margin: 28px auto; } }
+          .navbar ul li.logo a img {
             margin: 0 auto; }
+            .navbar ul li.logo a img.hover {
+              display: none; }
 
 /******************************
 * FULLPAGE PLUGIN OVERRIDES
@@ -4362,19 +4373,26 @@ footer {
     margin: 60px 0;
     overflow: hidden; }
     .work-details .item .logo {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      padding: 10px; }
       .work-details .item .logo img {
-        width: 150px; }
+        height: 50px;
+        margin: 0 auto; }
   .work-details .hero, .work-details .image {
     border-style: solid;
     border-color: #ffffff; }
   .work-details .image {
-    border-width: 2px; }
+    margin-bottom: 10px;
+    border-width: 2px;
+    cursor: pointer; }
   .work-details .hero {
     margin-bottom: 20px;
     border-width: 4px; }
     .work-details .hero img {
       width: 100%; }
+  .work-details .description {
+    font-size: 14px;
+    text-align: center; }
 
 .hidden-menu-active {
   /*position: absolute !important;
