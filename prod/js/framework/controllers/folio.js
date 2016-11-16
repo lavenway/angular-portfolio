@@ -2,7 +2,7 @@
 
 	'use strict';
 
-	function FolioController(dataService) {
+	function FolioController(dataService, $http) {
 		// VM = Virtual model
 		var vm = this,
 				$body = $('body'),
@@ -42,18 +42,14 @@
           },
         },
         $fullPage = $('#fullpage'),
+        maxNumberOfItems,
 				mobileDevice = 'mobile-viewport',
+        randomNumber = Math.floor(Math.random()*8999+1000),
         resizeId,
         tabletDevice = 'tablet-viewport',
         panelActive = false,
         workItemID = 0,
         workItemIndex = 0;
-
-    //Window resizing finished
-    function doneWindowResize(){
-      //console.log('window resize finished');
-      initializeFullpage();
-    }
 
     //Setup full page
     function initializeFullpage() {
@@ -68,13 +64,19 @@
       }
     }
 
+    //Window resizing finished
+    function doneWindowResize(){
+      //console.log('window resize finished');
+      calculateNumberofSlides();
+      initializeFullpage();
+    }
+
     //Work Section - Wrap every 'X' number of work items to force slider
     function numberOfSlides() {
       
       //console.log('numberOfSlides() - setup new HTML');
 
-      var maxNumberOfItems,
-          workItemSlider = $('.section.work .container .items'),
+      var workItemSlider = $('.section.work .container .items'),
           workItemSlides = $('.section.work .container .slide');
 
           //console.log('number of work items ' + workItemSlider.length);
@@ -92,12 +94,31 @@
       function destroySlideHTML() {
         //console.log('destroy existing HTML');
 
-        $(workItemSlides).replaceWith(function() {
+        /*$(workItemSlides).replaceWith(function() {
          return $(workItemSlider, this);
+        });*/
+
+        workItemSlides.replaceWith(function() {
+         return workItemSlider;
         });
 
         buildSlideHTML();
       }
+
+      // If the work items are wrapped in the 'slide' HTML then destroy, otherwise rebuild
+      if(workItemSlides.length) {
+        //console.log('destroy');
+        destroySlideHTML();
+      } else {
+        //console.log('build');
+        buildSlideHTML();
+      }
+
+    }
+
+    // Calculate number of slides required for the work section
+    function calculateNumberofSlides() {
+      //console.log('calculate number of slides');
 
       if ($body.hasClass(mobileDevice)) {
         maxNumberOfItems = 6;
@@ -110,15 +131,10 @@
         //console.log('desktop device - set max number of items to ' + maxNumberOfItems);
       }
 
-      // If the work items are wrapped in the 'slide' HTML then destroy, otherwise rebuild
-      if(workItemSlides.length) {
-        //console.log("destroy");
-        destroySlideHTML();
-      } else {
-        //console.log("build");
-        buildSlideHTML();
-      }
+      numberOfSlides();
 
+      return;
+ 
     }
 
     //Get work item details
@@ -176,14 +192,75 @@
     }
 
     //If a current image is the same as the requested image
-    function isActive (index) {
+    function isActive(index) {
 
       return workItemIndex === index;
 
     }
 
+    //Randomise an array when called
+    function randomizeArray() {
+      
+      return 0.5 - Math.random();
 
-    
+    }
+
+    //Random number for the anti-spam contact form
+    function getRandomNumber() {
+      
+      //console.log(randomNumber);
+
+      return randomNumber;
+
+    }
+
+    // calling our contact submit function.
+    function contactFormSubmit() {
+
+      //console.log(vm.user);
+
+      //console.log(randomNumber);
+
+      var urlBase = 'HTMLResources/php/contact.php';
+
+      vm.errorHeaderMessage = '';
+      vm.successHeaderMessage = '';
+
+      // Posting data to php file
+      $http({
+        method  : 'POST',
+        url     : urlBase,
+        data    : vm.user, //forms user object
+        headers : {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        cache: false
+       })
+        .success(function(data) {
+          //console.log(data);
+          if (data.errors) {
+            //console.log(vm.user);
+            vm.validationError = true;
+            vm.validationSuccess = false;
+            vm.errorHeaderMessage = data.errorHeaderMessage;
+            vm.errorName = data.errors.name;
+            vm.errorEmail = data.errors.email;
+            vm.errorMessage = data.errors.message;
+            vm.errorNumber = data.errors.human;
+          } else {
+            vm.validationError = false;
+            vm.validationSuccess = true;
+            vm.successHeaderMessage = data.successHeaderMessage;
+            vm.errorName = '';
+            vm.errorEmail = '';
+            vm.errorMessage = '';
+            vm.errorNumber = '';
+            vm.user = {};
+          }
+
+        });
+
+    }
 
     //Initialise full page
     vm.initializeFullpage = initializeFullpage;
@@ -192,7 +269,7 @@
 		vm.dataService = dataService;
 
 		//Work Section - Wrap every 'X' number of work items to force slider
-		vm.numberOfSlides = numberOfSlides;
+		vm.calculateNumberofSlides = calculateNumberofSlides;
 
     //Set the ID of the clicked work item
     vm.setWorkItemDetailsId = setWorkItemDetailsId;
@@ -209,8 +286,26 @@
     //Show details of selected work item thumbnail
     vm.updateThumbDetails = updateThumbDetails;
 
-    //
+    //Set image as the active image
     vm.isActive = isActive;
+
+    //Randomise an array
+    vm.randomizeArray = randomizeArray;
+
+    //Generate a random number for the contact page
+    vm.getRandomNumber = getRandomNumber;
+
+    //Click function for retrieving contact from submission
+    vm.contactFormSubmit = contactFormSubmit;
+
+    // create a blank object to handle form data.
+    vm.user = {
+      name: '',
+      email: '',
+      message: '',
+      randomnumber: randomNumber,
+      human: null
+    };
 
     //Window resized
     $(window).resize(function() {
@@ -227,7 +322,9 @@
       link: function(scope) {
 
         //console.log('xxx loaded ng repeat in work section xxx');
+
         scope.callbackFn();
+
       },
     };
   }
@@ -239,10 +336,10 @@
       scope: { callbackrenderFn: '&' },
       link: function(scope){
 
-        $(window).load(function() {
+        setTimeout(function() {
           //console.log('xxx site has rendered initialise the fullpage plugin xxx');
           scope.callbackrenderFn();
-        });
+        }, 0); // wait...
 
       } 
   	};
@@ -254,6 +351,6 @@
 		.directive('loadedDirective', Loaded)
 		.directive('initializeDirective', Initialise);
 
-	FolioController.$inject = ['dataService'];
+	FolioController.$inject = ['dataService', '$http'];
 
 })();

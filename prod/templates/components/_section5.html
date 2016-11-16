@@ -1,48 +1,72 @@
 <section class="section contact">
 
-	<div class="container">
+	<!--<div class="animation-trigger"></div>-->
 
-		<h2>{{folio.dataService.JSONContactSection[0].header}}</h2>
+	<div class="container scrollme">
 
-		<div class="contact-form">
+		<h2 class="animateme"
+				data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatex="-1000">
+			{{folio.dataService.JSONContactSection[0].header}}
+		</h2>
+
+		<div class="contact-form animateme"
+				data-when="enter"
+        data-from="1"
+        data-to="0"
+        data-translatey="500">
 
 			<h3>{{folio.dataService.JSONContactSection[0].subheaderone}}</h3>
 
 			<div class="social"></a>
-				<a href="https://uk.linkedin.com/in/lavenderwayne" class="linkedin">
+				<a ng-href="{{folio.dataService.JSONContactSection[0].linkedin}}" class="linkedin">
 					<i class="fa fa-linkedin-square"></i>
 				</a>
 			</div>
 
 			<h3>{{folio.dataService.JSONContactSection[0].subheadertwo}}</h3>
 
-		  <form method="post" action="contact.php" id="contact-form" role="form" class="contact-form">
+		  	<p ng-show="folio.validationSuccess" class="validation success">
+		  		{{folio.dataService.JSONContactSection[0].validationSuccess}}
+		  	</p>
+
+		  	<p ng-show="folio.validationError" class="validation error">
+		  		{{folio.dataService.JSONContactSection[0].validationError}}
+		  	</p>
+
+		  	<form ng-submit="folio.contactFormSubmit()" name="userForm" id="contact-form" role="form" class="contact-form">
 		                                
 				<!-- Name -->
 				<div class="form-group">
-			    <input type="text" name="name" id="name" class="form-control" placeholder="Name" min="3" max="100" required="">
+			    <input ng-model="folio.user.name" type="text" name="name" id="name" class="form-control" placeholder="Name" min="3" max="100">
+			    <span class="error" ng-show="folio.errorName">{{folio.dataService.JSONContactSection[0].errorName}}</span>
 			  </div>
 
 				<!-- Email -->
 				<div class="form-group">
-			    <input type="email" name="email" id="email" class="form-control" placeholder="Email" min="5" max="100" required="">
+			    <input ng-model="folio.user.email" type="email" name="email" id="email" class="form-control" placeholder="Email" min="5" max="100">
+			    <span class="error" ng-show="folio.errorEmail">{{folio.errorEmail}}</span>
 			  </div>
 
 				<!-- Message -->
 			  <div class="form-group">
-			    <textarea name="message" id="text" class="form-control" rows="6" placeholder="Message" min="5" max="400"></textarea>
+			    <textarea ng-model="folio.user.message" type="text" name="message" id="message" class="form-control" rows="6" placeholder="Message" min="5" max="400"></textarea>
+			    <span class="error" ng-show="folio.errorMessage">{{folio.errorMessage}}</span>
 			  </div>   
 
 			  <!-- Anti-spam -->
 			  <div class="form-group last">
-			  	<label>1966 <span></label>
-					<input name="human" placeholder="Enter security code">
+			  	<input class="label" type="text" name="randomnumber" id="randomnumber" value="{{folio.getRandomNumber()}}" disabled>
+			  	<div class="form-item">
+						<input ng-model="folio.user.human" type="number" name="human" id="human" placeholder="Enter security code" max="9999" pattern="[0-9]*">
+						<span class="error" ng-show="folio.errorNumber">{{folio.errorNumber}}</span>
+					</div>
 				</div>
 			  
 				<!-- Send Button -->                                 
-			  <button id="submit" class="btn" name="submit" type="submit" value="Submit">
-			      Send
-			  </button>
+			  <button id="submit" class="btn" name="submit" type="submit" value="Submit">Send</button>
 
 			</form>
 

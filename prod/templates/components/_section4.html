@@ -1,22 +1,39 @@
 <section class="section testimonial">
 
-	<div class="container">
+	<!--<div class="animation-trigger"></div>-->
 
-		<h2>{{folio.dataService.JSONTestimonialSection[0].header}}</h2>
+	<div class="container">
 
 		<div class="row">
 
-	  	<div ng-repeat="testimonial in folio.dataService.JSONTestimonialSection[0].possibilities">
+			<div class="col-xs-12">
 
-				<div class="col-xs-12 col-sm-6">
+				<h2>{{folio.dataService.JSONTestimonialSection[0].header}}</h2>
 
-					<div class="item">
-						<p class="description">{{testimonial.description}}</p>
-						<p class="name">{{testimonial.name}}</p>
-				  	<p class="company"></b>{{testimonial.company}}</p>
-			  	</div>
-			  	
-			  </div>
+				<div class="items">
+
+			  	<div ng-repeat="testimonial in folio.dataService.JSONTestimonialSection[0].possibilities | limitTo:3"
+			  	loaded-directive callback-fn="folio.randomizeArray">
+
+						<div class="col-xs-12">
+
+							<div class="item item-{{$index}}" ng-class-odd="'odd'" ng-class-even="'even'">
+
+								<p class="description">{{testimonial.description}}</p>
+
+								<p class="name">{{testimonial.name}}</p>
+
+								<p class="divider">&#45;</p>
+
+						  	<p class="company"></b>{{testimonial.company}}</p>
+
+					  	</div>
+					  	
+					  </div>
+
+					</div>
+
+				</div>
 
 			</div>
 

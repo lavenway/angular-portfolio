@@ -1,11 +1,19 @@
 /********************************************
+*
 * SECTION 1 - HOME
+*
 ********************************************/
+.fp-viewing-firstPage {
+	#fullpage {
+		background: $bluebase;
+	}
+}
+
 .section.home {
 	text-align: center;
-	background: $bluebase;
 
 	.wl-logo {
+		position: relative;
 		width: 100%;
 		max-width: 450px;
 		margin: 0 auto 40px;
@@ -15,51 +23,73 @@
 		}
 	}
 
-	h1 {
-		margin-bottom: 10px;
-		font-family: $font-secondary;
-		font-weight: 900;
-	}
+	.text {
+		position: relative;
 
-	h1, h3 {
-		color: $white;
-	}
+		h1 {
+			margin-bottom: 20px;
+			font-family: $font-secondary;
+			font-weight: 900;
 
-	a {
-		display: inline-block;
-		margin-top: 40px;
-		font-weight: 700;
-		color: $white;
-		text-transform: uppercase;
-
-		span {
-			display: block;
-			font-size: 18px;
+			span {
+				display: block;
+				font-size: 30px;
+				line-height: 30px;
+			}
 		}
 
-		i {
-			margin-top: 10px;
-			font-size: 40px;
+		h1, h3 {
+			position: relative;
 		}
 
+		a.portfolio-link {
+			display: inline-block;
+			margin-top: 40px;
+			font-weight: 700;
+			color: $white;
+			cursor: pointer;
+			text-transform: uppercase;
+
+			span {
+				display: block;
+				font-size: 18px;
+			}
+
+			i {
+				margin-top: 10px;
+				font-size: 40px;
+			}
+
+			&:hover {
+				color: $black;
+			}
+
+		}
 	}
 
 }
 
 
 /********************************************
+*
 * SECTION 2 - WORK
+*
 ********************************************/
+body[class^='fp-viewing-secondPage'],
+body[class*=' fp-viewing-secondPage']{
+	#fullpage {
+		background: $offwhite;
+	}
+}
+
 .section.work {
 	overflow: hidden;
-	background: $offwhite;
 
-	.container.animate {
+	.container {
 		position: relative;
 		top: 50%;
 		left: 0;
 		margin-top: -40px;
-		padding: 0;
 		transform: translateY(-50%);
 		@include transition(.4s);
 
@@ -68,15 +98,16 @@
     }
 
 		> .row {
-			position: relative;
-			padding: 0;
-			margin: 0 12px;
 
 			.fp-tableCell {
 				display: inline-block;
 				vertical-align: top;
 				height: auto !important;
 			}
+		}
+
+		h2 {
+			color: $black;
 		}
 
 		.items {
@@ -87,7 +118,6 @@
 				p {
 					margin: 0;
 					font-weight: normal;
-					color: $white;
 				}
 			}
 
@@ -98,7 +128,9 @@
 
 
 /********************************************
+*
 * SECTION 2 - WORK DETAILS
+*
 ********************************************/
 .work-details {
 	z-index: 5;
@@ -108,21 +140,38 @@
 	width: 100%;
 	height: 100%;
 	@include transition(.4s);
-	background: $greenmediumlight;
+
+	background: $darkgrey;
 
 	.container {
 		position: relative;
+
+		.section.work & {
+
+			h2 {
+				color: $white;
+			}
+
+		}
 	}
 
 	.close {
 		display: block;
 		z-index: 1;
 		position: absolute;
-		top: 20px;
+		top: 54px;
 		right: 12px;
-		font-size: 40px;
+		font-size: 28px;
 		color: $white;
 		text-align: center;
+
+		@media all and (min-width: 768px) {
+      font-size: 40px;
+    }
+
+		&:hover {
+			color: $black;
+		}
 	}
 
 	.item {
@@ -165,13 +214,20 @@
 		text-align: center;
 	}
 
+	a.url {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: normal;
+		color: $white;
+
+		&:hover {
+			color: $black;
+		}
+	}
+
 }
 
 .hidden-menu-active {
-	/*position: absolute !important;
-	width: 100% !important;
-	height: 100% !important;
-  overflow: hidden !important;*/
 
 	.section.work .container.animate {
 		position: absolute;
@@ -189,27 +245,88 @@
 
 
 /********************************************
+*
 * SECTION 3 - ABOUT
+*
 ********************************************/
-.section.about { background: $bluemediumlight; }
+body[class^='fp-viewing-thirdPage'],
+body[class*=' fp-viewing-thirdPage']{
+	#fullpage {
+		background: $bluemediumlight;
+	}
+}
+
+.section.about {
+	overflow: hidden;
+	margin: 100px 0;
+
+	@media all and (min-width: 1024px) {
+    margin: 0;
+  }
+
+	.container {
+		position: relative;
+		top: 50%;
+		left: 0;
+		margin-top: -40px;
+		transform: translateY(-50%);
+		@include transition(.4s);
+
+  	@media all and (min-width: 768px) {
+      margin-top: -78px;
+    }
+
+		.fp-tableCell {
+			display: inline-block;
+			vertical-align: top;
+			height: auto !important;
+		}
+
+	}
+
+	h2, p {
+		color: $black;
+	}
+}
 
 
 /********************************************
+*
 * SECTION 4 - TESTIMONIALS
+*
 ********************************************/
+.fp-viewing-fourthPage {
+	#fullpage {
+		background: $bluemediumdark;
+	}
+}
+
 .section.testimonial {
-	background: $offwhite;
+	margin: 100px 0;
+	
+	@media all and (min-width: 1024px) {
+    margin: 0;
+  }
 
 	.container {
 
 		.item {
-			margin: 20px 0;
+			
+			position: relative;
+			width: 100%;
+			margin: 10px 0;
 
 			@media all and (min-width: 768px) {
-      	margin: 40px 0;
+      	float: right;
+      	width: 50%;
+      	margin: 20px 0;
+
+      	&.odd {
+					float: left;
+				}
     	}
 
-			.name, .company {
+			.name, .divider, .company {
 				display: inline-block;
 				margin: 0;
 				font-weight: 700;
@@ -220,12 +337,9 @@
 			}
 
 			.name {
-				color: $bluemediumdark;
+				color: $bluemediumlight;
 			}
 
-			.company {
-				color: $greenbase;
-			}
 		}
 
 	}
@@ -233,14 +347,22 @@
 
 
 /********************************************
+*
 * SECTION 5 - CONTACT
+*
 ********************************************/
-.section.contact {
-	background: $greenlight;
-
-	h2, h3 {
-		color: $black;
+.fp-viewing-lastPage {
+	#fullpage {
+		background: $bluedark;
 	}
+}
+
+.section.contact {
+	margin: 60px 0;
+	
+	@media all and (min-width: 1024px) {
+    margin: 0;
+  }
 
 	.social {
 		margin-bottom: 40px;
@@ -252,11 +374,33 @@
 			font-size: 60px;
 			color: $white;
 			text-align: center;
+
+			&:hover {
+				color: $bluemediumlight;
+			}
 		}
 	}
 
+	.validation {
+		padding: 20px;
+		font-size: 14px;
+		font-weight: 700;
+		color: $white;
+		text-align: center;
+
+		&.error {
+			background: $testred;
+		}
+
+		&.success {
+			background: $testgreen;
+		}
+		
+	}
+
 	.contact-form {
-		max-width: 670px;
+		position: relative;
+		max-width: 692px;
 		margin: 0 auto;
 
 		.form-group {
@@ -265,25 +409,47 @@
 
 			&.last {
 
-				label {
+				input.label {
 					float: left;
-					width: 15%;
-					margin: 14px 0 0 10px;
+					width: 20%;
+					height: auto;
+					margin: 8px 0 0 10px;
+					padding: 0;
 					font-weight: 700;
 					font-size: 30px;
+					color: $white;
+					border: none;
+					background: transparent;
+
+					@media all and (min-width: 768px) {
+			      width: 15%;
+			    }
 				}
 
-				input {
+				.form-item {
 					float: right;
-					width: 75%;
+					width: 60%;
+
+					@media all and (min-width: 768px) {
+			      width: 75%;
+			    }
 				}
 
+			}
+
+			.error {
+				clear: both;
+				display: block;
+				margin: 4px 0 0 10px;
+				font-weight: 700;
+				color: $testred;
+				line-height: normal;
 			}
 		}
 
 		input, textarea {
 			width: 100%;
-			height: 60px;
+			height: 40px;
 			padding: 5px 5px 5px 10px;
 			font-family: $font-primary;
 			font-size: 16px;
@@ -291,10 +457,22 @@
     	outline: none;
     	@include transition(background 0.5s ease-in-out 0s);
     	background: $white;
+
+    	@media all and (min-width: 768px) {
+	      height: 60px;
+	    }
+
+    	&:focus {
+    		background: $bluemediumlight;
+    	}
 		}
 
 		textarea {
-			height: 150px;
+			height: 80px;
+
+			@media all and (min-width: 768px) {
+	      height: 150px;
+	    }
 		}
 
 		.btn {
@@ -304,7 +482,12 @@
 			font-weight: 700;
 			color: $white;
 			border: none;
+			@include transition(all 0.2s ease-in);
 			background: $black;
+
+			&:hover {
+				background: $bluemediumlight;
+			}
 		}
 	}
 
@@ -312,9 +495,37 @@
 
 
 /********************************************
+*
 * SHARED STYLES
+*
 ********************************************/
+#fullpage {
+	@include transition(background 0.8s ease-in !important);
+}
+
 .section {
+	position: relative;
+	@include transition(all 0.8s ease-in);
+
+	/*&.active {
+		.container {
+			opacity: 1;
+		}
+	}*/
+
+	h2 {
+		position: relative;
+	}
+
+	/*.animation-trigger {
+		z-index: 1;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background: transparent;
+	}*/
 
 	> .fp-tableCell {
   	position: relative;
@@ -325,18 +536,9 @@
     }
 	}
 
-	/*.container:first-of-type {
-		position: relative;
-  	top: -40px;
-
-  	@media all and (min-width: 768px) {
-      top: -78px;
-    }
-	}*/
-
 	.container {
-		/*width: auto;
-		max-width: 1280px;*/
+		/*opacity: 0;
+		@include transition(all 0.6s ease-in);*/
 
 		.items [class*='col'] {
 			overflow: hidden;
@@ -345,6 +547,7 @@
 		}
 
 		.items {
+			position: relative;
 
 			.logo {
 				display: block;

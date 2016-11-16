@@ -3,6 +3,6 @@
 	'use strict';
 
 	angular
-		.module('folioFramework', []);
+		.module('folioFramework', ['ngSanitize']);
 
 })();

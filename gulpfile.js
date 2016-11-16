@@ -21,6 +21,7 @@ var gulp = require('gulp'),
     include = require('gulp-html-tag-include'),
     imagemin = require('gulp-imagemin'),
     jshint = require('gulp-jshint'),
+    phpconnect = require('gulp-connect-php'),
     phplint = require('gulp-phplint'),
     rename = require('gulp-rename'),
     runSequence = require('run-sequence'),
@@ -231,10 +232,15 @@ var gulp = require('gulp'),
   // START BROWSERSYNC SERVER
   gulp.task('browserSync', ['build'], function() {
     browserSync.init({
-      server: {
+      proxy: '127.0.0.1:8000'
+      /*server: {
         baseDir: dest, port: PORT
-      },
+      }*/
     });
+  });
+
+  gulp.task('phpserver', ['build'], function() {
+    phpconnect.server({ base: dest, port: PORT, keepalive: true});
   });
 
   // FTP FILES TO REMOTE SERVER
@@ -242,8 +248,12 @@ var gulp = require('gulp'),
     runSequence('rmdirdist', ['ftp'], callback); 
   });
 
+  /*gulp.task('phpserver', ['build'], function() {
+    phpconnect.server({ proxy: '127.0.0.1:8000', port: PORT, keepalive: true});
+  });*/
+
   // BUILD THE SITE, RUN THE SERVER, FTP FILES IN PRODUCTION MODE
-  gulp.task('default', ['build', 'browserSync', 'upload'], function() {
+  gulp.task('default', ['build', 'browserSync', 'upload', 'phpserver'], function() {
     // WATCH HTML FILES
     gulp.watch(src + PATHS.htmlfiles, ['html-include', browserSync.reload]);
     // WATCH JS FILES

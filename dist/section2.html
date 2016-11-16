@@ -83,32 +83,38 @@
           <div class="col-xs-12">
             <section class="section work">
 
-            	<div class="container animate">
+            	<!--<div class="animation-trigger"></div>-->
+
+            	<div class="container">
 
             		<div class="row">
 
-            			<h2>{{folio.dataService.JSONWorkSection[0].header}}</h2>
-             
-            			<div class="items"
-            				ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
-            				loaded-directive callback-fn="folio.numberOfSlides()">
+            			<div class="col-xs-12">
 
-            				<div class="col-xs-4 col-sm-4 col-md-3">
+            				<h2>{{folio.dataService.JSONWorkSection[0].header}}</h2>
+            	 
+            				<div class="items"
+            					ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
+            					loaded-directive callback-fn="folio.calculateNumberofSlides()">
 
-            					<a href="#"
-            						 ng-attr-style="background: {{work.colour}}"
-            						 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
-            						 class="logo">
+            					<div class="col-xs-4 col-sm-4 col-md-3">
 
-            						<p>{{work.title}}</p>
+            						<a href="#"
+            							 ng-attr-style="background: {{work.colour}}"
+            							 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
+            							 class="logo">
 
-            						<div class="image">
-            			  			<img ng-src="{{work.logo}}">
-            			  		</div>
+            							<p>{{work.title}}</p>
 
-            			  	</a>
+            							<div class="image">
+            				  			<img ng-src="{{work.logo}}">
+            				  		</div>
 
-            			  </div>
+            				  	</a>
+
+            				  </div>
+
+            				</div>
 
             			</div>
 
@@ -138,7 +144,7 @@
 
 	            						<div class="row">
 
-	            							<div class="col-xs-12 col-sm-4">
+	            							<div class="col-xs-12 col-md-4">
 
 	            								<div class="logo" ng-attr-style="background: {{workItem.colour}}">
 	            									<img ng-src="{{workItem.logo}}">
@@ -146,9 +152,14 @@
 
 	            								<p>{{workItem.description}}</p>
 
+	            								<a class="url" href="{{workItem.url}}">
+	            									View site:
+	            									{{workItem.url}}
+	            								</a>
+
 	            							</div>
 
-	            							<div class="col-xs-12 col-sm-7 col-sm-offset-1">
+	            							<div class="col-xs-12 col-md-7 col-md-offset-1">
 
 	            								<div class="row">
 
@@ -252,11 +263,12 @@
    <script type="text/javascript" src="HTMLResources/js/framework.min.js"></script>
 
    <!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>-->
-     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
-     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
 
-
-       <!-- Angular Material Library -->
-     <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+   <!-- Angular Material Library -->
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-sanitize.js"></script>
+   <!-- Angular Material Library -->
+   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
   </body>
 </html>

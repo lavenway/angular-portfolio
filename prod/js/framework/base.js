@@ -26,6 +26,9 @@
             // interactive = DOMContentLoaded & complete = window.load
             if (document.readyState == 'interactive' || document.readyState == 'complete') {
               ready = true;
+
+              // LOAD THE PAGE ANIMATIONS
+              //animations();
             }
           };
       });
@@ -38,6 +41,7 @@
           mobileDevice = 'mobile-viewport',
           $mobileHiddenNav = $('.navbar-links'),
           $mobileMenuToggle = $('.mobile-menu'),
+          $portfolioAnchor = $('.portfolio-link'),
           tabletDevice = 'tablet-viewport',
 
           handleMobileNavToggle = function () {
@@ -55,6 +59,14 @@
             $.data(this, 'scrollTimer', setTimeout(function() {
                 body.removeClass('scroll-active');
             }, 1000));
+
+          },
+
+          handlePortfolioAnchor = function () {
+
+            $('html,body').animate({
+              scrollTop: $('.section.work').offset().top
+            });
 
           };
 
@@ -149,6 +161,9 @@
 
       // MOBILE NAV TOGGLE MENU
       $mobileMenuToggle.on('click', handleMobileNavToggle);
+
+      //SCROLL TO PORTFOLIO ANCHOR
+      $portfolioAnchor.on('click', handlePortfolioAnchor);
 
       // WINDOW SCROLL DETECTION
       $(window).on('scroll', handleScrollDetection);
