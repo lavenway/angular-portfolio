@@ -4082,14 +4082,22 @@ h1, h2 {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase; }
   @media all and (min-width: 480px) {
     h1 {
       font-size: 50px;
       line-height: 50px; } }
+  h1 span {
+    display: block;
+    font-size: 18px;
+    line-height: 18px; }
+    @media all and (min-width: 480px) {
+      h1 span {
+        font-size: 30px;
+        line-height: 30px; } }
 
 h2 {
   font-size: 22px;
@@ -4100,11 +4108,19 @@ h2 {
       line-height: 34px; } }
 
 h3 {
-  font-size: 18px; }
+  font-size: 16px;
+  line-height: 20px; }
+  @media all and (min-width: 480px) {
+    h3 {
+      font-size: 18px; } }
 
 /******************************
 * MAIN NAV
 ******************************/
+.navbar-active {
+  position: absolute;
+  overflow: hidden !important; }
+
 .navbar {
   z-index: 20;
   position: fixed;
@@ -4128,23 +4144,28 @@ h3 {
     width: 0; }
   .scroll-active .navbar {
     bottom: -156px; }
-  .navbar:hover, .navbar.navbar-active {
-    background: #323232; }
-    .navbar:hover .mobile-menu, .navbar.navbar-active .mobile-menu {
+  .navbar:hover, .navbar-active .navbar {
+    background: #323232;
+    /*.logo {
+      img.default {
+        display: none;
+      }
+
+      img.hover {
+        display: block;
+      }
+    }*/ }
+    .navbar:hover .mobile-menu, .navbar-active .navbar .mobile-menu {
       color: #FFFFFF; }
-    .navbar:hover .logo img.default, .navbar.navbar-active .logo img.default {
-      display: none; }
-    .navbar:hover .logo img.hover, .navbar.navbar-active .logo img.hover {
-      display: block; }
-  .navbar.navbar-active {
-    height: auto; }
-  @media all and (min-width: 768px) {
+  .navbar-active .navbar {
+    height: 100%; }
+  @media all and (min-width: 769px) and (min-height: 769px) {
     .navbar {
       height: 160px; } }
   .navbar .mobile-menu i {
     padding: 26px;
     font-size: 30px; }
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 769px) and (min-height: 769px) {
     .navbar .mobile-menu {
       display: none; } }
   .navbar ul {
@@ -4152,7 +4173,7 @@ h3 {
     margin: 0 2%;
     font-size: 14px;
     text-transform: uppercase; }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 769px) and (min-height: 769px) {
       .navbar ul {
         display: block; } }
     .navbar ul li {
@@ -4160,29 +4181,28 @@ h3 {
       width: 100%;
       min-width: 140px;
       vertical-align: top; }
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 769px) and (min-height: 769px) {
         .navbar ul li {
-          width: 10%;
-          min-width: 100px; } }
+          width: 10%; } }
       .navbar ul li:hover a span:before {
         display: block; }
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 769px) and (min-height: 769px) {
         .navbar ul li {
           display: inline-block;
           margin-bottom: 0; } }
       .navbar ul li a {
         display: block;
         width: 100%;
-        margin-bottom: 20px;
+        margin: 10px 0;
         padding: 20px 0;
         font-weight: 700;
         color: #FFFFFF;
         line-height: normal; }
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 769px) and (min-height: 769px) {
           .navbar ul li a {
             display: inline-block;
             width: 100px;
-            margin-bottom: 0;
+            margin: 0;
             padding: 0;
             line-height: 156px; } }
         .navbar ul li a span {
@@ -4201,14 +4221,18 @@ h3 {
         margin-left: -20px;
         padding: 0 20px; }
         .navbar ul li.logo a {
-          display: none;
-          height: 80px;
-          margin: 0 auto;
-          font-size: 0; }
-          @media all and (min-width: 768px) {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 140px;
+          height: auto;
+          margin-left: -70px; }
+          @media all and (min-width: 769px) and (min-height: 769px) {
             .navbar ul li.logo a {
-              display: block;
-              width: 140px;
+              position: relative;
+              left: inherit;
+              bottom: inherit;
+              height: 80px;
               margin: 28px auto; } }
           .navbar ul li.logo a img {
             margin: 0 auto; }
@@ -4226,6 +4250,7 @@ h3 {
   background: #333333; }
 
 #fp-nav {
+  z-index: 10;
   left: 0 !important;
   padding: 20px 0; }
 
@@ -4329,8 +4354,11 @@ footer {
   .section.home .wl-logo {
     position: relative;
     width: 100%;
-    max-width: 450px;
+    max-width: 250px;
     margin: 0 auto 40px; }
+    @media all and (min-width: 480px) and (min-height: 769px) {
+      .section.home .wl-logo {
+        max-width: 450px; } }
     .section.home .wl-logo img {
       width: 100%; }
   .section.home .text {
@@ -4339,22 +4367,20 @@ footer {
       margin-bottom: 20px;
       font-family: "Titillium Web", sans-serif;
       font-weight: 900; }
-      .section.home .text h1 span {
-        display: block;
-        font-size: 30px;
-        line-height: 30px; }
     .section.home .text h1, .section.home .text h3 {
       position: relative; }
     .section.home .text a.portfolio-link {
       display: inline-block;
-      margin-top: 40px;
       font-weight: 700;
       color: #FFFFFF;
       cursor: pointer;
       text-transform: uppercase; }
       .section.home .text a.portfolio-link span {
         display: block;
-        font-size: 18px; }
+        font-size: 16px; }
+        @media all and (min-width: 480px) and (min-height: 769px) {
+          .section.home .text a.portfolio-link span {
+            font-size: 18px; } }
       .section.home .text a.portfolio-link i {
         margin-top: 10px;
         font-size: 40px; }
@@ -4371,7 +4397,10 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
   background: #F9F9F9; }
 
 .section.work {
-  overflow: hidden; }
+  padding: 100px 0; }
+  @media all and (min-width: 480px) {
+    .section.work {
+      padding: 0; } }
   .section.work .container {
     position: relative;
     top: 50%;
@@ -4381,7 +4410,7 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     transition: 0.4s; }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 480px) {
       .section.work .container {
         margin-top: -78px; } }
     .section.work .container > .row .fp-tableCell {
@@ -4402,17 +4431,22 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
 *
 ********************************************/
 .work-details {
-  z-index: 5;
-  position: absolute;
+  z-index: 20;
+  position: fixed;
   top: 0;
   right: -200%;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   transition: 0.4s;
   background: #4C5C68; }
   .work-details .container {
-    position: relative; }
-    .section.work .work-details .container h2 {
+    position: relative;
+    top: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+    .work-details .container h2 {
       color: #FFFFFF; }
   .work-details .close {
     display: block;
@@ -4423,7 +4457,7 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     font-size: 28px;
     color: #FFFFFF;
     text-align: center; }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 480px) {
       .work-details .close {
         font-size: 40px; } }
     .work-details .close:hover {
@@ -4460,15 +4494,17 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     .work-details a.url:hover {
       color: #333333; }
 
-.hidden-menu-active .section.work .container.animate {
-  position: absolute;
-  left: -100%; }
-
-.hidden-menu-active .work-details {
-  right: 0; }
-  @media all and (min-width: 768px) {
-    .hidden-menu-active .work-details {
-      width: 100%; } }
+.hidden-menu-active {
+  overflow: hidden !important;
+  height: 100% !important; }
+  .hidden-menu-active .section.work .container.animate {
+    position: relative;
+    left: -100%; }
+  .hidden-menu-active .work-details {
+    right: 0; }
+    @media all and (min-width: 480px) {
+      .hidden-menu-active .work-details {
+        width: 100%; } }
 
 /********************************************
 *
@@ -4477,32 +4513,36 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
 ********************************************/
 body[class^='fp-viewing-thirdPage'] #fullpage,
 body[class*=' fp-viewing-thirdPage'] #fullpage {
-  background: #81C3D7; }
+  background: #2F6690; }
 
 .section.about {
   overflow: hidden;
-  margin: 100px 0; }
-  @media all and (min-width: 1024px) {
+  padding: 100px 0; }
+  @media all and (min-width: 480px) {
     .section.about {
-      margin: 0; } }
+      padding: 0; } }
   .section.about .container {
     position: relative;
-    top: 50%;
-    left: 0;
-    margin-top: -40px;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    transition: 0.4s; }
-    @media all and (min-width: 768px) {
+    transition: 0.4s;
+    /*.fp-slides, .fp-controlArrow {
+			margin-bottom: 100px;
+
+			@media all and (min-width: 480px) {
+	      margin-bottom: 0;
+	    }
+		}*/ }
+    @media all and (min-width: 480px) {
       .section.about .container {
-        margin-top: -78px; } }
-    .section.about .container .fp-tableCell {
+        top: 50%;
+        left: 0;
+        margin-top: -78px;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%); } }
+    .section.about .container > .row .fp-tableCell {
       display: inline-block;
       vertical-align: top;
       height: auto !important; }
-  .section.about h2, .section.about p {
-    color: #333333; }
 
 /********************************************
 *
@@ -4513,28 +4553,59 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
   background: #2E4057; }
 
 .section.testimonial {
-  margin: 100px 0; }
-  @media all and (min-width: 1024px) {
+  padding: 100px 0; }
+  @media all and (min-width: 480px) {
     .section.testimonial {
-      margin: 0; } }
-  .section.testimonial .container .item {
-    position: relative;
-    width: 100%;
-    margin: 10px 0; }
-    @media all and (min-width: 768px) {
-      .section.testimonial .container .item {
-        float: right;
-        width: 50%;
-        margin: 20px 0; }
-        .section.testimonial .container .item.odd {
-          float: left; } }
-    .section.testimonial .container .item .name, .section.testimonial .container .item .divider, .section.testimonial .container .item .company {
+      padding: 0; } }
+  .section.testimonial .items {
+    overflow: hidden;
+    margin: 30px 0; }
+    @media all and (min-width: 480px) {
+      .section.testimonial .items {
+        margin: 60px 0; } }
+    .section.testimonial .items .quote {
+      position: relative;
+      margin: 20px 0; }
+      @media all and (min-width: 480px) {
+        .section.testimonial .items .quote {
+          position: absolute;
+          left: 0;
+          width: 50%;
+          height: 100%;
+          margin: 0; }
+          .section.testimonial .items .quote.odd {
+            left: auto;
+            right: 0; } }
+      .section.testimonial .items .quote blockquote {
+        position: relative;
+        width: 100%;
+        font-family: "Titillium Web", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #FFFFFF;
+        text-align: center; }
+        @media all and (min-width: 480px) {
+          .section.testimonial .items .quote blockquote {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%); } }
+    .section.testimonial .items .item {
+      width: 100%; }
+      @media all and (min-width: 480px) {
+        .section.testimonial .items .item {
+          float: right;
+          width: 50%; }
+          .section.testimonial .items .item.odd {
+            float: left; } }
+    .section.testimonial .items .item .name, .section.testimonial .items .item .divider, .section.testimonial .items .item .company {
       display: inline-block;
       margin: 0;
       font-weight: 700; }
-    .section.testimonial .container .item .description {
+    .section.testimonial .items .item .description {
       margin-bottom: 10px; }
-    .section.testimonial .container .item .name {
+    .section.testimonial .items .item .name {
       color: #81C3D7; }
 
 /********************************************
@@ -4546,10 +4617,10 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
   background: #16425B; }
 
 .section.contact {
-  margin: 60px 0; }
-  @media all and (min-width: 1024px) {
+  padding: 60px 0; }
+  @media all and (min-width: 480px) {
     .section.contact {
-      margin: 0; } }
+      padding: 0; } }
   .section.contact .social {
     margin-bottom: 40px; }
     .section.contact .social a {
@@ -4580,24 +4651,24 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
       margin-bottom: 10px; }
       .section.contact .contact-form .form-group.last input.label {
         float: left;
-        width: 20%;
         height: auto;
-        margin: 8px 0 0 10px;
+        max-width: 25%;
+        margin-left: 10px;
         padding: 0;
         font-weight: 700;
         font-size: 30px;
         color: #FFFFFF;
         border: none;
         background: transparent; }
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 480px) {
           .section.contact .contact-form .form-group.last input.label {
-            width: 15%; } }
+            margin-top: 8px; } }
       .section.contact .contact-form .form-group.last .form-item {
         float: right;
         width: 60%; }
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 480px) {
           .section.contact .contact-form .form-group.last .form-item {
-            width: 75%; } }
+            width: 72%; } }
       .section.contact .contact-form .form-group .error {
         clear: both;
         display: block;
@@ -4613,16 +4684,20 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
       font-size: 16px;
       border: 1px solid #333333;
       outline: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      border-radius: 0;
       transition: background 0.5s ease-in-out 0s;
       background: #FFFFFF; }
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 480px) {
         .section.contact .contact-form input, .section.contact .contact-form textarea {
           height: 60px; } }
       .section.contact .contact-form input:focus, .section.contact .contact-form textarea:focus {
         background: #81C3D7; }
     .section.contact .contact-form textarea {
       height: 80px; }
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 480px) {
         .section.contact .contact-form textarea {
           height: 150px; } }
     .section.contact .contact-form .btn {
@@ -4646,6 +4721,7 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
   transition: background 0.8s ease-in !important; }
 
 .section {
+  clear: both;
   position: relative;
   transition: all 0.8s ease-in;
   /*&.active {
@@ -4667,7 +4743,7 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
   .section > .fp-tableCell {
     position: relative;
     top: -40px; }
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 480px) {
       .section > .fp-tableCell {
         top: -78px; } }
   .section .container {
@@ -4690,15 +4766,21 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
           position: absolute;
           bottom: -100%;
           width: 100%;
-          height: 50px;
+          height: 100%;
           transition: 0.3s;
           background: #333333; }
+          @media all and (min-width: 480px) {
+            .section .container .items .logo:before {
+              height: 50px; } }
         .section .container .items .logo:hover:before {
           bottom: 0; }
         .section .container .items .logo:hover p {
-          bottom: 0;
+          bottom: 20%;
           margin: 0;
           transition-delay: .3s; }
+          @media all and (min-width: 480px) {
+            .section .container .items .logo:hover p {
+              height: 0; } }
         .section .container .items .logo:hover .image {
           -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9);
           -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9);

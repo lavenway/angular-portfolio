@@ -12,14 +12,16 @@
           controlArrows: true,
           autoScrolling: false,
           fitToSection: false,
-          fixedElements: '.navbar',
+          fixedElements: '.navbar, .work-details',
           menu: '#menu',
+          responsiveHeight: '768',
           slidesNavigation: false,
           slidesNavPosition: 'bottom',
           afterResize: function(){
             //console.log('after resize');
             $.fn.fullpage.destroy('all');
-            numberOfSlides();
+            calculateNumberofSlides();
+            initializeFullpage();
           }
         },
         $fullPageOptionsDesktop = {
@@ -27,19 +29,20 @@
           controlArrows: true,
           autoScrolling: false,
           scrollBar: true,
-          fitToSection: true,
-          fixedElements: '.navbar',
+          fitToSection: false,
+          fixedElements: '.navbar, .work-details',
           menu: '#menu',
           navigation: true,
           navigationPosition: 'left',
-          resize : true,
+          responsiveHeight: '768',
           slidesNavigation: false,
           slidesNavPosition: 'bottom',
           afterResize: function(){
             //console.log('after resize');
             $.fn.fullpage.destroy('all');
-            numberOfSlides();
-          },
+            calculateNumberofSlides();
+            initializeFullpage();
+          }
         },
         $fullPage = $('#fullpage'),
         maxNumberOfItems,
@@ -59,7 +62,7 @@
         //console.log('DESKTOP');
         $fullPage.fullpage($fullPageOptionsDesktop);
       } else {
-        //console.log('MOBILE');
+        //console.log('TOUCH DEVICE');
         $fullPage.fullpage($fullPageOptionsTouchDevice);
       }
     }
@@ -308,10 +311,10 @@
     };
 
     //Window resized
-    $(window).resize(function() {
+    /*$(window).resize(function() {
         clearTimeout(resizeId);
         resizeId = setTimeout(doneWindowResize, 500);
-    });
+    });*/
 
 	}
 
@@ -322,9 +325,7 @@
       link: function(scope) {
 
         //console.log('xxx loaded ng repeat in work section xxx');
-
         scope.callbackFn();
-
       },
     };
   }

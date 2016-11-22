@@ -776,22 +776,26 @@
 				{
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"name": "Lorem ipsum dolor",
-					"company": "consectetur"
+					"company": "consectetur",
+					"quote": "ut labore et dolore"
 				},
 				{
 					"description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"name": "Lorem ipsum dolor",
-					"company": "consectetur"
+					"company": "consectetur",
+					"quote": "ut labore et dolore"
 				},
 				{
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
 					"name": "Lorem ipsum dolor",
-					"company": "consectetur"
+					"company": "consectetur",
+					"quote": "ut labore et dolore"
 				},
 				{
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 					"name": "Lorem ipsum dolor",
-					"company": "consectetur"
+					"company": "consectetur",
+					"quote": "ut labore et dolore"
 				}
 			]
 	}],

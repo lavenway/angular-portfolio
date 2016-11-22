@@ -15,8 +15,12 @@
 	.wl-logo {
 		position: relative;
 		width: 100%;
-		max-width: 450px;
+		max-width: 250px;
 		margin: 0 auto 40px;
+
+		@media all and (min-width: 480px) and (min-height: 769px) {
+      max-width: 450px;
+    }
 
 		img {
 			width: 100%;
@@ -30,12 +34,6 @@
 			margin-bottom: 20px;
 			font-family: $font-secondary;
 			font-weight: 900;
-
-			span {
-				display: block;
-				font-size: 30px;
-				line-height: 30px;
-			}
 		}
 
 		h1, h3 {
@@ -44,7 +42,6 @@
 
 		a.portfolio-link {
 			display: inline-block;
-			margin-top: 40px;
 			font-weight: 700;
 			color: $white;
 			cursor: pointer;
@@ -52,7 +49,11 @@
 
 			span {
 				display: block;
-				font-size: 18px;
+				font-size: 16px;
+
+				@media all and (min-width: 480px) and (min-height: 769px) {
+		      font-size: 18px;
+		    }
 			}
 
 			i {
@@ -83,7 +84,12 @@ body[class*=' fp-viewing-secondPage']{
 }
 
 .section.work {
-	overflow: hidden;
+	//overflow: hidden;
+	padding: 100px 0;
+
+	@media all and (min-width: 480px) {
+    padding: 0;
+  }
 
 	.container {
 		position: relative;
@@ -93,7 +99,7 @@ body[class*=' fp-viewing-secondPage']{
 		transform: translateY(-50%);
 		@include transition(.4s);
 
-  	@media all and (min-width: 768px) {
+  	@media all and (min-width: 480px) {
       margin-top: -78px;
     }
 
@@ -133,26 +139,26 @@ body[class*=' fp-viewing-secondPage']{
 *
 ********************************************/
 .work-details {
-	z-index: 5;
-	position: absolute;
+	z-index: 20;
+	position: fixed;
 	top: 0;
 	right: -200%;
 	width: 100%;
 	height: 100%;
+	overflow-y: scroll;
 	@include transition(.4s);
-
 	background: $darkgrey;
 
 	.container {
+
 		position: relative;
+		top: auto;
+		transform: none;
 
-		.section.work & {
-
-			h2 {
-				color: $white;
-			}
-
+		h2 {
+			color: $white;
 		}
+
 	}
 
 	.close {
@@ -165,7 +171,7 @@ body[class*=' fp-viewing-secondPage']{
 		color: $white;
 		text-align: center;
 
-		@media all and (min-width: 768px) {
+		@media all and (min-width: 480px) {
       font-size: 40px;
     }
 
@@ -228,19 +234,22 @@ body[class*=' fp-viewing-secondPage']{
 }
 
 .hidden-menu-active {
+	overflow: hidden !important;
+	height: 100% !important;
 
 	.section.work .container.animate {
-		position: absolute;
+		position: relative;
 		left: -100%;
 	}
 
 	.work-details {
 		right: 0;
 
-		@media all and (min-width: 768px) {
+		@media all and (min-width: 480px) {
       width: 100%;
     }
 	}
+
 }
 
 
@@ -252,41 +261,53 @@ body[class*=' fp-viewing-secondPage']{
 body[class^='fp-viewing-thirdPage'],
 body[class*=' fp-viewing-thirdPage']{
 	#fullpage {
-		background: $bluemediumlight;
+		background: $bluemedium;
 	}
 }
 
 .section.about {
 	overflow: hidden;
-	margin: 100px 0;
+	padding: 100px 0;
 
-	@media all and (min-width: 1024px) {
-    margin: 0;
+	@media all and (min-width: 480px) {
+    padding: 0;
   }
 
 	.container {
 		position: relative;
-		top: 50%;
-		left: 0;
-		margin-top: -40px;
-		transform: translateY(-50%);
+		
+		
+		//height: 100%;
+		//margin-top: -40px;
+		
 		@include transition(.4s);
 
-  	@media all and (min-width: 768px) {
+  	@media all and (min-width: 480px) {
+      top: 50%;
+      left: 0;
       margin-top: -78px;
+      transform: translateY(-50%);
     }
 
-		.fp-tableCell {
-			display: inline-block;
-			vertical-align: top;
-			height: auto !important;
+		> .row {
+
+			.fp-tableCell {
+				display: inline-block;
+				vertical-align: top;
+				height: auto !important;
+			}
 		}
 
+		/*.fp-slides, .fp-controlArrow {
+			margin-bottom: 100px;
+
+			@media all and (min-width: 480px) {
+	      margin-bottom: 0;
+	    }
+		}*/
+
 	}
 
-	h2, p {
-		color: $black;
-	}
 }
 
 
@@ -302,29 +323,68 @@ body[class*=' fp-viewing-thirdPage']{
 }
 
 .section.testimonial {
-	margin: 100px 0;
+	padding: 100px 0;
 	
-	@media all and (min-width: 1024px) {
-    margin: 0;
+	@media all and (min-width: 480px) {
+    padding: 0;
   }
 
-	.container {
+	.items {
+		overflow: hidden;
+		margin: 30px 0;
 
-		.item {
-			
-			position: relative;
-			width: 100%;
-			margin: 10px 0;
+		@media all and (min-width: 480px) {
+    	margin: 60px 0;
+  	}
 
-			@media all and (min-width: 768px) {
+  	.quote {
+  		position: relative;
+  		margin: 20px 0;
+
+  		@media all and (min-width: 480px) {
+      	position: absolute;
+      	left: 0;
+      	width: 50%;
+      	height: 100%;
+      	margin: 0;
+
+      	&.odd {
+      		left: auto;
+					right: 0;
+				}
+    	}
+
+			blockquote {
+	  		position: relative;
+	  		width: 100%;
+	  		font-family: $font-secondary;
+	  		font-size: 30px;
+	  		font-weight: 700;
+	  		color: $white;
+	  		text-align: center;
+
+	  		@media all and (min-width: 480px) {
+	  			position: absolute;
+	  			top: 50%;
+	  			@include transform(translateY(-50%));
+	  		}
+	  	}
+  	}
+
+  	.item {
+  		width: 100%;
+
+  		@media all and (min-width: 480px) {
       	float: right;
       	width: 50%;
-      	margin: 20px 0;
 
       	&.odd {
 					float: left;
 				}
     	}
+  	}
+
+		.item {
 
 			.name, .divider, .company {
 				display: inline-block;
@@ -358,10 +418,10 @@ body[class*=' fp-viewing-thirdPage']{
 }
 
 .section.contact {
-	margin: 60px 0;
+	padding: 60px 0;
 	
-	@media all and (min-width: 1024px) {
-    margin: 0;
+	@media all and (min-width: 480px) {
+    padding: 0;
   }
 
 	.social {
@@ -411,9 +471,9 @@ body[class*=' fp-viewing-thirdPage']{
 
 				input.label {
 					float: left;
-					width: 20%;
 					height: auto;
-					margin: 8px 0 0 10px;
+					max-width: 25%;
+					margin-left: 10px;
 					padding: 0;
 					font-weight: 700;
 					font-size: 30px;
@@ -421,8 +481,8 @@ body[class*=' fp-viewing-thirdPage']{
 					border: none;
 					background: transparent;
 
-					@media all and (min-width: 768px) {
-			      width: 15%;
+					@media all and (min-width: 480px) {
+			      margin-top: 8px;
 			    }
 				}
 
@@ -430,8 +490,8 @@ body[class*=' fp-viewing-thirdPage']{
 					float: right;
 					width: 60%;
 
-					@media all and (min-width: 768px) {
-			      width: 75%;
+					@media all and (min-width: 480px) {
+			      width: 72%;
 			    }
 				}
 
@@ -455,10 +515,12 @@ body[class*=' fp-viewing-thirdPage']{
 			font-size: 16px;
 			border: 1px solid $black;
     	outline: none;
+    	appearance: none;
+    	border-radius:0;
     	@include transition(background 0.5s ease-in-out 0s);
     	background: $white;
 
-    	@media all and (min-width: 768px) {
+    	@media all and (min-width: 480px) {
 	      height: 60px;
 	    }
 
@@ -470,7 +532,7 @@ body[class*=' fp-viewing-thirdPage']{
 		textarea {
 			height: 80px;
 
-			@media all and (min-width: 768px) {
+			@media all and (min-width: 480px) {
 	      height: 150px;
 	    }
 		}
@@ -504,6 +566,7 @@ body[class*=' fp-viewing-thirdPage']{
 }
 
 .section {
+	clear: both;
 	position: relative;
 	@include transition(all 0.8s ease-in);
 
@@ -531,7 +594,7 @@ body[class*=' fp-viewing-thirdPage']{
   	position: relative;
   	top: -40px;
 
-  	@media all and (min-width: 768px) {
+  	@media all and (min-width: 480px) {
       top: -78px;
     }
 	}
@@ -561,9 +624,13 @@ body[class*=' fp-viewing-thirdPage']{
 					position: absolute;
 					bottom: -100%;
 					width: 100%;
-					height: 50px;
+					height: 100%;
 					@include transition(.3s);
 					background: $black;
+
+					@media all and (min-width: 480px) {
+			      height: 50px;
+			    }
 				}
 
 				&:hover {
@@ -572,9 +639,13 @@ body[class*=' fp-viewing-thirdPage']{
 					}
 
 					p {
-						bottom: 0;
+						bottom: 20%;
 						margin: 0;
 						transition-delay: .3s;
+
+						@media all and (min-width: 480px) {
+				      height: 0;
+				    }
 					}
 
 					.image {

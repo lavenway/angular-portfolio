@@ -1,5 +1,5 @@
-function animations() {
-	/*var controller = $.superscrollorama({
+/*function animations() {
+	var controller = $.superscrollorama({
 				isVertical: true,
 				triggerAtCenter: true,
 				playoutAnimations: true
@@ -79,6 +79,6 @@ function animations() {
 		clearTimeout(resizeId);
     resizeId = setTimeout(doneWindowResize, 500);
 
-	});*/
+	});
 
-};
+};*/

@@ -83,14 +83,25 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
 
   @media all and (min-width: 480px) {
     font-size: 50px;
     line-height: 50px;
+  }
+
+  span {
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+
+    @media all and (min-width: 480px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -105,13 +116,23 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media all and (min-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 
 /******************************
 * MAIN NAV
 ******************************/
+.navbar-active {
+  position: absolute;
+  overflow: hidden !important;
+}
+
 .navbar {
   z-index: 20;
   position: fixed;
@@ -121,7 +142,7 @@ h3 {
   text-align: center;
   box-shadow: none;
   transition: all 1s ease;
-  background:rgba(50,50,50,0.3);
+  background: rgba(50,50,50,0.3);
 
   .fp-viewing-firstPage & {
     .logo {
@@ -146,14 +167,14 @@ h3 {
     bottom: -156px;
   }
 
-  &:hover, &.navbar-active {
-    background:rgba(50,50,50,1);
+  &:hover, .navbar-active & {
+    background: rgba(50,50,50,1);
 
     .mobile-menu {
       color: $white;
     }
 
-    .logo {
+    /*.logo {
       img.default {
         display: none;
       }
@@ -161,14 +182,14 @@ h3 {
       img.hover {
         display: block;
       }
-    }
+    }*/
   }
 
-  &.navbar-active {
-    height: auto;
+  .navbar-active & {
+    height: 100%;
   }
 
-  @media all and (min-width: 768px) {
+  @media all and (min-width: 769px) and (min-height: 769px) {
     height: 160px;
   }
 
@@ -178,7 +199,7 @@ h3 {
       font-size: 30px;
     }
 
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 769px) and (min-height: 769px) {
       display: none;
     }
   }
@@ -189,7 +210,7 @@ h3 {
     font-size: 14px;
     text-transform: uppercase;
 
-    @media all and (min-width: 768px) {
+    @media all and (min-width: 769px) and (min-height: 769px) {
       display: block;
     }
 
@@ -199,9 +220,9 @@ h3 {
       min-width: 140px;
       vertical-align: top;
 
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 769px) and (min-height: 769px) {
         width: 10%;
-        min-width: 100px;
+        //min-width: 100px;
       }
 
       &:hover {
@@ -210,7 +231,7 @@ h3 {
         }
       }
 
-      @media all and (min-width: 768px) {
+      @media all and (min-width: 769px) and (min-height: 769px) {
         display: inline-block;
         margin-bottom: 0;
       }
@@ -218,16 +239,16 @@ h3 {
       a {
         display: block;
         width: 100%;
-        margin-bottom: 20px;
+        margin: 10px 0;
         padding: 20px 0;
         font-weight: 700;
         color: $white;
         line-height: normal;
 
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 769px) and (min-height: 769px) {
           display: inline-block;
           width: 100px;
-          margin-bottom: 0;
+          margin: 0;
           padding: 0;
           line-height: 156px;
         }
@@ -255,14 +276,18 @@ h3 {
         padding: 0 20px;
 
         a {
-          display: none;
-          height: 80px;
-          margin: 0 auto;
-          font-size: 0;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 140px;
+          height: auto;
+          margin-left: -70px;
 
-          @media all and (min-width: 768px) {
-            display: block;
-            width: 140px;
+          @media all and (min-width: 769px) and (min-height: 769px) { 
+            position: relative;
+            left: inherit;
+            bottom: inherit;
+            height: 80px;
             margin: 28px auto
           }
 
@@ -299,6 +324,7 @@ h3 {
 }
 
 #fp-nav {
+  z-index: 10;
   left: 0 !important;
   padding: 20px 0;
 }

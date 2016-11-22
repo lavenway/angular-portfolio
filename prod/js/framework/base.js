@@ -41,13 +41,24 @@
           mobileDevice = 'mobile-viewport',
           $mobileHiddenNav = $('.navbar-links'),
           $mobileMenuToggle = $('.mobile-menu'),
+          $mobileMenulinkClose = $('.navbar a'),
           $portfolioAnchor = $('.portfolio-link'),
           tabletDevice = 'tablet-viewport',
 
           handleMobileNavToggle = function () {
-            $mainNav.toggleClass('navbar-active');
+            body.toggleClass('navbar-active');
 
             $mobileHiddenNav.toggle();
+          },
+
+          handleMobileNavClose = function () {
+
+            if(body.hasClass(mobileDevice)) {
+              body.removeClass('navbar-active');
+
+              $mobileHiddenNav.hide();
+            }
+            
           },
 
           handleScrollDetection = function () {
@@ -58,7 +69,7 @@
 
             $.data(this, 'scrollTimer', setTimeout(function() {
                 body.removeClass('scroll-active');
-            }, 1000));
+            }, 500));
 
           },
 
@@ -161,6 +172,9 @@
 
       // MOBILE NAV TOGGLE MENU
       $mobileMenuToggle.on('click', handleMobileNavToggle);
+
+      // MOBILE NAV LINK CLOSE MENU
+      $mobileMenulinkClose.on('click', handleMobileNavClose);
 
       //SCROLL TO PORTFOLIO ANCHOR
       $portfolioAnchor.on('click', handlePortfolioAnchor);
