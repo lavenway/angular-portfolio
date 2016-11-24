@@ -4447,6 +4447,7 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
         -ms-transform: none;
             transform: none; }
     .work-details .container h2 {
+      max-width: 80%;
       color: #FFFFFF; }
   .work-details .close {
     display: block;
@@ -4461,15 +4462,15 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
       .work-details .close {
         font-size: 40px; } }
     .work-details .close:hover {
-      color: #333333; }
+      color: #81C3D7; }
   .work-details .item {
     margin: 60px 0;
     overflow: hidden; }
     .work-details .item .logo {
+      width: 50%;
       margin-bottom: 20px;
       padding: 10px; }
       .work-details .item .logo img {
-        height: 50px;
         margin: 0 auto; }
   .work-details .hero, .work-details .image {
     border-style: solid;
@@ -4479,20 +4480,21 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     border-width: 2px;
     cursor: pointer; }
   .work-details .hero {
-    margin-bottom: 20px;
-    border-width: 4px; }
+    margin-bottom: 10px;
+    border-width: 2px; }
     .work-details .hero img {
       width: 100%; }
   .work-details .description {
-    font-size: 14px;
-    text-align: center; }
+    font-size: 12px; }
   .work-details a.url {
-    font-size: 16px;
+    display: block;
+    margin-bottom: 40px;
+    font-size: 14px;
     font-weight: 700;
     line-height: normal;
     color: #FFFFFF; }
     .work-details a.url:hover {
-      color: #333333; }
+      color: #81C3D7; }
 
 .hidden-menu-active {
   overflow: hidden !important;
@@ -4543,6 +4545,10 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
       display: inline-block;
       vertical-align: top;
       height: auto !important; }
+    .section.about .container .fp-controlArrow {
+      color: #FFFFFF; }
+      .section.about .container .fp-controlArrow:hover {
+        color: #81C3D7; }
 
 /********************************************
 *
@@ -4759,44 +4765,54 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
         display: block;
         position: relative;
         overflow: hidden;
-        border: 1px solid #46494C; }
-        .section .container .items .logo:before {
-          content: "";
-          z-index: 1;
-          position: absolute;
-          bottom: -100%;
-          width: 100%;
-          height: 100%;
-          transition: 0.3s;
-          background: #333333; }
-          @media all and (min-width: 480px) {
-            .section .container .items .logo:before {
-              height: 50px; } }
-        .section .container .items .logo:hover:before {
-          bottom: 0; }
-        .section .container .items .logo:hover p {
-          bottom: 20%;
-          margin: 0;
-          transition-delay: .3s; }
-          @media all and (min-width: 480px) {
-            .section .container .items .logo:hover p {
-              height: 0; } }
-        .section .container .items .logo:hover .image {
-          -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9);
-          -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9);
-          transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9); }
+        border: 1px solid #46494C;
+        /*&:before {
+					content: "";
+					z-index: 1;
+					position: absolute;
+					bottom: -100%;
+					width: 100%;
+					height: 100%;
+					@include transition(.3s);
+					background: $black;
+
+					@media all and (min-width: 480px) {
+			      height: 50px;
+			    }
+				}*/ }
+        .section .container .items .logo:hover {
+          /*&:before {
+						bottom: 0;
+					}*/ }
+          .section .container .items .logo:hover p {
+            bottom: 0;
+            margin: 0;
+            transition-delay: .3s;
+            -webkit-transform: none;
+                -ms-transform: none;
+                    transform: none;
+            /*@media all and (min-width: 480px) {
+				      height: 0;
+				    }*/ }
+          .section .container .items .logo:hover .image {
+            -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9);
+            -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9);
+            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9); }
         .section .container .items .logo p {
           z-index: 1;
           position: absolute;
           bottom: -100%;
           width: 100%;
+          padding: 10px;
           font-size: 16px;
           line-height: 25px;
           text-align: center;
           transition-delay: 0;
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
-          transform: translateY(-50%); }
+          transform: translateY(-50%);
+          transition: 0.1s;
+          background: #333333; }
         .section .container .items .logo .image {
           position: absolute;
           top: 50%;

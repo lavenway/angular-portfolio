@@ -1,7 +1,5 @@
 <section class="section work scrollme">
 
-	<!--<div class="animation-trigger"></div>-->
-
 	<div class="container animate">
 
 		<div class="row">
@@ -22,9 +20,8 @@
 	        data-to="0"
 	        data-translatey="1000">
 	 
-					<div class="items"
-						ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
-						loaded-directive callback-fn="folio.calculateNumberofSlides()">
+					<d*iv class="items"
+						ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true">
 
 						<div class="col-xs-4 col-sm-4 col-md-3">
 
@@ -44,6 +41,8 @@
 					  </div>
 
 					</div>
+
+					<div ng-init="folio.calculateNumberofSlides()"></div>
 
 				</div>
 

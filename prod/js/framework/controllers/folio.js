@@ -56,23 +56,29 @@
 
     //Setup full page
     function initializeFullpage() {
-      //console.log('initialise plugin');
 
-      if($body.hasClass(desktopDevice)){
-        //console.log('DESKTOP');
-        $fullPage.fullpage($fullPageOptionsDesktop);
-      } else {
-        //console.log('TOUCH DEVICE');
-        $fullPage.fullpage($fullPageOptionsTouchDevice);
-      }
+      // This will only run after the ng-repeat has rendered its things to the DOM
+      setTimeout(function() {
+        //console.log('initialise plugin');
+
+        if($body.hasClass(desktopDevice)){
+          //console.log('DESKTOP');
+          $fullPage.fullpage($fullPageOptionsDesktop);
+        } else {
+          //console.log('TOUCH DEVICE');
+          $fullPage.fullpage($fullPageOptionsTouchDevice);
+        }
+        
+      }, 0); // wait...
+
     }
 
     //Window resizing finished
-    function doneWindowResize(){
-      //console.log('window resize finished');
+    /*function doneWindowResize(){
+      console.log('window resize finished');
       calculateNumberofSlides();
       initializeFullpage();
-    }
+    }*/
 
     //Work Section - Wrap every 'X' number of work items to force slider
     function numberOfSlides() {
@@ -95,7 +101,7 @@
       }
 
       function destroySlideHTML() {
-        //console.log('destroy existing HTML');
+        console.log('destroy existing HTML');
 
         /*$(workItemSlides).replaceWith(function() {
          return $(workItemSlider, this);
@@ -121,23 +127,30 @@
 
     // Calculate number of slides required for the work section
     function calculateNumberofSlides() {
-      //console.log('calculate number of slides');
 
-      if ($body.hasClass(mobileDevice)) {
-        maxNumberOfItems = 6;
-        //console.log('mobile device - set max number of items to ' + maxNumberOfItems);
-      } else if ($body.hasClass(tabletDevice)) {
-        maxNumberOfItems = 9;
-        //console.log('tablet device - set max number of items to ' + maxNumberOfItems);
-      } else if ($body.hasClass(desktopDevice)) {
-        maxNumberOfItems = 12;
-        //console.log('desktop device - set max number of items to ' + maxNumberOfItems);
-      }
+      // This will only run after the ng-repeat has rendered its things to the DOM
+      setTimeout(function() {
+        //console.log('calculate number of slides');
 
-      numberOfSlides();
+        if ($body.hasClass(mobileDevice)) {
+          maxNumberOfItems = 6;
+          //console.log('mobile device - set max number of items to ' + maxNumberOfItems);
+        } else if ($body.hasClass(tabletDevice)) {
+          maxNumberOfItems = 9;
+          //console.log('tablet device - set max number of items to ' + maxNumberOfItems);
+        } else if ($body.hasClass(desktopDevice)) {
+          maxNumberOfItems = 12;
+          //console.log('desktop device - set max number of items to ' + maxNumberOfItems);
+        }
 
-      return;
- 
+        numberOfSlides();
+
+        return;
+        
+      }, 0); // wait...
+
+        
+
     }
 
     //Get work item details
@@ -349,7 +362,7 @@
 	angular
 		.module('folioFramework')
 		.controller('folioCtrl', FolioController)
-		.directive('loadedDirective', Loaded)
+		//.directive('loadedDirective', Loaded)
 		.directive('initializeDirective', Initialise);
 
 	FolioController.$inject = ['dataService', '$http'];

@@ -156,6 +156,7 @@ body[class*=' fp-viewing-secondPage']{
 		transform: none;
 
 		h2 {
+			max-width: 80%;
 			color: $white;
 		}
 
@@ -176,7 +177,7 @@ body[class*=' fp-viewing-secondPage']{
     }
 
 		&:hover {
-			color: $black;
+			color: $bluemediumlight;
 		}
 	}
 
@@ -185,11 +186,12 @@ body[class*=' fp-viewing-secondPage']{
 		overflow: hidden;
 
 		.logo  {
+			width: 50%;
 			margin-bottom: 20px;
 			padding: 10px;
 
 			img {
-				height: 50px;
+				//height: 50px;
 				margin: 0 auto;
 			}
 		}
@@ -207,8 +209,8 @@ body[class*=' fp-viewing-secondPage']{
 	}
 
 	.hero {
-		margin-bottom: 20px;
-		border-width: 4px;
+		margin-bottom: 10px;
+		border-width: 2px;
 
 		img {
 			width: 100%;
@@ -216,18 +218,19 @@ body[class*=' fp-viewing-secondPage']{
 	}
 
 	.description {
-		font-size: 14px;
-		text-align: center;
+		font-size: 12px;
 	}
 
 	a.url {
-		font-size: 16px;
+		display: block;
+		margin-bottom: 40px;
+		font-size: 14px;
 		font-weight: 700;
 		line-height: normal;
 		color: $white;
 
 		&:hover {
-			color: $black;
+			color: $bluemediumlight;
 		}
 	}
 
@@ -275,11 +278,6 @@ body[class*=' fp-viewing-thirdPage']{
 
 	.container {
 		position: relative;
-		
-		
-		//height: 100%;
-		//margin-top: -40px;
-		
 		@include transition(.4s);
 
   	@media all and (min-width: 480px) {
@@ -295,6 +293,14 @@ body[class*=' fp-viewing-thirdPage']{
 				display: inline-block;
 				vertical-align: top;
 				height: auto !important;
+			}
+		}
+
+		.fp-controlArrow {
+			color: $white;
+
+			&:hover {
+				color: $bluemediumlight;
 			}
 		}
 
@@ -618,7 +624,7 @@ body[class*=' fp-viewing-thirdPage']{
 				overflow: hidden;
 				border: 1px solid $grey;
 
-				&:before {
+				/*&:before {
 					content: "";
 					z-index: 1;
 					position: absolute;
@@ -631,21 +637,22 @@ body[class*=' fp-viewing-thirdPage']{
 					@media all and (min-width: 480px) {
 			      height: 50px;
 			    }
-				}
+				}*/
 
 				&:hover {
-					&:before {
+					/*&:before {
 						bottom: 0;
-					}
+					}*/
 
 					p {
-						bottom: 20%;
+						bottom: 0;
 						margin: 0;
 						transition-delay: .3s;
+						transform: none;
 
-						@media all and (min-width: 480px) {
+						/*@media all and (min-width: 480px) {
 				      height: 0;
-				    }
+				    }*/
 					}
 
 					.image {
@@ -658,11 +665,14 @@ body[class*=' fp-viewing-thirdPage']{
 					position: absolute;
 					bottom: -100%;
 					width: 100%;
+					padding: 10px;
 					font-size: 16px;
 					line-height: 25px;
 					text-align: center;
 					transition-delay: 0;
 					@include transform(translateY(-50%));
+					@include transition(.1s);
+					background: $black;
 				}
 
 				.image {
