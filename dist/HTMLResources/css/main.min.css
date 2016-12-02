@@ -4453,14 +4453,14 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     display: block;
     z-index: 1;
     position: absolute;
-    top: 54px;
+    top: 60px;
     right: 12px;
     font-size: 28px;
     color: #FFFFFF;
     text-align: center; }
     @media all and (min-width: 480px) {
       .work-details .close {
-        font-size: 40px; } }
+        font-size: 34px; } }
     .work-details .close:hover {
       color: #81C3D7; }
   .work-details .item {
@@ -4477,11 +4477,11 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     border-color: #FFFFFF; }
   .work-details .image {
     margin-bottom: 10px;
-    border-width: 2px;
+    border-width: 1px;
     cursor: pointer; }
   .work-details .hero {
-    margin-bottom: 10px;
-    border-width: 2px; }
+    margin-bottom: 6px;
+    border-width: 1px; }
     .work-details .hero img {
       width: 100%; }
   .work-details .description {
@@ -4492,9 +4492,17 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    word-break: break-word; }
+    .work-details a.url i {
+      display: inline-block;
+      margin-right: 2px; }
     .work-details a.url:hover {
       color: #81C3D7; }
+  .work-details .no-url {
+    font-size: 14px;
+    font-weight: 700;
+    color: red; }
 
 .hidden-menu-active {
   overflow: hidden !important;
@@ -4823,7 +4831,7 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
           transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
           transition: 0.3s; }
           .section .container .items .logo .image img {
-            max-width: 70%;
+            width: 60%;
             margin: 0 auto; }
 
 /*!

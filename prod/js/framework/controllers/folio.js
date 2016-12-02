@@ -48,7 +48,7 @@
         maxNumberOfItems,
 				mobileDevice = 'mobile-viewport',
         randomNumber = Math.floor(Math.random()*8999+1000),
-        resizeId,
+        //resizeId,
         tabletDevice = 'tablet-viewport',
         panelActive = false,
         workItemID = 0,
@@ -69,7 +69,7 @@
           $fullPage.fullpage($fullPageOptionsTouchDevice);
         }
         
-      }, 0); // wait...
+      }, 500); // wait...
 
     }
 
@@ -92,16 +92,19 @@
 
       function buildSlideHTML() {
         //console.log('building the html');
+
         for(var i = 0; i < workItemSlider.length; i+=maxNumberOfItems) {
           //console.log('loop the items and wrap with new HTML');
           workItemSlider.slice(i, i+maxNumberOfItems).wrapAll('<div class="slide"></div>');
         }
 
+        //console.log(workItemSlider.length);
         //console.log('number of work slides ' + workItemSlides.length);
+
       }
 
       function destroySlideHTML() {
-        console.log('destroy existing HTML');
+        //console.log('destroy existing HTML');
 
         /*$(workItemSlides).replaceWith(function() {
          return $(workItemSlider, this);
@@ -147,9 +150,7 @@
 
         return;
         
-      }, 0); // wait...
-
-        
+      }, 500); // wait...
 
     }
 
@@ -332,7 +333,7 @@
 	}
 
 	//Call the function after ng-repeat in work section has finished
-	function Loaded() {
+	/*function Loaded() {
   	return {
       scope: { callbackFn: '&' },
       link: function(scope) {
@@ -341,7 +342,7 @@
         scope.callbackFn();
       },
     };
-  }
+  }*/
 
   //Call the function after the site has rendered
   function Initialise() {
@@ -353,7 +354,7 @@
         setTimeout(function() {
           //console.log('xxx site has rendered initialise the fullpage plugin xxx');
           scope.callbackrenderFn();
-        }, 0); // wait...
+        }, 100); // wait...
 
       } 
   	};

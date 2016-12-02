@@ -2,7 +2,7 @@
 	"JSONHomeSection": [{
 		"header": "Wayne Lavender <span>Front-end Developer</span>",
 		"skills": "HTML | CSS | JS | jQuery | Responsive",
-		"image": "HTMLResources/img/logo-wl-large.png"
+		"image": "HTMLResources/img/logos/logo-wl-large.png"
 	}],
 
 	"JSONWorkSection": [{
@@ -10,754 +10,778 @@
 			"possibilities": [
 				{
 					"itemId": 0,
-					"title": "Lorem ipsum 1",
-					"logo": "HTMLResources/img/logo-ambition.png",
-					"url": "http://www.google.com",
+					"title": "Ambition",
+					"logo": "HTMLResources/img/logos/logo-ambition.png",
+					"url": "",
+					"noUrl": "Site no longer available",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder-hero.png"
+							"url": "HTMLResources/img/work/details-ambition-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
-						},
-						{
-							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder-hero.png"
+							"url": "HTMLResources/img/work/details-ambition-2.jpg"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 1,
-					"title": "Lorem ipsum 2",
-					"logo": "HTMLResources/img/logo-argyllscott.jpg",
-					"url": "http://www.google.com",
+					"title": "Argyll Scott",
+					"logo": "HTMLResources/img/logos/logo-argyllscott.jpg",
+					"url": "http://www.argyllscott.co.uk",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-argyllscott-1.jpg"
+							"url": "HTMLResources/img/work/details-argyllscott-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-argyllscott-2.jpg"
+							"url": "HTMLResources/img/work/details-argyllscott-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-argyllscott-3.jpg"
+							"url": "HTMLResources/img/work/details-argyllscott-3.jpg"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 2,
-					"title": "Lorem ipsum 3",
-					"logo": "HTMLResources/img/logo-berkley.jpg",
-					"url": "http://www.google.com",
+					"title": "Berkley Group",
+					"logo": "HTMLResources/img/logos/logo-berkley.jpg",
+					"url": "",
+					"noUrl": "Site no longer available",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 3,
-					"title": "Lorem ipsum 4",
-					"logo": "HTMLResources/img/logo-boots.png",
-					"url": "http://www.google.com",
+					"title": "Boots",
+					"logo": "HTMLResources/img/logos/logo-boots.png",
+					"url": "http://www.bootshealthandbeauty.com",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 4,
-					"title": "Lorem ipsum 5",
-					"logo": "HTMLResources/img/logo-capita.jpg",
-					"url": "http://www.google.com",
+					"title": "Capita Specialist Recruitment",
+					"logo": "HTMLResources/img/logos/logo-capita.jpg",
+					"url": "https://www.capitaspecialistrecruitment.co.uk",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-capita-1.jpg"
+							"url": "HTMLResources/img/work/details-capita-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-capita-2.jpg"
+							"url": "HTMLResources/img/work/details-capita-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-capita-3.jpg"
+							"url": "HTMLResources/img/work/details-capita-3.jpg"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 5,
-					"title": "Lorem ipsum 6",
-					"logo": "HTMLResources/img/logo-connex.jpg",
-					"url": "http://www.google.com",
+					"title": "Connex Education",
+					"logo": "HTMLResources/img/logos/logo-connex.jpg",
+					"url": "http://www.connex-education.com",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": true
 				},
 				{
 					"itemId": 6,
-					"title": "Lorem ipsum 7",
-					"logo": "HTMLResources/img/logo-ford.png",
-					"url": "http://www.google.com",
+					"title": "Ford Motor Company",
+					"logo": "HTMLResources/img/logos/logo-ford.png",
+					"url": "",
+					"noUrl": "Site no longer available",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 7,
-					"title": "Lorem ipsum 8",
-					"logo": "HTMLResources/img/logo-g4-americas.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "G4 Américas",
+					"logo": "HTMLResources/img/logos/logo-g4americas.jpg",
+					"url": "",
+					"noUrl": "Site no longer available",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 8,
-					"title": "Lorem ipsum 9",
-					"logo": "HTMLResources/img/logo-harnham.jpg",
-					"url": "http://www.google.com",
+					"title": "Harnham",
+					"logo": "HTMLResources/img/logos/logo-harnham.jpg",
+					"url": "http://www.harnham.com",
+					"noUrl": "",
 					"colour": "#000000",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 9,
-					"title": "Lorem ipsum 10",
-					"logo": "HTMLResources/img/logo-hfg.jpg",
-					"url": "http://www.google.com",
+					"title": "HFG",
+					"logo": "HTMLResources/img/logos/logo-hfg.jpg",
+					"url": "http://hfg.co.uk",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 10,
-					"title": "Lorem ipsum 11",
-					"logo": "HTMLResources/img/logo-jonathan-lee.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "Jonathan Lee Recruitment",
+					"logo": "HTMLResources/img/logos/logo-jonathanlee.jpg",
+					"url": "http://www.jonlee.co.uk",
+					"noUrl": "",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 11,
-					"title": "Lorem ipsum 12",
-					"logo": "HTMLResources/img/logo-monarch.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "Monarch IT",
+					"logo": "HTMLResources/img/logos/logo-monarch.jpg",
+					"url": "http://www.monarchit.co.uk",
+					"noUrl": "",
+					"colour": "#ca151a",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": true
 				},
 				{
 					"itemId": 12,
-					"title": "Lorem ipsum 13",
-					"logo": "HTMLResources/img/logo-next.jpg",
-					"url": "http://www.google.com",
+					"title": "Next",
+					"logo": "HTMLResources/img/logos/logo-next.jpg",
+					"url": "LINK TO WAYNES DOMAIN",
+					"noUrl": "",
 					"colour": "#212121",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 13,
-					"title": "Lorem ipsum 14",
-					"logo": "HTMLResources/img/logo-npower.jpg",
-					"url": "http://www.google.com",
+					"title": "NPower",
+					"logo": "HTMLResources/img/logos/logo-npower.jpg",
+					"url": "https://www.npowerjobs.com",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 14,
-					"title": "Lorem ipsum 15",
-					"logo": "HTMLResources/img/logo-opus.jpg",
-					"url": "http://www.google.com",
+					"title": "Opus Recruitment Solutions",
+					"logo": "HTMLResources/img/logos/logo-opus.jpg",
+					"url": "http://www.opusrecruitmentsolutions.com",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 15,
-					"title": "Lorem ipsum 16",
-					"logo": "HTMLResources/img/logo-saccomann.png",
-					"url": "http://www.google.com",
+					"title": "Saccomann",
+					"logo": "HTMLResources/img/logos/logo-saccomann.png",
+					"url": "http://www.saccomann.com",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 16,
-					"title": "Lorem ipsum 17",
-					"logo": "HTMLResources/img/logo-sagarwright.png",
-					"url": "http://www.google.com",
+					"title": "Sagar Wright",
+					"logo": "HTMLResources/img/logos/logo-sagarwright.png",
+					"url": "http://www.sagarwright.co.uk",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": true
 				},
 				{
 					"itemId": 17,
-					"title": "Lorem ipsum 18",
-					"logo": "HTMLResources/img/logo-sanctuary.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "Sanctuary Social Care",
+					"logo": "HTMLResources/img/logos/logo-sanctuary.jpg",
+					"url": "http://www.sanctuarysocialcare.com",
+					"noUrl": "",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 18,
-					"title": "Lorem ipsum 19",
-					"logo": "HTMLResources/img/logo-skills-alliance.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "Skills Alliance",
+					"logo": "HTMLResources/img/logos/logo-skillsalliance.jpg",
+					"url": "http://www.skillsalliance.com",
+					"noUrl": "",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 19,
-					"title": "Lorem ipsum 20",
-					"logo": "HTMLResources/img/logo-subsurface.jpg",
-					"url": "http://www.google.com",
+					"title": "Subsurface Global",
+					"logo": "HTMLResources/img/logos/logo-subsurface.jpg",
+					"url": "http://www.subsurfaceglobal.com",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 20,
-					"title": "Lorem ipsum 21",
-					"logo": "HTMLResources/img/logo-thomas-thor.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					"image": [
-						{
-							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
-						},
-						{
-							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
-						},
-						{
-							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
-							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
-						}
-					],
-					"favourite": false
-				},
-				{
-					"itemId": 21,
-					"title": "Lorem ipsum 22",
-					"logo": "HTMLResources/img/logo-vue.jpg",
-					"url": "http://www.google.com",
+					"title": "Thomas Thor",
+					"logo": "HTMLResources/img/logos/logo-thomasthor.jpg",
+					"url": "http://www.thomas-thor.com",
+					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
+						}
+					],
+					"favourite": false
+				},
+				{
+					"itemId": 21,
+					"title": "Vue Cinemas",
+					"logo": "HTMLResources/img/logos/logo-vue.jpg",
+					"url": "http://careers.myvue.com",
+					"noUrl": "",
+					"colour": "#ffffff",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"image": [
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-placeholder.png"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-placeholder.png"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": true
 				},
 				{
 					"itemId": 22,
-					"title": "Lorem ipsum 23",
-					"logo": "HTMLResources/img/logo-williamalexander.jpg",
-					"url": "http://www.google.com",
+					"title": "William Alexander",
+					"logo": "HTMLResources/img/logos/logo-williamalexander.jpg",
+					"url": "http://www.william-alexander.com",
+					"noUrl": "",
 					"colour": "#c71e23",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 23,
-					"title": "Lorem ipsum 24",
-					"logo": "HTMLResources/img/logo-atkins.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "Atkins Careers",
+					"logo": "HTMLResources/img/logos/logo-atkins.jpg",
+					"url": "",
+					"noUrl": "Site no longer available",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-atkins-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-atkins-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-atkins-3.jpg"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 24,
-					"title": "Lorem ipsum 25",
-					"logo": "HTMLResources/img/logo-kitchentheory.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "Kitchen Theory",
+					"logo": "HTMLResources/img/logos/logo-kitchentheory.jpg",
+					"url": "",
+					"noUrl": "Site no longer available",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 25,
-					"title": "Lorem ipsum 26",
-					"logo": "HTMLResources/img/logo-wearejava.jpg",
-					"url": "http://www.google.com",
+					"title": "We Are Java",
+					"logo": "HTMLResources/img/logos/logo-wearejava.jpg",
+					"url": "WAIT FOR ANTS URL",
+					"noUrl": "",
 					"colour": "#696969",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 26,
-					"title": "Lorem ipsum 27",
-					"logo": "HTMLResources/img/logo-tourismireland.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "Tourism Ireland",
+					"logo": "HTMLResources/img/logos/logo-tourismireland.jpg",
+					"url": "APP STORE LINK",
+					"noUrl": "",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 27,
-					"title": "Lorem ipsum 28",
-					"logo": "HTMLResources/img/logo-bernarvenet.jpg",
-					"url": "http://www.google.com",
-					"colour": "#696969",
+					"title": "Bernar Venet",
+					"logo": "HTMLResources/img/logos/logo-venet.jpg",
+					"url": "WAIT FOR LIVE SITE UTL",
+					"noUrl": "",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false
 				},
 				{
 					"itemId": 28,
-					"title": "Lorem ipsum 29",
-					"logo": "HTMLResources/img/logo-uni.jpg",
-					"url": "http://www.google.com",
+					"title": "University Promotional Flyers",
+					"logo": "HTMLResources/img/logos/logo-uni.jpg",
+					"url": "LINK TO WAYNES DOMAIN",
+					"noUrl": "",
 					"colour": "#696969",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
 					"favourite": false

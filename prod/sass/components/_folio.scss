@@ -166,14 +166,14 @@ body[class*=' fp-viewing-secondPage']{
 		display: block;
 		z-index: 1;
 		position: absolute;
-		top: 54px;
+		top: 60px;
 		right: 12px;
 		font-size: 28px;
 		color: $white;
 		text-align: center;
 
 		@media all and (min-width: 480px) {
-      font-size: 40px;
+      font-size: 34px;
     }
 
 		&:hover {
@@ -204,13 +204,13 @@ body[class*=' fp-viewing-secondPage']{
 
 	.image {
 		margin-bottom: 10px;
-		border-width: 2px;
+		border-width: 1px;
 		cursor: pointer;
 	}
 
 	.hero {
-		margin-bottom: 10px;
-		border-width: 2px;
+		margin-bottom: 6px;
+		border-width: 1px;
 
 		img {
 			width: 100%;
@@ -228,10 +228,22 @@ body[class*=' fp-viewing-secondPage']{
 		font-weight: 700;
 		line-height: normal;
 		color: $white;
+		word-break: break-word;
+
+		i {
+			display: inline-block;
+			margin-right: 2px;
+		}
 
 		&:hover {
 			color: $bluemediumlight;
 		}
+	}
+
+	.no-url {
+		font-size: 14px;
+		font-weight: 700;
+		color: $testred;
 	}
 
 }
@@ -684,7 +696,7 @@ body[class*=' fp-viewing-thirdPage']{
 					@include transition(.3s);
 
 					img {
-						max-width: 70%;
+						width: 60%;
 						margin: 0 auto;
 					}
 				}
