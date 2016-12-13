@@ -21,7 +21,8 @@
 	        data-translatey="1000">
 	 
 					<div class="items"
-						ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true">
+						ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
+						ng-if="work.show != false">
 
 						<div class="col-xs-4 col-sm-4 col-md-3">
 

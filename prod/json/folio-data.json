@@ -28,7 +28,8 @@
 							"url": "HTMLResources/img/work/details-ambition-2.jpg"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 1,
@@ -55,7 +56,8 @@
 							"url": "HTMLResources/img/work/details-argyllscott-3.jpg"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 2,
@@ -82,7 +84,8 @@
 							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": false
 				},
 				{
 					"itemId": 3,
@@ -96,20 +99,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-boots-1.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-boots-2.png"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-boots-3.png"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 4,
@@ -136,7 +140,8 @@
 							"url": "HTMLResources/img/work/details-capita-3.jpg"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 5,
@@ -150,20 +155,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-connex-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-connex-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-connex-3.jpg"
 						}
 					],
-					"favourite": true
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 6,
@@ -190,7 +196,8 @@
 							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 7,
@@ -217,7 +224,8 @@
 							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": false
 				},
 				{
 					"itemId": 8,
@@ -231,20 +239,31 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-harnham-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-harnham-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-harnham-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-harnham-4.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-harnham-5.gif"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 9,
@@ -258,20 +277,26 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-hfg-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-hfg-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-hfg-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-hfg-4.gif"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 10,
@@ -285,20 +310,26 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-jonlee-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-jonlee-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-jonlee-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-jonlee-4.gif"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 11,
@@ -312,20 +343,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-monarch-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-monarch-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-monarch-3.jpg"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 12,
@@ -339,20 +371,56 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-next-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-next-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-next-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-next-4.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-next-5.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-next-6.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-next-7.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-next-8.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-next-9.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-next-10.gif"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 13,
@@ -366,20 +434,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-npower-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-npower-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-npower-3.jpg"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 14,
@@ -393,20 +462,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-opus-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-opus-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-opus-3.jpg"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 15,
@@ -420,20 +490,26 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-saccomann-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-saccomann-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-saccomann-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-saccomann-4.gif"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 16,
@@ -447,20 +523,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-sagar-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-sagar-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-sagar-3.jpg"
 						}
 					],
-					"favourite": true
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 17,
@@ -474,20 +551,26 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-sanctuary-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-sanctuary-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-sanctuary-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-sanctuary-4.gif"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 18,
@@ -501,20 +584,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-skillsalliance-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-skillsalliance-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-skillsalliance-3.jpg"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": false
 				},
 				{
 					"itemId": 19,
@@ -528,20 +612,26 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-subsurface-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-subsurface-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-subsurface-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-subsurface-4.gif"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 20,
@@ -555,20 +645,26 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-thomasthor-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-thomasthor-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-thomasthor-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-thomasthor-4.gif"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 21,
@@ -582,20 +678,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-vue-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-vue-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-vue-3.jpg"
 						}
 					],
-					"favourite": true
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 22,
@@ -609,20 +706,26 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-williamalex-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-williamalex-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-williamalex-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-williamalex-4.gif"
 						}
 					],
-					"favourite": false
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 23,
@@ -649,7 +752,8 @@
 							"url": "HTMLResources/img/work/details-atkins-3.jpg"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 24,
@@ -676,7 +780,8 @@
 							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 25,
@@ -703,7 +808,8 @@
 							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 26,
@@ -730,7 +836,8 @@
 							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				},
 				{
 					"itemId": 27,
@@ -744,20 +851,21 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-venet-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-venet-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-venet-3.jpg"
 						}
 					],
-					"favourite": false
+					"favourite": true,
+					"show": true
 				},
 				{
 					"itemId": 28,
@@ -784,7 +892,8 @@
 							"url": "HTMLResources/img/work/details-placeholder.png"
 						}
 					],
-					"favourite": false
+					"favourite": false,
+					"show": true
 				}
 			]
 	}],

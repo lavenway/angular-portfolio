@@ -55,7 +55,7 @@ p {
 
 ::selection {
     color: $white; 
-    background: $bluebase;
+    background: $bluemediumlight;
 }
 
 
@@ -189,7 +189,7 @@ h3 {
     height: 100%;
   }
 
-  @media all and (min-width: 769px) and (min-height: 769px) {
+  @media all and (min-width: 769px) and (min-height: 980px) {
     height: 160px;
   }
 
@@ -199,7 +199,7 @@ h3 {
       font-size: 30px;
     }
 
-    @media all and (min-width: 769px) and (min-height: 769px) {
+    @media all and (min-width: 769px) and (min-height: 980px) {
       display: none;
     }
   }
@@ -210,7 +210,7 @@ h3 {
     font-size: 14px;
     text-transform: uppercase;
 
-    @media all and (min-width: 769px) and (min-height: 769px) {
+    @media all and (min-width: 769px) and (min-height: 980px) {
       display: block;
     }
 
@@ -220,7 +220,7 @@ h3 {
       min-width: 140px;
       vertical-align: top;
 
-      @media all and (min-width: 769px) and (min-height: 769px) {
+      @media all and (min-width: 769px) and (min-height: 980px) {
         width: 10%;
         //min-width: 100px;
       }
@@ -231,7 +231,7 @@ h3 {
         }
       }
 
-      @media all and (min-width: 769px) and (min-height: 769px) {
+      @media all and (min-width: 769px) and (min-height: 980px) {
         display: inline-block;
         margin-bottom: 0;
       }
@@ -245,7 +245,7 @@ h3 {
         color: $white;
         line-height: normal;
 
-        @media all and (min-width: 769px) and (min-height: 769px) {
+        @media all and (min-width: 769px) and (min-height: 980px) {
           display: inline-block;
           width: 100px;
           margin: 0;
@@ -283,7 +283,7 @@ h3 {
           height: auto;
           margin-left: -70px;
 
-          @media all and (min-width: 769px) and (min-height: 769px) { 
+          @media all and (min-width: 769px) and (min-height: 980px) { 
             position: relative;
             left: inherit;
             bottom: inherit;
