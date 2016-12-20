@@ -4041,9 +4041,21 @@ a img {
   border: none; }
 
 img {
-  border: none;
+  display: block;
   max-width: 100%;
-  display: block; }
+  border: none;
+  image-rendering: optimizeSpeed;
+  /*                     */
+  image-rendering: -moz-crisp-edges;
+  /* Firefox             */
+  image-rendering: -o-crisp-edges;
+  /* Opera               */
+  image-rendering: -webkit-optimize-contrast;
+  /* Chrome (and Safari) */
+  image-rendering: optimize-contrast;
+  /* CSS3 Proposed       */
+  /*-ms-interpolation-mode: nearest-neighbor;*/
+  /* IE8+                */ }
 
 strong {
   font-weight: 700; }
@@ -4051,7 +4063,7 @@ strong {
 p {
   margin-bottom: 20px;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 24px;
   color: #FFFFFF; }
 
 ::-moz-selection {
@@ -4070,7 +4082,7 @@ h1, h3, h4, h5, h6 {
   color: #FFFFFF; }
 
 h2 {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   color: #FFFFFF; }
 
 h2, h3, h4, h5, h6 {
@@ -4129,8 +4141,10 @@ h3 {
   height: 80px;
   text-align: center;
   box-shadow: none;
-  transition: all 1s ease;
-  background: rgba(50, 50, 50, 0.3); }
+  background: #323232; }
+  @media all and (min-width: 480px) {
+    .navbar {
+      background: rgba(50, 50, 50, 0.3); } }
   .fp-viewing-firstPage .navbar .logo {
     width: 0;
     min-width: 0;
@@ -4162,12 +4176,17 @@ h3 {
   @media all and (min-width: 769px) and (min-height: 980px) {
     .navbar {
       height: 160px; } }
-  .navbar .mobile-menu i {
-    padding: 26px;
-    font-size: 30px; }
-  @media all and (min-width: 769px) and (min-height: 980px) {
-    .navbar .mobile-menu {
-      display: none; } }
+  .navbar .mobile-menu {
+    color: #FFFFFF; }
+    @media all and (min-width: 480px) {
+      .navbar .mobile-menu {
+        color: #2E4057; } }
+    .navbar .mobile-menu i {
+      padding: 26px;
+      font-size: 30px; }
+    @media all and (min-width: 769px) and (min-height: 980px) {
+      .navbar .mobile-menu {
+        display: none; } }
   .navbar ul {
     display: none;
     margin: 0 2%;
@@ -4262,7 +4281,7 @@ h3 {
 .fp-controlArrow {
   top: auto;
   left: 50% !important;
-  bottom: -46px;
+  bottom: -60px;
   border: none;
   width: 20px !important;
   height: 30px; }
@@ -4354,7 +4373,7 @@ footer {
   .section.home .wl-logo {
     position: relative;
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     margin: 0 auto 40px; }
     @media all and (min-width: 480px) and (min-height: 769px) {
       .section.home .wl-logo {
@@ -4363,14 +4382,20 @@ footer {
       width: 100%; }
   .section.home .text {
     position: relative; }
+    .section.home .text h1, .section.home .text h3 {
+      position: relative; }
     .section.home .text h1 {
       margin-bottom: 20px;
       font-family: "Titillium Web", sans-serif;
       font-weight: 900; }
-    .section.home .text h1, .section.home .text h3 {
-      position: relative; }
+    .section.home .text p {
+      font-size: 14px; }
+      @media all and (min-width: 480px) {
+        .section.home .text p {
+          font-size: 18px; } }
     .section.home .text a.portfolio-link {
-      display: inline-block;
+      display: none;
+      /*display: inline-block;*/
       font-weight: 700;
       color: #FFFFFF;
       cursor: pointer;
@@ -4420,7 +4445,10 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     .section.work .container h2 {
       color: #333333; }
     .section.work .container .items .logo {
-      min-height: 190px; }
+      min-height: 100px; }
+      @media all and (min-width: 480px) {
+        .section.work .container .items .logo {
+          min-height: 190px; } }
       .section.work .container .items .logo p {
         margin: 0;
         font-weight: normal; }
@@ -4460,7 +4488,7 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     text-align: center; }
     @media all and (min-width: 480px) {
       .work-details .close {
-        right: 0;
+        right: 20px;
         font-size: 34px; } }
     .work-details .close:hover {
       color: #81C3D7; }
@@ -4502,8 +4530,13 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
       height: 100%;
       margin: 0 auto; }
   .work-details .hero {
+    max-height: 300px;
+    overflow-y: auto;
     margin-bottom: 6px;
     border-width: 2px; }
+    @media all and (min-width: 480px) {
+      .work-details .hero {
+        max-height: 600px; } }
     .work-details .hero img {
       width: 100%; }
   .work-details .description {
@@ -4518,7 +4551,7 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     word-break: break-word; }
     .work-details a.url i {
       display: inline-block;
-      margin-right: 2px; }
+      margin-right: 8px; }
     .work-details a.url:hover {
       color: #81C3D7; }
   .work-details .no-url {
@@ -4548,10 +4581,14 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
   background: #2F6690; }
 
 .section.about {
-  overflow: hidden;
+  margin-bottom: 100px;
   padding: 100px 0; }
+  @media all and (max-width: 480px) {
+    .section.about {
+      height: auto !important; } }
   @media all and (min-width: 480px) {
     .section.about {
+      margin-bottom: 0;
       padding: 0; } }
   .section.about .container {
     position: relative;
@@ -4571,14 +4608,48 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%); } }
+    .section.about .container .slide {
+      padding: 0 1px; }
     .section.about .container > .row .fp-tableCell {
       display: inline-block;
       vertical-align: top;
       height: auto !important; }
     .section.about .container .fp-controlArrow {
+      bottom: -30px;
       color: #FFFFFF; }
       .section.about .container .fp-controlArrow:hover {
         color: #81C3D7; }
+    .section.about .container .logo {
+      overflow: hidden;
+      max-width: 80%;
+      margin: 0 auto 20px; }
+      @media all and (min-width: 480px) {
+        .section.about .container .logo {
+          max-width: none; } }
+      .section.about .container .logo.no-colour img {
+        padding: 0; }
+      .section.about .container .logo img {
+        max-height: 100px;
+        margin: 0 auto;
+        padding: 20px; }
+        @media all and (min-width: 480px) {
+          .section.about .container .logo img {
+            max-height: none; } }
+    .section.about .container .details li {
+      position: relative; }
+      .section.about .container .details li i {
+        position: absolute;
+        top: 6px;
+        font-size: 12px;
+        color: #FFFFFF; }
+      .section.about .container .details li p {
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 10px; }
+        @media all and (min-width: 480px) {
+          .section.about .container .details li p {
+            margin-bottom: 20px;
+            font-size: 18px; } }
 
 /********************************************
 *
@@ -4831,11 +4902,11 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
         .section .container .items .logo p {
           z-index: 1;
           position: absolute;
-          bottom: -100%;
+          bottom: -150%;
           width: 100%;
           padding: 10px;
-          font-size: 16px;
-          line-height: 25px;
+          font-size: 12px;
+          line-height: 18px;
           text-align: center;
           transition-delay: 0;
           -webkit-transform: translateY(-50%);
@@ -4843,6 +4914,10 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
           transform: translateY(-50%);
           transition: 0.1s;
           background: #333333; }
+          @media all and (min-width: 480px) {
+            .section .container .items .logo p {
+              font-size: 16px;
+              line-height: 25px; } }
         .section .container .items .logo .image {
           position: absolute;
           top: 50%;
@@ -4853,8 +4928,11 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
           transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
           transition: 0.3s; }
           .section .container .items .logo .image img {
-            width: 60%;
+            width: 80%;
             margin: 0 auto; }
+            @media all and (min-width: 480px) {
+              .section .container .items .logo .image img {
+                width: 60%; } }
 
 /*!
  * Angular Material Design

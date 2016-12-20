@@ -81,7 +81,7 @@
 
         <div class="row">        
           <div class="col-xs-12">
-            <section class="section work scrollme">
+            <section class="section work scrollme-desktop">
 
             	<div class="container animate">
 
@@ -89,46 +89,34 @@
 
             			<div class="col-xs-12">
 
-            				<h2 class="animateme"
-            						data-when="enter"
-            		        data-from="1"
-            		        data-to="0"
-            		        data-translatex="-1000">
+            				<h2>
             		        {{folio.dataService.JSONWorkSection[0].header}}
             		    </h2>
 
-            		    <div class="animateme"
-            					data-when="enter"
-            	        data-from="1"
-            	        data-to="0"
-            	        data-translatey="1000">
-            	 
-            					<div class="items"
-            						ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
-            						ng-if="work.show != false">
+            				<div class="items"
+            					ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
+            					ng-if="work.show !=  false">
 
-            						<div class="col-xs-4 col-sm-4 col-md-3">
+            					<div class="col-xs-4 col-sm-4 col-md-3">
 
-            							<a href="#"
-            								 ng-attr-style="background: {{work.colour}}"
-            								 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
-            								 class="logo">
+            						<a href="#"
+            							 ng-attr-style="background: {{work.colour}}"
+            							 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
+            							 class="logo">
 
-            								<p>{{work.title}}</p>
+            							<p>{{work.title}}</p>
 
-            								<div class="image">
-            					  			<img ng-src="{{work.logo}}">
-            					  		</div>
+            							<div class="image">
+            				  			<img ng-src="{{work.logo}}">
+            				  		</div>
 
-            					  	</a>
+            				  	</a>
 
-            					  </div>
-
-            					</div>
-
-            					<div ng-init="folio.calculateNumberofSlides()"></div>
+            				  </div>
 
             				</div>
+
+            				<div ng-init="folio.calculateNumberofSlides()"></div>
 
             			</div>
 
@@ -168,7 +156,7 @@
 
 	            								<a class="url" href="{{workItem.url}}"
 	            									 ng-if="workItem.url !==''">
-	            									<span>{{workItem.url}}</span>
+	            									<span><i class="fa fa-external-link-square"></i>View site</span>
 	            								</a>
 
 	            								<span class="no-url"
@@ -184,30 +172,23 @@
 
 	            									<div class="col-xs-12">
 
-	            										<div class="row">
 	            										
-	            											<div class="hero"
-	            												ng-repeat="workItemDetails in workItem.image"
-	            												ng-show="folio.isActive($index)">
+	            										<div class="hero"
+	            											ng-repeat="workItemDetails in workItem.image"
+	            											ng-show="folio.isActive($index)">
 	            												<img alt="{{workItemDetails.name}}" title="{{workItemDetails.name}}" ng-src="{{workItemDetails.url}}">
-	            											</div>
-
-	            											<!--<div ng-repeat="workItemDetails in workItem.image">
-
-	            												<p class="description" ng-show="folio.isActive($index)">{{workItemDetails.description}}</p>
-
-	            											</div>-->
-
 	            										</div>
 
-	            										<div class="row" >
+	            										<!--<div ng-repeat="workItemDetails in workItem.image">
 
-	            											<div class="image" ng-repeat="workItemDetails in workItem.image"
-	            												ng-click="folio.updateThumbDetails($index);"
-	            												ng-class="{'active':folio.isActive($index)}">
-	            												<img ng-src="{{workItemDetails.url}}">
-	            											</div>
+	            											<p class="description" ng-show="folio.isActive($index)">{{workItemDetails.description}}</p>
 
+	            										</div>-->
+
+	            										<div class="image" ng-repeat="workItemDetails in workItem.image"
+	            											ng-click="folio.updateThumbDetails($index);"
+	            											ng-class="{'active':folio.isActive($index)}">
+	            											<img ng-src="{{workItemDetails.url}}">
 	            										</div>
 
 	            									</div>

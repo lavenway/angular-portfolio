@@ -15,7 +15,7 @@
 					"url": "",
 					"noUrl": "Site no longer available",
 					"colour": "#ffffff",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
@@ -176,24 +176,29 @@
 					"title": "Ford Motor Company",
 					"logo": "HTMLResources/img/logos/logo-ford.png",
 					"url": "",
-					"noUrl": "Site no longer available",
+					"noUrl": "App no longer available in the app store",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-ford-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-ford-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-ford-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-ford-4.jpg"
 						}
 					],
 					"favourite": true,
@@ -363,7 +368,7 @@
 					"itemId": 12,
 					"title": "Next",
 					"logo": "HTMLResources/img/logos/logo-next.jpg",
-					"url": "LINK TO WAYNES DOMAIN",
+					"url": "http://next.cloudstage.4matnetworks.com/customer-services",
 					"noUrl": "",
 					"colour": "#212121",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -781,7 +786,7 @@
 						}
 					],
 					"favourite": false,
-					"show": true
+					"show": false
 				},
 				{
 					"itemId": 25,
@@ -809,13 +814,13 @@
 						}
 					],
 					"favourite": false,
-					"show": true
+					"show": false
 				},
 				{
 					"itemId": 26,
 					"title": "Tourism Ireland",
 					"logo": "HTMLResources/img/logos/logo-tourismireland.jpg",
-					"url": "APP STORE LINK",
+					"url": "https://appsto.re/gb/hzJ4D.i",
 					"noUrl": "",
 					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -823,17 +828,27 @@
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-tourismireland-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-tourismireland-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-tourismireland-3.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-tourismireland-4.jpg"
+						},
+						{
+							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+							"name": "Lorem ipsom dolor",
+							"url": "HTMLResources/img/work/details-tourismireland-5.jpg"
 						}
 					],
 					"favourite": false,
@@ -870,21 +885,21 @@
 				{
 					"itemId": 28,
 					"title": "University Promotional Flyers",
-					"logo": "HTMLResources/img/logos/logo-uni.jpg",
-					"url": "LINK TO WAYNES DOMAIN",
+					"logo": "HTMLResources/img/logos/logo-unihuddersfield.jpg",
+					"url": "",
 					"noUrl": "",
-					"colour": "#696969",
+					"colour": "#ffffff",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 					"image": [
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-uni-1.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
 							"name": "Lorem ipsom dolor",
-							"url": "HTMLResources/img/work/details-placeholder.png"
+							"url": "HTMLResources/img/work/details-uni-2.jpg"
 						},
 						{
 							"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
@@ -900,17 +915,91 @@
 
 	"JSONAboutSection": [{
 			"header": "Now some background about me...",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+			"sections": [
+				{
+					"image": "HTMLResources/img/logos/logo-wayne.jpg",
+					"colour": "transparent",
+					"details": [
+						{
+							"bullet": "I am an experienced Front end developer who embraces the latest Digital trends. Working as part of a team or by myself, I like to contribute and express ideas to develop responsive, pixel perfect websites from concept through to final output."
+						},
+						{
+							"bullet": "Skilled in HTML, HTML/5, CSS/3, LESS/SASS, Javascript, jQuery, AngularJS 1 Wordpress, Grunt, Gulp, Git, Bootstrap , cross browser testing."
+						}
+					]
+				},
+				{
+					"image": "HTMLResources/img/logos/logo-rhapsody.jpg",
+					"colour": "#ffffff",
+					"details": [
+						{
+							"bullet": "Lead the development of all templates provided by the UX department"
+						},
+						{
+							"bullet": "CSS/SCSS, JavaScript, JQuery, Bootstrap, Angular, Grunt, Gulp, responsive website development"
+						},
+						{
+							"bullet": "Worked with an offshore back-end development team regarding all implementation matters"
+						},
+						{
+							"bullet": "Liaised with the Technical Director on the development of internal systems and products"
+						}
+					]
+				},
+				{
+					"image": "HTMLResources/img/logos/logo-4mat.jpg",
+					"colour": "#ffffff",
+					"details": [
+						{
+							"bullet": "Integrated custom designs into an existing ASP.NET framework"
+						},
+						{
+							"bullet": "HTML, CSS, JavaScript and JQuery, Bootstrap"
+						},
+						{
+							"bullet": "Responsive website development"
+						},
+						{
+							"bullet": "Cross-browser testing"
+						},
+						{
+							"bullet": "Provided quotations for project managers and the sales team"
+						}
+					]
+				},
+				{
+					"image": "HTMLResources/img/logos/logo-burrows.jpg",
+					"colour": "#0192bf",
+					"details": [
+						{
+							"bullet": "Building HTML and CSS websites from creative concepts"
+						},
+						{
+							"bullet": "Created CSS styling for Mobile and Tablet applications"
+						},
+						{
+							"bullet": "Generated assets for tablet applications"
+						},
+						{
+							"bullet": "Production and roll-out of multiple tablet applications"
+						},
+						{
+							"bullet": "Produced HTML content for websites"
+						}
+					]
+				}
+			]
 	}],
 
 	"JSONTestimonialSection": [{
 			"header": "And the nice things people have said about my work...",
 			"possibilities": [
 				{
-					"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-					"name": "Lorem ipsum dolor",
-					"company": "consectetur",
-					"quote": "ut labore et dolore"
+					"description": "I worked with Wayne for 12 months while at Rhapsody, during this time we worked on a number of complex builds and his knowledge and expertise helped in the smooth delivery of these projects. When clients presented problems he would work through these to find a solution to meet their needs. He also worked closely with our offshore team and would help and assist them when required. Wayne is a first class coder and I would have no problem in recommending him.",
+					"name": "Russell Wilding",
+					"company": "Former Project Manager at Rhapsody",
+					"quote": "first class coder"
 				},
 				{
 					"description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",

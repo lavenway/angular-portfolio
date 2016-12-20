@@ -77,29 +77,19 @@
         <!-- Section 1 - Home -->
         <section class="section home">
 
-        	<div class="container scrollme">
+        	<div class="container">
 
-        		<div class="wl-logo animateme"
-                data-when="enter"
-                data-from="0"
-                data-to="1"
-                data-crop="true",
-                data-scale="0.8">
+        		<div class="wl-logo">
 
         			<img ng-src="{{folio.dataService.JSONHomeSection[0].image}}">
 
         		</div>
 
-        		<div class="text animateme"
-        				data-when="span"
-                data-from="0"
-                data-to="1"
-                data-crop="true",
-                data-translatey="-200">
+        		<div class="text">
 
         	  	<h1 ng-bind-html="folio.dataService.JSONHomeSection[0].header">{{folio.dataService.JSONHomeSection[0].header}}</h1>
 
-        	  	<h3>{{folio.dataService.JSONHomeSection[0].skills}}</h3>
+        	  	<p>{{folio.dataService.JSONHomeSection[0].skills}}</p>
 
         	  	<a class="portfolio-link" href="#">
         	  		<span>Portfolio</span>
@@ -112,7 +102,7 @@
         	
         </section>
         <!-- Section 2 - Portfolio -->
-        <section class="section work scrollme">
+        <section class="section work scrollme-desktop">
 
         	<div class="container animate">
 
@@ -120,46 +110,34 @@
 
         			<div class="col-xs-12">
 
-        				<h2 class="animateme"
-        						data-when="enter"
-        		        data-from="1"
-        		        data-to="0"
-        		        data-translatex="-1000">
+        				<h2>
         		        {{folio.dataService.JSONWorkSection[0].header}}
         		    </h2>
 
-        		    <div class="animateme"
-        					data-when="enter"
-        	        data-from="1"
-        	        data-to="0"
-        	        data-translatey="1000">
-        	 
-        					<div class="items"
-        						ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
-        						ng-if="work.show != false">
+        				<div class="items"
+        					ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
+        					ng-if="work.show !=  false">
 
-        						<div class="col-xs-4 col-sm-4 col-md-3">
+        					<div class="col-xs-4 col-sm-4 col-md-3">
 
-        							<a href="#"
-        								 ng-attr-style="background: {{work.colour}}"
-        								 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
-        								 class="logo">
+        						<a href="#"
+        							 ng-attr-style="background: {{work.colour}}"
+        							 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
+        							 class="logo">
 
-        								<p>{{work.title}}</p>
+        							<p>{{work.title}}</p>
 
-        								<div class="image">
-        					  			<img ng-src="{{work.logo}}">
-        					  		</div>
+        							<div class="image">
+        				  			<img ng-src="{{work.logo}}">
+        				  		</div>
 
-        					  	</a>
+        				  	</a>
 
-        					  </div>
-
-        					</div>
-
-        					<div ng-init="folio.calculateNumberofSlides()"></div>
+        				  </div>
 
         				</div>
+
+        				<div ng-init="folio.calculateNumberofSlides()"></div>
 
         			</div>
 
@@ -199,7 +177,7 @@
 
 	        								<a class="url" href="{{workItem.url}}"
 	        									 ng-if="workItem.url !==''">
-	        									<span>{{workItem.url}}</span>
+	        									<span><i class="fa fa-external-link-square"></i>View site</span>
 	        								</a>
 
 	        								<span class="no-url"
@@ -215,30 +193,23 @@
 
 	        									<div class="col-xs-12">
 
-	        										<div class="row">
 	        										
-	        											<div class="hero"
-	        												ng-repeat="workItemDetails in workItem.image"
-	        												ng-show="folio.isActive($index)">
+	        										<div class="hero"
+	        											ng-repeat="workItemDetails in workItem.image"
+	        											ng-show="folio.isActive($index)">
 	        												<img alt="{{workItemDetails.name}}" title="{{workItemDetails.name}}" ng-src="{{workItemDetails.url}}">
-	        											</div>
-
-	        											<!--<div ng-repeat="workItemDetails in workItem.image">
-
-	        												<p class="description" ng-show="folio.isActive($index)">{{workItemDetails.description}}</p>
-
-	        											</div>-->
-
 	        										</div>
 
-	        										<div class="row" >
+	        										<!--<div ng-repeat="workItemDetails in workItem.image">
 
-	        											<div class="image" ng-repeat="workItemDetails in workItem.image"
-	        												ng-click="folio.updateThumbDetails($index);"
-	        												ng-class="{'active':folio.isActive($index)}">
-	        												<img ng-src="{{workItemDetails.url}}">
-	        											</div>
+	        											<p class="description" ng-show="folio.isActive($index)">{{workItemDetails.description}}</p>
 
+	        										</div>-->
+
+	        										<div class="image" ng-repeat="workItemDetails in workItem.image"
+	        											ng-click="folio.updateThumbDetails($index);"
+	        											ng-class="{'active':folio.isActive($index)}">
+	        											<img ng-src="{{workItemDetails.url}}">
 	        										</div>
 
 	        									</div>
@@ -263,7 +234,7 @@
 
         </section>
         <!-- Section 3 - About -->
-        <section class="section about scrollme">
+        <section class="section about scrollme-desktop">
 
         	<div class="container">
 
@@ -271,37 +242,41 @@
 
         			<div class="col-xs-12">
 
-        				<h2 class="animateme"
-        						data-when="enter"
-        		        data-from="1"
-        		        data-to="0"
-        		        data-translatex="-1000">
+        				<h2>
         		        {{folio.dataService.JSONAboutSection[0].header}}
         		    </h2>
 
-        		    <div class="animateme"
-        						data-when="enter"
-        		        data-from="1"
-        		        data-to="0"
-        		        data-translatex="2000">
+        				<div class="slide" ng-repeat="aboutItem in folio.dataService.JSONAboutSection[0].sections">
 
-        					<div class="slide">
+        					<div class="row"> 
 
-        						<p>{{folio.dataService.JSONAboutSection[0].description}}</p>
+        	       		<div class="col-xs-12 col-sm-3">
 
-        					</div>
+        	       			<div class="logo" ng-attr-style="background: {{aboutItem.colour}}" ng-class="{true: 'no-colour'}[aboutItem.colour == 'transparent']">
 
-        					<div class="slide">
+        	       				<img ng-src="{{aboutItem.image}}">
 
-        						<p>xxxxxx</p>
-        						
-        					</div>
+        	       			</div>
 
-        					<div class="slide">
+        	       		</div>
 
-        						<p>sssssss</p>
-        						
-        					</div>
+        	       		<div class="col-xs-12 col-sm-offset-1 col-sm-8">
+
+        	       			<ul class="details">
+
+        	       				<li ng-repeat="aboutItemList in aboutItem.details">
+
+        	       					<i class="fa fa-chevron-right"></i>
+
+        	       					<p>{{aboutItemList.bullet}}</p>
+
+        	       				</li>
+
+        	       			</ul>
+
+        	       		</div>
+
+        	      	</div>
 
         				</div>
 
@@ -313,7 +288,7 @@
         	
         </section>
         <!-- Section 4 - Agencies -->
-        <section class="section testimonial scrollme">
+        <section class="section testimonial scrollme-desktop">
 
         	<div class="container">
 
@@ -321,46 +296,35 @@
 
         			<div class="col-xs-12">
 
-        				<h2 class="animateme"
-        						data-when="enter"
-        		        data-from="1"
-        		        data-to="0"
-        		        data-translatex="-1000">
+        				<h2>
         		        {{folio.dataService.JSONTestimonialSection[0].header}}
         		    </h2>
 
-        		    <div class="animateme"
-        		    		data-when="enter"
-        		        data-from="1"
-        		        data-to="0"
-        		        data-translatex="-2000">
+        		  	<div class="items"
+        		  			ng-repeat="testimonial in folio.dataService.JSONTestimonialSection[0].possibilities | limitTo:3"
+        		  			loaded-directive callback-fn="folio.randomizeArray">
 
-        			  	<div class="items"
-        			  			ng-repeat="testimonial in folio.dataService.JSONTestimonialSection[0].possibilities | limitTo:3"
-        			  			loaded-directive callback-fn="folio.randomizeArray">
+        					<div class="quote" ng-class-odd="'odd'" ng-class-even="'even'">
 
-        						<div class="quote" ng-class-odd="'odd'" ng-class-even="'even'">
+        						<blockquote>
+        							&#34;
+        							{{testimonial.quote}}
+        							&#34;
+        						</blockquote>
 
-        							<blockquote>
-        								&#34;
-        								{{testimonial.quote}}
-        								&#34;
-        							</blockquote>
-
-        						</div>
-
-        						<div class="item item-{{$index}}" ng-class-odd="'odd'" ng-class-even="'even'">
-
-        							<p class="description">{{testimonial.description}}</p>
-
-        							<p class="name">{{testimonial.name}}</p>
-
-        							<p class="divider">&#45;</p>
-
-        					  	<p class="company"></b>{{testimonial.company}}</p>
-
-        				  	</div>
         					</div>
+
+        					<div class="item item-{{$index}}" ng-class-odd="'odd'" ng-class-even="'even'">
+
+        						<p class="description">{{testimonial.description}}</p>
+
+        						<p class="name">{{testimonial.name}}</p>
+
+        						<p class="divider">&#45;</p>
+
+        				  	<p class="company"></b>{{testimonial.company}}</p>
+
+        			  	</div>
 
         				</div>
 
@@ -372,23 +336,15 @@
 
         </section>
         <!-- Section 5 - Contact -->
-        <section class="section contact scrollme">
+        <section class="section contact scrollme-desktop">
 
         	<div class="container">
 
-        		<h2 class="animateme"
-        				data-when="enter"
-                data-from="1"
-                data-to="0"
-                data-translatex="-1000">
+        		<h2>
         			{{folio.dataService.JSONContactSection[0].header}}
         		</h2>
 
-        		<div class="contact-form animateme"
-        				data-when="enter"
-                data-from="1"
-                data-to="0"
-                data-translatey="500">
+        		<div class="contact-form">
 
         			<h3>{{folio.dataService.JSONContactSection[0].subheaderone}}</h3>
 

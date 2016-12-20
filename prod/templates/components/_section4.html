@@ -1,4 +1,4 @@
-<section class="section testimonial scrollme">
+<section class="section testimonial scrollme-desktop">
 
 	<div class="container">
 
@@ -6,46 +6,35 @@
 
 			<div class="col-xs-12">
 
-				<h2 class="animateme"
-						data-when="enter"
-		        data-from="1"
-		        data-to="0"
-		        data-translatex="-1000">
+				<h2>
 		        {{folio.dataService.JSONTestimonialSection[0].header}}
 		    </h2>
 
-		    <div class="animateme"
-		    		data-when="enter"
-		        data-from="1"
-		        data-to="0"
-		        data-translatex="-2000">
+		  	<div class="items"
+		  			ng-repeat="testimonial in folio.dataService.JSONTestimonialSection[0].possibilities | limitTo:3"
+		  			loaded-directive callback-fn="folio.randomizeArray">
 
-			  	<div class="items"
-			  			ng-repeat="testimonial in folio.dataService.JSONTestimonialSection[0].possibilities | limitTo:3"
-			  			loaded-directive callback-fn="folio.randomizeArray">
+					<div class="quote" ng-class-odd="'odd'" ng-class-even="'even'">
 
-						<div class="quote" ng-class-odd="'odd'" ng-class-even="'even'">
+						<blockquote>
+							&#34;
+							{{testimonial.quote}}
+							&#34;
+						</blockquote>
 
-							<blockquote>
-								&#34;
-								{{testimonial.quote}}
-								&#34;
-							</blockquote>
-
-						</div>
-
-						<div class="item item-{{$index}}" ng-class-odd="'odd'" ng-class-even="'even'">
-
-							<p class="description">{{testimonial.description}}</p>
-
-							<p class="name">{{testimonial.name}}</p>
-
-							<p class="divider">&#45;</p>
-
-					  	<p class="company"></b>{{testimonial.company}}</p>
-
-				  	</div>
 					</div>
+
+					<div class="item item-{{$index}}" ng-class-odd="'odd'" ng-class-even="'even'">
+
+						<p class="description">{{testimonial.description}}</p>
+
+						<p class="name">{{testimonial.name}}</p>
+
+						<p class="divider">&#45;</p>
+
+				  	<p class="company"></b>{{testimonial.company}}</p>
+
+			  	</div>
 
 				</div>
 

@@ -1,4 +1,4 @@
-<section class="section work scrollme">
+<section class="section work scrollme-desktop">
 
 	<div class="container animate">
 
@@ -6,46 +6,34 @@
 
 			<div class="col-xs-12">
 
-				<h2 class="animateme"
-						data-when="enter"
-		        data-from="1"
-		        data-to="0"
-		        data-translatex="-1000">
+				<h2>
 		        {{folio.dataService.JSONWorkSection[0].header}}
 		    </h2>
 
-		    <div class="animateme"
-					data-when="enter"
-	        data-from="1"
-	        data-to="0"
-	        data-translatey="1000">
-	 
-					<div class="items"
-						ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
-						ng-if="work.show != false">
+				<div class="items"
+					ng-repeat="work in folio.dataService.JSONWorkSection[0].possibilities | orderBy: 'favourite':true"
+					ng-if="work.show !=  false">
 
-						<div class="col-xs-4 col-sm-4 col-md-3">
+					<div class="col-xs-4 col-sm-4 col-md-3">
 
-							<a href="#"
-								 ng-attr-style="background: {{work.colour}}"
-								 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
-								 class="logo">
+						<a href="#"
+							 ng-attr-style="background: {{work.colour}}"
+							 ng-click="folio.openWorkItemDetailsPanel($event); folio.setWorkItemDetailsId(work); folio.panelActive = !folio.panelActive"
+							 class="logo">
 
-								<p>{{work.title}}</p>
+							<p>{{work.title}}</p>
 
-								<div class="image">
-					  			<img ng-src="{{work.logo}}">
-					  		</div>
+							<div class="image">
+				  			<img ng-src="{{work.logo}}">
+				  		</div>
 
-					  	</a>
+				  	</a>
 
-					  </div>
-
-					</div>
-
-					<div ng-init="folio.calculateNumberofSlides()"></div>
+				  </div>
 
 				</div>
+
+				<div ng-init="folio.calculateNumberofSlides()"></div>
 
 			</div>
 

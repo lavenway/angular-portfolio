@@ -28,7 +28,9 @@
               ready = true;
 
               // LOAD THE PAGE ANIMATIONS
-              //animations();
+              setTimeout( function() {
+                animations();
+              }, 700);
             }
           };
       });
@@ -37,7 +39,6 @@
       // Variables
       var body = $('body'),
           desktopDevice = 'desktop-viewport',
-          $mainNav = $('.navbar'),
           mobileDevice = 'mobile-viewport',
           $mobileHiddenNav = $('.navbar-links'),
           $mobileMenuToggle = $('.mobile-menu'),
