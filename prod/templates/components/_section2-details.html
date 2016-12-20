@@ -26,7 +26,7 @@
 									<img ng-src="{{workItem.logo}}">
 								</div>
 
-								<p>{{workItem.description}}</p>
+								<div ng-bind-html="workItem.description">{{workItem.description}}</div>
 
 								<a class="url" href="{{workItem.url}}"
 									 ng-if="workItem.url !==''">

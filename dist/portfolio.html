@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="folioFramework" ng-controller="folioCtrl as folio">
+<html class="no-js" lang="en" ng-app="folioFramework" ng-controller="folioCtrl as folio" ng-cloak>
 
 <head>
 	<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js ','no-js').replace('no-js','');</script>
@@ -173,7 +173,7 @@
 	        									<img ng-src="{{workItem.logo}}">
 	        								</div>
 
-	        								<p>{{workItem.description}}</p>
+	        								<div ng-bind-html="workItem.description">{{workItem.description}}</div>
 
 	        								<a class="url" href="{{workItem.url}}"
 	        									 ng-if="workItem.url !==''">

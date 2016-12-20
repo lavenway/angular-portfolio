@@ -257,6 +257,19 @@ body[class*=' fp-viewing-secondPage']{
 		margin-bottom: 6px;
 		border-width: 2px;
 
+		&::-webkit-scrollbar {
+		  width: 12px;  /* for vertical scrollbars */
+		  height: 12px; /* for horizontal scrollbars */
+		}
+
+		&::-webkit-scrollbar-track {
+		  background: $offblack;
+		}
+
+		&::-webkit-scrollbar-thumb {
+		  background: $bluemediumlight;
+		}
+
 		@media all and (min-width: 480px) {
       max-height: 600px;
     }
@@ -298,6 +311,7 @@ body[class*=' fp-viewing-secondPage']{
 }
 
 .hidden-menu-active {
+	position: absolute;
 	overflow: hidden !important;
 	height: 100% !important;
 

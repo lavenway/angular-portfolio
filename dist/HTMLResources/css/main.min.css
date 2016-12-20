@@ -4075,6 +4075,12 @@ p {
   background: #81C3D7; }
 
 /******************************
+* ANGULAR HIDE ON LOAD
+******************************/
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
+/******************************
 * HEADER STYLES
 ******************************/
 h1, h3, h4, h5, h6 {
@@ -4279,24 +4285,26 @@ h3 {
     top: 0; }
 
 .fp-controlArrow {
+  z-index: 1000;
   top: auto;
   left: 50% !important;
   bottom: -60px;
   border: none;
-  width: 20px !important;
-  height: 30px; }
+  width: 40px !important;
+  height: 40px; }
   .fp-controlArrow:before {
     display: block;
     width: 100%;
     height: 100%;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 30px;
+    line-height: 40px;
     text-align: center; }
   .fp-controlArrow.fp-prev {
-    margin-left: -30px; }
+    margin-left: -44px; }
   .fp-controlArrow.fp-next {
     right: auto;
-    margin-left: 10px; }
+    margin-left: 6px; }
   .fp-controlArrow.fp-prev:before {
     content: "\f053"; }
   .fp-controlArrow.fp-next:before {
@@ -4534,6 +4542,15 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     overflow-y: auto;
     margin-bottom: 6px;
     border-width: 2px; }
+    .work-details .hero::-webkit-scrollbar {
+      width: 12px;
+      /* for vertical scrollbars */
+      height: 12px;
+      /* for horizontal scrollbars */ }
+    .work-details .hero::-webkit-scrollbar-track {
+      background: #2E4057; }
+    .work-details .hero::-webkit-scrollbar-thumb {
+      background: #81C3D7; }
     @media all and (min-width: 480px) {
       .work-details .hero {
         max-height: 600px; } }
@@ -4560,6 +4577,7 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
     color: red; }
 
 .hidden-menu-active {
+  position: absolute;
   overflow: hidden !important;
   height: 100% !important; }
   .hidden-menu-active .section.work .container.animate {
