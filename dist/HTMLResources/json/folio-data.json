@@ -2,7 +2,7 @@
 	"JSONHomeSection": [{
 		"header": "Wayne Lavender <span>Front-end Developer</span>",
 		"skills": "HTML | CSS | JS | jQuery | Responsive",
-		"image": "HTMLResources/img/logos/logo-wl-large.png"
+		"image": "HTMLResources/img/logos/wl-logo-animated.svg"
 	}],
 
 	"JSONWorkSection": [{
