@@ -19,8 +19,8 @@
 		margin: 0 auto 40px;
 
 		@media all and (min-width: 480px) and (min-height: 769px) {
-      max-width: 450px;
-    }
+			max-width: 450px;
+		}
 
 		img {
 			width: 100%;
@@ -44,8 +44,8 @@
 			font-size: 14px;
 
 			@media all and (min-width: 480px) {
-    		font-size: 18px;
-  		}
+				font-size: 18px;
+			}
 		}
 
 		a.portfolio-link {
@@ -61,8 +61,8 @@
 				font-size: 16px;
 
 				@media all and (min-width: 480px) and (min-height: 769px) {
-		      font-size: 18px;
-		    }
+					font-size: 18px;
+				}
 			}
 
 			i {
@@ -97,8 +97,8 @@ body[class*=' fp-viewing-secondPage']{
 	padding: 100px 0;
 
 	@media all and (min-width: 480px) {
-    padding: 0;
-  }
+		padding: 0;
+	}
 
 	.container {
 		position: relative;
@@ -108,9 +108,9 @@ body[class*=' fp-viewing-secondPage']{
 		transform: translateY(-50%);
 		@include transition(.4s);
 
-  	@media all and (min-width: 480px) {
-      margin-top: -78px;
-    }
+		@media all and (min-width: 480px) {
+			margin-top: -78px;
+		}
 
 		> .row {
 
@@ -131,8 +131,8 @@ body[class*=' fp-viewing-secondPage']{
 				min-height: 100px;
 
 				@media all and (min-width: 480px) {
-		      min-height: 190px;
-		    }
+					min-height: 190px;
+				}
 
 				p {
 					margin: 0;
@@ -186,9 +186,9 @@ body[class*=' fp-viewing-secondPage']{
 		text-align: center;
 
 		@media all and (min-width: 480px) {
-      right: 20px;
-      font-size: 34px;
-    }
+			right: 20px;
+			font-size: 34px;
+		}
 
 		&:hover {
 			color: $bluemediumlight;
@@ -258,21 +258,21 @@ body[class*=' fp-viewing-secondPage']{
 		border-width: 2px;
 
 		&::-webkit-scrollbar {
-		  width: 12px;  /* for vertical scrollbars */
-		  height: 12px; /* for horizontal scrollbars */
+			width: 12px;  /* for vertical scrollbars */
+			height: 12px; /* for horizontal scrollbars */
 		}
 
 		&::-webkit-scrollbar-track {
-		  background: $offblack;
+			background: $offblack;
 		}
 
 		&::-webkit-scrollbar-thumb {
-		  background: $bluemediumlight;
+			background: $bluemediumlight;
 		}
 
 		@media all and (min-width: 480px) {
-      max-height: 600px;
-    }
+			max-height: 600px;
+		}
 
 		img {
 			width: 100%;
@@ -324,8 +324,8 @@ body[class*=' fp-viewing-secondPage']{
 		right: 0;
 
 		@media all and (min-width: 480px) {
-      width: 100%;
-    }
+			width: 100%;
+		}
 	}
 
 }
@@ -348,28 +348,28 @@ body[class*=' fp-viewing-thirdPage']{
 	padding: 100px 0;
 
 	@media all and (max-width: 480px) {
-    height: auto !important;
-  }
+		height: auto !important;
+	}
 
 	@media all and (min-width: 480px) {
-    margin-bottom: 0;
-    padding: 0;
-  }
+		margin-bottom: 0;
+		padding: 0;
+	}
 
 	.container {
 		position: relative;
 		@include transition(.4s);
 
-  	@media all and (min-width: 480px) {
-      top: 50%;
-      left: 0;
-      margin-top: -78px;
-      transform: translateY(-50%);
-    }
+		@media all and (min-width: 480px) {
+			top: 50%;
+			left: 0;
+			margin-top: -78px;
+			transform: translateY(-50%);
+		}
 
-    .slide {
-    	padding: 0 1px;
-    }
+		.slide {
+			padding: 0 1px;
+		}
 
 		> .row {
 
@@ -393,8 +393,8 @@ body[class*=' fp-viewing-thirdPage']{
 			margin-bottom: 100px;
 
 			@media all and (min-width: 480px) {
-	      margin-bottom: 0;
-	    }
+			margin-bottom: 0;
+			}
 		}*/
 
 		.logo {
@@ -403,8 +403,8 @@ body[class*=' fp-viewing-thirdPage']{
 			margin: 0 auto 20px;
 
 			@media all and (min-width: 480px) {
-	      max-width: none;
-	    }
+				max-width: none;
+			}
 
 			&.no-colour {
 				img {
@@ -418,8 +418,8 @@ body[class*=' fp-viewing-thirdPage']{
 				padding: 20px;
 
 				@media all and (min-width: 480px) {
-		      max-height: none;
-		    }
+					max-height: none;
+				}
 			}
 		}
 
@@ -441,13 +441,13 @@ body[class*=' fp-viewing-thirdPage']{
 					margin-bottom: 10px;
 
 					@media all and (min-width: 480px) {
-			      margin-bottom: 20px;
-			      font-size: 18px;
-			    }
+						margin-bottom: 20px;
+						font-size: 18px;
+					}
 				}
 
 			}
-			
+
 		}
 
 	}
@@ -468,65 +468,65 @@ body[class*=' fp-viewing-thirdPage']{
 
 .section.testimonial {
 	padding: 100px 0;
-	
+
 	@media all and (min-width: 480px) {
-    padding: 0;
-  }
+		padding: 0;
+	}
 
 	.items {
 		overflow: hidden;
 		margin: 30px 0;
 
 		@media all and (min-width: 480px) {
-    	margin: 60px 0;
-  	}
+			margin: 60px 0;
+		}
 
-  	.quote {
-  		position: relative;
-  		margin: 20px 0;
+		.quote {
+			position: relative;
+			margin: 20px 0;
 
-  		@media all and (min-width: 480px) {
-      	position: absolute;
-      	left: 0;
-      	width: 50%;
-      	height: 100%;
-      	margin: 0;
+			@media all and (min-width: 480px) {
+				position: absolute;
+				left: 0;
+				width: 50%;
+				height: 100%;
+				margin: 0;
 
-      	&.odd {
-      		left: auto;
+				&.odd {
+					left: auto;
 					right: 0;
 				}
-    	}
+			}
 
 			blockquote {
-	  		position: relative;
-	  		width: 100%;
-	  		font-family: $font-secondary;
-	  		font-size: 30px;
-	  		font-weight: 700;
-	  		color: $white;
-	  		text-align: center;
+				position: relative;
+				width: 100%;
+				font-family: $font-secondary;
+				font-size: 30px;
+				font-weight: 700;
+				color: $white;
+				text-align: center;
 
-	  		@media all and (min-width: 480px) {
-	  			position: absolute;
-	  			top: 50%;
-	  			@include transform(translateY(-50%));
-	  		}
-	  	}
-  	}
+				@media all and (min-width: 480px) {
+					position: absolute;
+					top: 50%;
+					@include transform(translateY(-50%));
+				}
+			}
+		}
 
-  	.item {
-  		width: 100%;
+		.item {
+			width: 100%;
 
-  		@media all and (min-width: 480px) {
-      	float: right;
-      	width: 50%;
+			@media all and (min-width: 480px) {
+				float: right;
+				width: 50%;
 
-      	&.odd {
+				&.odd {
 					float: left;
 				}
-    	}
-  	}
+			}
+		}
 
 		.item {
 
@@ -563,10 +563,10 @@ body[class*=' fp-viewing-thirdPage']{
 
 .section.contact {
 	padding: 60px 0;
-	
+
 	@media all and (min-width: 480px) {
-    padding: 0;
-  }
+		padding: 0;
+	}
 
 	.social {
 		margin-bottom: 40px;
@@ -599,7 +599,7 @@ body[class*=' fp-viewing-thirdPage']{
 		&.success {
 			background: $testgreen;
 		}
-		
+
 	}
 
 	.contact-form {
@@ -626,8 +626,8 @@ body[class*=' fp-viewing-thirdPage']{
 					background: transparent;
 
 					@media all and (min-width: 480px) {
-			      margin-top: 8px;
-			    }
+						margin-top: 8px;
+					}
 				}
 
 				.form-item {
@@ -635,8 +635,8 @@ body[class*=' fp-viewing-thirdPage']{
 					width: 60%;
 
 					@media all and (min-width: 480px) {
-			      width: 72%;
-			    }
+						width: 72%;
+					}
 				}
 
 			}
@@ -658,27 +658,27 @@ body[class*=' fp-viewing-thirdPage']{
 			font-family: $font-primary;
 			font-size: 16px;
 			border: 1px solid $black;
-    	outline: none;
-    	appearance: none;
-    	border-radius:0;
-    	@include transition(background 0.5s ease-in-out 0s);
-    	background: $white;
+			outline: none;
+			appearance: none;
+			border-radius:0;
+			@include transition(background 0.5s ease-in-out 0s);
+			background: $white;
 
-    	@media all and (min-width: 480px) {
-	      height: 60px;
-	    }
+			@media all and (min-width: 480px) {
+				height: 60px;
+			}
 
-    	&:focus {
-    		background: $bluemediumlight;
-    	}
+			&:focus {
+				background: $bluemediumlight;
+			}
 		}
 
 		textarea {
 			height: 80px;
 
 			@media all and (min-width: 480px) {
-	      height: 150px;
-	    }
+				height: 150px;
+			}
 		}
 
 		.btn {
@@ -735,12 +735,12 @@ body[class*=' fp-viewing-thirdPage']{
 	}*/
 
 	> .fp-tableCell {
-  	position: relative;
-  	top: -40px;
+		position: relative;
+		top: -40px;
 
-  	@media all and (min-width: 480px) {
-      top: -78px;
-    }
+		@media all and (min-width: 480px) {
+			top: -78px;
+		}
 	}
 
 	.container {
@@ -773,8 +773,8 @@ body[class*=' fp-viewing-thirdPage']{
 					background: $black;
 
 					@media all and (min-width: 480px) {
-			      height: 50px;
-			    }
+					height: 50px;
+					}
 				}*/
 
 				&:hover {
@@ -789,8 +789,8 @@ body[class*=' fp-viewing-thirdPage']{
 						transform: none;
 
 						/*@media all and (min-width: 480px) {
-				      height: 0;
-				    }*/
+							height: 0;
+						}*/
 					}
 
 					.image {
@@ -813,16 +813,16 @@ body[class*=' fp-viewing-thirdPage']{
 					background: $black;
 
 					@media all and (min-width: 480px) {
-			      font-size: 16px;
-			      line-height: 25px;
-			    }
+						font-size: 16px;
+						line-height: 25px;
+					}
 				}
 
 				.image {
 					position: absolute;
-				  top: 50%;
-				  left: 50%;
-		    	width: 100%;
+					top: 50%;
+					left: 50%;
+					width: 100%;
 					@include transform(translateX(-50%) translateY(-50%) translateZ(0) scale(1.0));
 					@include transition(.3s);
 
@@ -831,8 +831,8 @@ body[class*=' fp-viewing-thirdPage']{
 						margin: 0 auto;
 
 						@media all and (min-width: 480px) {
-				      width: 60%;
-			    	}
+							width: 60%;
+						}
 					}
 				}
 

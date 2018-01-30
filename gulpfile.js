@@ -15,7 +15,6 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     del = require('del'),
     environments = require('gulp-environments'),
-    ftp = require( 'vinyl-ftp' ),
     flatten = require('gulp-flatten'),
     ignore = require('gulp-ignore'),
     include = require('gulp-html-tag-include'),
@@ -39,9 +38,6 @@ var gulp = require('gulp'),
 
   // PORT TO USE FOR THE DEVELOPMENT SERVER
   var PORT = 8000;
-
-  // PATH ON THE DEVELOPMENT SERVER TO FTP FILES TO
-  var PROJECTSERVERPATH = 'boots-quiz';
 
   // BROWSERS TO TARGET WHEN PREFIXING CSS.
   var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
@@ -83,14 +79,7 @@ var gulp = require('gulp'),
     ],
   };
 
-  var ftpoptions = {
-      host:     'digitaldev.rhapsodymedia.co.uk',
-      user:     'wayneftp',
-      password: 'ftp101',
-      parallel: 10
-  };
-
-// OPTIMISATION TASKS 
+// OPTIMISATION TASKS
 // ------------------
   // BUILD HTML FILES
   gulp.task('html-include', function() {
@@ -98,7 +87,7 @@ var gulp = require('gulp'),
     return gulp.src(src + PATHS.htmlfiles)
       .pipe(include())
       .pipe(ignore.exclude(condition))
-      .pipe(flatten()) 
+      .pipe(flatten())
       .pipe(gulp.dest(dest));
   });
 
@@ -149,7 +138,7 @@ var gulp = require('gulp'),
   gulp.task('sass', function() {
     return gulp.src(src + PATHS.sassfiles, {style: 'compressed'})
       .pipe(development(sourcemaps.init()))
-      .pipe(sass())    
+      .pipe(sass())
       .pipe(autoprefixer({browsers: COMPATIBILITY}))
       .pipe(concat('main.css'))
       .pipe(production(cssnano()))
@@ -158,13 +147,13 @@ var gulp = require('gulp'),
       .pipe(gulp.dest(dest + 'HTMLResources/css'));
   });
 
-  // COPYING JSON 
+  // COPYING JSON
   gulp.task('json', function() {
     return gulp.src(src + PATHS.jsonfiles)
       .pipe(gulp.dest(dest + 'HTMLResources/json'));
   });
 
-  // COPYING PHP 
+  // COPYING PHP
   gulp.task('php', function() {
     return gulp.src(src + PATHS.phpfiles)
       .pipe(gulp.dest(dest + 'HTMLResources/php'));
@@ -177,19 +166,19 @@ var gulp = require('gulp'),
       .pipe(gulp.dest(dest + 'HTMLResources/img'));
   });
 
-  // COPYING FONTS 
+  // COPYING FONTS
   gulp.task('fonts', function() {
     return gulp.src(src + PATHS.fontfiles)
       .pipe(gulp.dest(dest + 'HTMLResources/fonts'));
   });
 
-  // COPYING FAVICONS 
+  // COPYING FAVICONS
   gulp.task('favicon', function() {
     return gulp.src(src + PATHS.faviconfiles)
       .pipe(gulp.dest(dest));
   });
 
-  // CLEANING 
+  // CLEANING
   gulp.task('clean', function() {
     return del.sync(dest).then(function(cb) {
       return cache.clearAll(cb);
@@ -202,20 +191,7 @@ var gulp = require('gulp'),
 
   // REMOVE REMOTE DIST DIRECTORY
   gulp.task('rmdirdist', function (cb) {
-    var conn = ftp.create(ftpoptions);
-    return gulp.src(dest, {buffer: true})
-    .pipe(production(conn.newer(PROJECTSERVERPATH, cb))) // only upload newer files
-    .pipe(production(conn.newer('./' + PROJECTSERVERPATH + '.zip', cb))); // only upload newer files
-
-  });
-
-  // FTP FILES TO REMOTE SERVER
-  gulp.task('ftp', function() {
-    var conn = ftp.create(ftpoptions);
-    return gulp.src(dest + '**', {buffer: true})
-    .pipe(production(conn.dest(PROJECTSERVERPATH)))
-    .pipe(production(zip(PROJECTSERVERPATH + '.zip')))
-    .pipe(production(conn.dest('./')));
+    return gulp.src(dest, {buffer: true});
   });
 
 
@@ -243,17 +219,12 @@ var gulp = require('gulp'),
     phpconnect.server({ base: dest, port: PORT, keepalive: true});
   });
 
-  // FTP FILES TO REMOTE SERVER
-  gulp.task('upload', ['build'], function(callback) {
-    runSequence('rmdirdist', ['ftp'], callback); 
-  });
-
   /*gulp.task('phpserver', ['build'], function() {
     phpconnect.server({ proxy: '127.0.0.1:8000', port: PORT, keepalive: true});
   });*/
 
-  // BUILD THE SITE, RUN THE SERVER, FTP FILES IN PRODUCTION MODE
-  gulp.task('default', ['build', 'browserSync', 'upload', 'phpserver'], function() {
+  // BUILD THE SITE, RUN THE SERVER IN PRODUCTION MODE
+  gulp.task('default', ['build', 'browserSync', 'phpserver'], function() {
     // WATCH HTML FILES
     gulp.watch(src + PATHS.htmlfiles, ['html-include', browserSync.reload]);
     // WATCH JS FILES

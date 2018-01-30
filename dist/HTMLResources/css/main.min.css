@@ -2872,23 +2872,30 @@ h3 {
       height: 160px; } }
   .navbar .mobile-menu {
     color: #FFFFFF; }
-    @media all and (min-width: 480px) {
-      .navbar .mobile-menu {
-        color: #2E4057; } }
     .navbar .mobile-menu i {
-      padding: 26px;
-      font-size: 30px; }
+      padding: 20px;
+      font-size: 40px; }
     @media all and (min-width: 769px) and (min-height: 980px) {
       .navbar .mobile-menu {
         display: none; } }
   .navbar ul {
     display: none;
-    margin: 0 2%;
-    font-size: 14px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%);
+        transform: translate(-50%);
+    font-size: 20px;
     text-transform: uppercase; }
     @media all and (min-width: 769px) and (min-height: 980px) {
       .navbar ul {
-        display: block; } }
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+        -ms-transform: none;
+            transform: none;
+        font-size: 14px; } }
     .navbar ul li {
       display: block;
       width: 100%;
@@ -2929,10 +2936,17 @@ h3 {
             width: 100%;
             height: 2px;
             background: #FFFFFF; }
+      @media all and (min-width: 769px) and (min-height: 980px) {
+        .navbar ul li.mobile {
+          display: none; } }
       .navbar ul li.logo {
+        display: none;
         min-width: 180px;
         margin-left: -20px;
         padding: 0 20px; }
+        @media all and (min-width: 769px) and (min-height: 980px) {
+          .navbar ul li.logo {
+            display: inline-block; } }
         .navbar ul li.logo a {
           position: absolute;
           bottom: 0;
@@ -2960,11 +2974,12 @@ h3 {
   position: absolute; }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
+  border: 2px solid #FFFFFF;
   background: #333333; }
 
 #fp-nav {
   z-index: 10;
-  left: 0 !important;
+  left: 20px !important;
   padding: 20px 0; }
 
 .fp-slidesNav {
@@ -3301,8 +3316,8 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
 			margin-bottom: 100px;
 
 			@media all and (min-width: 480px) {
-	      margin-bottom: 0;
-	    }
+			margin-bottom: 0;
+			}
 		}*/ }
     @media all and (min-width: 480px) {
       .section.about .container {
@@ -3580,8 +3595,8 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
 					background: $black;
 
 					@media all and (min-width: 480px) {
-			      height: 50px;
-			    }
+					height: 50px;
+					}
 				}*/ }
         .section .container .items .logo:hover {
           /*&:before {
@@ -3594,8 +3609,8 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
             -ms-transform: none;
                 transform: none;
             /*@media all and (min-width: 480px) {
-				      height: 0;
-				    }*/ }
+							height: 0;
+						}*/ }
           .section .container .items .logo:hover .image {
             -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9);
             transform: translateX(-50%) translateY(-50%) translateZ(0) scale(0.9); }

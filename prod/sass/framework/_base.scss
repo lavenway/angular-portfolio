@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 62.5%;   
+  font-size: 62.5%;
   height: 100%;
 }
 
@@ -50,7 +50,7 @@ img {
 }
 
 strong {
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 p {
@@ -61,7 +61,7 @@ p {
 }
 
 ::selection {
-    color: $white; 
+    color: $white;
     background: $bluemediumlight;
 }
 
@@ -214,12 +214,12 @@ h3 {
     color: $white;
 
     @media all and (min-width: 480px) {
-      color: $offblack;
+      //color: $offblack;
     }
 
     i {
-      padding: 26px;
-      font-size: 30px;
+      padding: 20px;
+      font-size: 40px;
     }
 
     @media all and (min-width: 769px) and (min-height: 980px) {
@@ -229,12 +229,20 @@ h3 {
 
   ul {
     display: none;
-    margin: 0 2%;
-    font-size: 14px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
     text-transform: uppercase;
 
     @media all and (min-width: 769px) and (min-height: 980px) {
       display: block;
+      position: relative;
+	  top: auto;
+	  left: auto;
+	  transform: none;
+	  font-size: 14px;
     }
 
     li {
@@ -293,10 +301,21 @@ h3 {
         }
       }
 
+      &.mobile {
+      	@media all and (min-width: 769px) and (min-height: 980px) {
+            display: none;
+        }
+      }
+
       &.logo {
+      	display: none;
         min-width: 180px;
         margin-left: -20px;
         padding: 0 20px;
+
+        @media all and (min-width: 769px) and (min-height: 980px) {
+            display: inline-block;
+        }
 
         a {
           position: absolute;
@@ -306,7 +325,7 @@ h3 {
           height: auto;
           margin-left: -70px;
 
-          @media all and (min-width: 769px) and (min-height: 980px) { 
+          @media all and (min-width: 769px) and (min-height: 980px) {
             position: relative;
             left: inherit;
             bottom: inherit;
@@ -341,6 +360,7 @@ h3 {
   }
 
   ul li a span {
+  	border: 2px solid $white;
     background: $black;
   }
 
@@ -348,7 +368,7 @@ h3 {
 
 #fp-nav {
   z-index: 10;
-  left: 0 !important;
+  left: 20px !important;
   padding: 20px 0;
 }
 
@@ -368,7 +388,7 @@ h3 {
   border: none;
   width: 40px !important;
   height: 40px;
-                                                                                             
+
   &:before {
     display: block;
     width: 100%;
