@@ -3350,7 +3350,8 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
         .section.about .container .logo {
           max-width: none; } }
       .section.about .container .logo.no-colour img {
-        padding: 0; }
+        padding: 0;
+        border: 10px solid #FFFFFF; }
       .section.about .container .logo img {
         max-height: 100px;
         margin: 0 auto;
