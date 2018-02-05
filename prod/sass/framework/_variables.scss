@@ -20,8 +20,8 @@ $testyellow: yellow;
 $bluebase: #7BAABE;
 $bluelight: #B3CDE0;
 $bluemediumlight: #81C3D7;
-$bluemedium: #2F6690;
-$bluemediumdark: #2E4057;
+$bluemedium: #416788;
+$bluemediumdark: #4C5760;
 $bluedark: #16425B;
 
 //UNUSED BLUES
@@ -56,7 +56,7 @@ $font-secondary: 'Titillium Web', sans-serif;
 
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
-    @content; 
+    @content;
   }
   @-moz-keyframes #{$name} {
     @content;
@@ -66,7 +66,7 @@ $font-secondary: 'Titillium Web', sans-serif;
   }
   @keyframes #{$name} {
     @content;
-  } 
+  }
 }
 
 @mixin animation($animation) {
@@ -75,7 +75,7 @@ $font-secondary: 'Titillium Web', sans-serif;
 	-ms-animation: #{$animation};
 	animation: #{$animation};
 }
-  
+
 @mixin transform($transform) {
   -webkit-transform: $transform;
   -moz-transform: $transform;

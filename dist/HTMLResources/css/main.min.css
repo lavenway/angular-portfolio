@@ -2835,7 +2835,9 @@ h3 {
   height: 80px;
   text-align: center;
   box-shadow: none;
-  background: #323232; }
+  background: #505050; }
+  [class*="secondPage"] .navbar {
+    background: #646464; }
   @media all and (min-width: 480px) {
     .navbar {
       background: rgba(50, 50, 50, 0.3); } }
@@ -2976,6 +2978,9 @@ h3 {
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   border: 2px solid #FFFFFF;
   background: #333333; }
+  [class*="secondPage"] #fp-nav ul li a span, [class*="secondPage"] .fp-slidesNav ul li a span {
+    border: 2px solid #333333;
+    background: #FFFFFF; }
 
 #fp-nav {
   z-index: 10;
@@ -3297,7 +3302,7 @@ body[class*=' fp-viewing-secondPage'] #fullpage {
 ********************************************/
 body[class^='fp-viewing-thirdPage'] #fullpage,
 body[class*=' fp-viewing-thirdPage'] #fullpage {
-  background: #2F6690; }
+  background: #416788; }
 
 .section.about {
   margin-bottom: 100px;
@@ -3375,7 +3380,7 @@ body[class*=' fp-viewing-thirdPage'] #fullpage {
 *
 ********************************************/
 .fp-viewing-fourthPage #fullpage {
-  background: #2E4057; }
+  background: #4C5760; }
 
 .section.testimonial {
   padding: 100px 0; }

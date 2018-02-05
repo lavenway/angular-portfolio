@@ -155,7 +155,11 @@ h3 {
   height: 80px;
   text-align: center;
   box-shadow: none;
-  background: rgba(50,50,50,1);
+  background: rgba(80,80,80,1);
+
+  [class*="secondPage"] & {
+	background: rgba(100,100,100,1);
+  }
 
   @media all and (min-width: 480px) {
     background: rgba(50,50,50,0.3);
@@ -362,8 +366,12 @@ h3 {
   ul li a span {
   	border: 2px solid $white;
     background: $black;
-  }
 
+    [class*="secondPage"] & {
+    	border: 2px solid $black;
+    	background: $white;
+    }
+  }
 }
 
 #fp-nav {
